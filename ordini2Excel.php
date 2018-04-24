@@ -3,8 +3,8 @@
 
 	require './vendor/autoload.php';
 	// leggo i dati da un file
-    // $request = file_get_contents('./ordini.json');
-    $request = file_get_contents('php://input');
+    $request = file_get_contents('./ordini.json');
+    //$request = file_get_contents('php://input');
     $data = json_decode($request, true);
        
     use PhpOffice\PhpSpreadsheet\Cell\Coordinate;
@@ -23,14 +23,6 @@
     // leggo i parametri contenuti nel file
     $nomeFile = $data['nomeFile'];
     $file = './temp/'.$nomeFile.'.xlsx';
-
-    $filiali = $data['filiali'];
-    $ordinamento = array();
-    foreach ($filiali as $key => $row) {
-        $ordinamento[$key] = $row['ordinamento'];
-    }
-    array_multisort($ordinamento, SORT_ASC, $filiali);
-    $countFiliali = count($filiali);
 
     $ordini = $data['ordini'];
     $ordinamento = array();
@@ -68,6 +60,14 @@
 		$dataConsegna= new \DateTime($ordine['dataConsegna']);
 		$dataConsegnaMinima= new \DateTime($ordine['dataConsegnaMinima']);
 		$dataConsegnaMassima= new \DateTime($ordine['dataConsegnaMassima']);
+		
+		$filiali = $ordine['sedi'];
+		$ordinamento = array();
+		foreach ($filiali as $key => $row) {
+			$ordinamento[$key] = $row['ordinamento'];
+		}
+		array_multisort($ordinamento, SORT_ASC, $filiali);
+		$countFiliali = count($filiali);
 		
 		
         // riquadro di testata
