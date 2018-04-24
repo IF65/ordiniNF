@@ -1,0 +1,705 @@
+{
+    "filiali": {
+        "ELW1": {
+            "codice": "ELW1",
+            "descrizione": "ELW1 - Negozio Eltron Web",
+            "ordinamento": 51
+        },
+        "SM1": {
+            "codice": "SM1",
+            "descrizione": "SM1 - S.Eufemia",
+            "ordinamento": 1
+        },
+        "SM13": {
+            "codice": "SM13",
+            "descrizione": "SM13 - Orzinuovi",
+            "ordinamento": 13
+        },
+        "SM14": {
+            "codice": "SM14",
+            "descrizione": "SM14 - Viadana",
+            "ordinamento": 14
+        },
+        "SM15": {
+            "codice": "SM15",
+            "descrizione": "SM15 - Albino",
+            "ordinamento": 15
+        },
+        "SM16": {
+            "codice": "SM16",
+            "descrizione": "SM16 - Villanuova",
+            "ordinamento": 16
+        },
+        "SM17": {
+            "codice": "SM17",
+            "descrizione": "SM17 - Pisogne",
+            "ordinamento": 17
+        },
+        "SM18": {
+            "codice": "SM18",
+            "descrizione": "SM18 - Casalmaggiore",
+            "ordinamento": 18
+        },
+        "SM19": {
+            "codice": "SM19",
+            "descrizione": "SM19 - Crema",
+            "ordinamento": 19
+        },
+        "SM25": {
+            "codice": "SM25",
+            "descrizione": "SM25 - Merate",
+            "ordinamento": 25
+        },
+        "SM26": {
+            "codice": "SM26",
+            "descrizione": "SM26 - Como",
+            "ordinamento": 26
+        },
+        "SM27": {
+            "codice": "SM27",
+            "descrizione": "SM27 - Gavirate",
+            "ordinamento": 27
+        },
+        "SM28": {
+            "codice": "SM28",
+            "descrizione": "SM28 - Albavilla",
+            "ordinamento": 28
+        },
+        "SM3": {
+            "codice": "SM3",
+            "descrizione": "SM3 - Ospitaletto",
+            "ordinamento": 3
+        },
+        "SM32": {
+            "codice": "SM32",
+            "descrizione": "SM32 - Sarezzo",
+            "ordinamento": 32
+        },
+        "SM33": {
+            "codice": "SM33",
+            "descrizione": "SM33 - Carpenedolo",
+            "ordinamento": 33
+        },
+        "SM34": {
+            "codice": "SM34",
+            "descrizione": "SM34 - Suzzara",
+            "ordinamento": 34
+        },
+        "SM35": {
+            "codice": "SM35",
+            "descrizione": "SM35 - Albano S.A.",
+            "ordinamento": 35
+        },
+        "SM36": {
+            "codice": "SM36",
+            "descrizione": "SM36 - Ostiglia",
+            "ordinamento": 36
+        },
+        "SM37": {
+            "codice": "SM37",
+            "descrizione": "SM37 - Sonico",
+            "ordinamento": 37
+        },
+        "SM38": {
+            "codice": "SM38",
+            "descrizione": "SM38 - Castel Goffredo",
+            "ordinamento": 38
+        },
+        "SM39": {
+            "codice": "SM39",
+            "descrizione": "SM39 - Antegnate",
+            "ordinamento": 39
+        },
+        "SM4": {
+            "codice": "SM4",
+            "descrizione": "SM4 - Moniga",
+            "ordinamento": 4
+        },
+        "SM41": {
+            "codice": "SM41",
+            "descrizione": "SM41 - Freccia Rossa",
+            "ordinamento": 41
+        },
+        "SM43": {
+            "codice": "SM43",
+            "descrizione": "SM43 - Novi Ligure",
+            "ordinamento": 43
+        },
+        "SM44": {
+            "codice": "SM44",
+            "descrizione": "SM44 - Sesto San Giovanni",
+            "ordinamento": 44
+        },
+        "SM45": {
+            "codice": "SM45",
+            "descrizione": "SM45 - Castelvetro",
+            "ordinamento": 45
+        },
+        "SM46": {
+            "codice": "SM46",
+            "descrizione": "SM46 - Voghera",
+            "ordinamento": 46
+        },
+        "SM5": {
+            "codice": "SM5",
+            "descrizione": "SM5 - Chiari",
+            "ordinamento": 5
+        },
+        "SM6": {
+            "codice": "SM6",
+            "descrizione": "SM6 - Asola",
+            "ordinamento": 6
+        },
+        "SM7": {
+            "codice": "SM7",
+            "descrizione": "SM7 - Palazzolo",
+            "ordinamento": 7
+        },
+        "SM9": {
+            "codice": "SM9",
+            "descrizione": "SM9 - Via Ducco",
+            "ordinamento": 9
+        },
+        "SM99": {
+            "codice": "SM99",
+            "descrizione": "SM99 - Mapello",
+            "ordinamento": 47
+        },
+        "SMBB": {
+            "codice": "SMBB",
+            "descrizione": "SMBB - Supermedia - B2B",
+            "ordinamento": 52
+        },
+        "SMC1": {
+            "codice": "SMC1",
+            "descrizione": "SMC1 - CR Brescia",
+            "ordinamento": 88
+        },
+        "SMM1": {
+            "codice": "SMM1",
+            "descrizione": "SMM1 - Mag Albavilla",
+            "ordinamento": 91
+        },
+        "SMM2": {
+            "codice": "SMM2",
+            "descrizione": "SMM2 - Mag. Villanuova",
+            "ordinamento": 92
+        },
+        "SMM3": {
+            "codice": "SMM3",
+            "descrizione": "SMM3 - Mag Brescia",
+            "ordinamento": 92
+        },
+        "SMMD": {
+            "codice": "SMMD",
+            "descrizione": "SMMD - Magazzino Differenze",
+            "ordinamento": 93
+        },
+        "SMW1": {
+            "codice": "SMW1",
+            "descrizione": "SMW1 - Negozio Web",
+            "ordinamento": 50
+        }
+    },
+    "nomeFile": "testOrdine",
+    "ordini": [
+        {
+            "buyerCodice": "",
+            "buyerDescrizione": "",
+            "data": "2018-04-11T22:00:00.000Z",
+            "dataConsegna": "2018-04-11T22:00:00.000Z",
+            "dataConsegnaMassima": "2018-04-26T22:00:00.000Z",
+            "dataConsegnaMinima": "2018-04-11T22:00:00.000Z",
+            "fornitore": "FMFINGROSS",
+            "numero": "6602/18",
+            "pagamento": "",
+            "righe": [
+                {
+                    "barcode": [
+                        "9788852224805"
+                    ],
+                    "codice": "0777635",
+                    "codiceArticoloFornitore": "",
+                    "descrizione": "ALLA RICERCA DI NEMO",
+                    "famiglia": "18",
+                    "iva": 0,
+                    "listino": 4.83,
+                    "marca": "OPPORTUNITY",
+                    "modello": "",
+                    "prezzo": 6.9,
+                    "quantita": [
+                        {
+                            "descrizione": "Casalmaggiore",
+                            "quantita": 2,
+                            "scontoMerce": 0,
+                            "sede": "SM18"
+                        }
+                    ],
+                    "scontoA": 0,
+                    "scontoB": 0,
+                    "scontoC": 0,
+                    "scontoD": 0,
+                    "scontoExtra": 0,
+                    "scontoImporto": 0,
+                    "sottoFamiglia": "9",
+                    "taglia": "",
+                    "tipoIva": 3
+                },
+                {
+                    "barcode": [
+                        "9788852224843"
+                    ],
+                    "codice": "0777626",
+                    "codiceArticoloFornitore": "",
+                    "descrizione": "RAPUNZEL                   CLA",
+                    "famiglia": "18",
+                    "iva": 0,
+                    "listino": 4.83,
+                    "marca": "OPPORTUNITY",
+                    "modello": "",
+                    "prezzo": 6.9,
+                    "quantita": [
+                        {
+                            "descrizione": "Casalmaggiore",
+                            "quantita": 2,
+                            "scontoMerce": 0,
+                            "sede": "SM18"
+                        }
+                    ],
+                    "scontoA": 0,
+                    "scontoB": 0,
+                    "scontoC": 0,
+                    "scontoD": 0,
+                    "scontoExtra": 0,
+                    "scontoImporto": 0,
+                    "sottoFamiglia": "9",
+                    "taglia": "",
+                    "tipoIva": 3
+                },
+                {
+                    "barcode": [
+                        "9788852224140"
+                    ],
+                    "codice": "0777608",
+                    "codiceArticoloFornitore": "",
+                    "descrizione": "PINOCCHIO",
+                    "famiglia": "18",
+                    "iva": 0,
+                    "listino": 4.83,
+                    "marca": "OPPORTUNITY",
+                    "modello": "",
+                    "prezzo": 6.9,
+                    "quantita": [
+                        {
+                            "descrizione": "Casalmaggiore",
+                            "quantita": 2,
+                            "scontoMerce": 0,
+                            "sede": "SM18"
+                        }
+                    ],
+                    "scontoA": 0,
+                    "scontoB": 0,
+                    "scontoC": 0,
+                    "scontoD": 0,
+                    "scontoExtra": 0,
+                    "scontoImporto": 0,
+                    "sottoFamiglia": "9",
+                    "taglia": "",
+                    "tipoIva": 3
+                },
+                {
+                    "barcode": [
+                        "9788852227400"
+                    ],
+                    "codice": "0777591",
+                    "codiceArticoloFornitore": "",
+                    "descrizione": "BELLA E LA BESTIA 8LA) CLASSIC",
+                    "famiglia": "18",
+                    "iva": 0,
+                    "listino": 4.83,
+                    "marca": "OPPORTUNITY",
+                    "modello": "",
+                    "prezzo": 6.9,
+                    "quantita": [
+                        {
+                            "descrizione": "Casalmaggiore",
+                            "quantita": 2,
+                            "scontoMerce": 0,
+                            "sede": "SM18"
+                        }
+                    ],
+                    "scontoA": 0,
+                    "scontoB": 0,
+                    "scontoC": 0,
+                    "scontoD": 0,
+                    "scontoExtra": 0,
+                    "scontoImporto": 0,
+                    "sottoFamiglia": "9",
+                    "taglia": "",
+                    "tipoIva": 3
+                },
+                {
+                    "barcode": [
+                        "9788852228759"
+                    ],
+                    "codice": "0777555",
+                    "codiceArticoloFornitore": "",
+                    "descrizione": "FROZEN LE AVVENTURE DI OLAF",
+                    "famiglia": "75",
+                    "iva": 0,
+                    "listino": 4.83,
+                    "marca": "OPPORTUNITY",
+                    "modello": "",
+                    "prezzo": 6.9,
+                    "quantita": [
+                        {
+                            "descrizione": "Casalmaggiore",
+                            "quantita": 2,
+                            "scontoMerce": 0,
+                            "sede": "SM18"
+                        }
+                    ],
+                    "scontoA": 0,
+                    "scontoB": 0,
+                    "scontoC": 0,
+                    "scontoD": 0,
+                    "scontoExtra": 0,
+                    "scontoImporto": 0,
+                    "sottoFamiglia": "10",
+                    "taglia": "",
+                    "tipoIva": 3
+                },
+                {
+                    "barcode": [
+                        "9788852220623"
+                    ],
+                    "codice": "0777546",
+                    "codiceArticoloFornitore": "",
+                    "descrizione": "SIRENETTA (LA)",
+                    "famiglia": "75",
+                    "iva": 0,
+                    "listino": 4.83,
+                    "marca": "OPPORTUNITY",
+                    "modello": "",
+                    "prezzo": 6.9,
+                    "quantita": [
+                        {
+                            "descrizione": "Casalmaggiore",
+                            "quantita": 2,
+                            "scontoMerce": 0,
+                            "sede": "SM18"
+                        }
+                    ],
+                    "scontoA": 0,
+                    "scontoB": 0,
+                    "scontoC": 0,
+                    "scontoD": 0,
+                    "scontoExtra": 0,
+                    "scontoImporto": 0,
+                    "sottoFamiglia": "10",
+                    "taglia": "",
+                    "tipoIva": 3
+                },
+                {
+                    "barcode": [
+                        "9788852220586"
+                    ],
+                    "codice": "0777528",
+                    "codiceArticoloFornitore": "",
+                    "descrizione": "DUMBO",
+                    "famiglia": "75",
+                    "iva": 0,
+                    "listino": 4.83,
+                    "marca": "OPPORTUNITY",
+                    "modello": "",
+                    "prezzo": 6.9,
+                    "quantita": [
+                        {
+                            "descrizione": "Casalmaggiore",
+                            "quantita": 2,
+                            "scontoMerce": 0,
+                            "sede": "SM18"
+                        }
+                    ],
+                    "scontoA": 0,
+                    "scontoB": 0,
+                    "scontoC": 0,
+                    "scontoD": 0,
+                    "scontoExtra": 0,
+                    "scontoImporto": 0,
+                    "sottoFamiglia": "10",
+                    "taglia": "",
+                    "tipoIva": 3
+                },
+                {
+                    "barcode": [
+                        "9788852224126"
+                    ],
+                    "codice": "0777519",
+                    "codiceArticoloFornitore": "",
+                    "descrizione": "CARICA DEI 101 (LA)",
+                    "famiglia": "75",
+                    "iva": 0,
+                    "listino": 4.83,
+                    "marca": "OPPORTUNITY",
+                    "modello": "38229845",
+                    "prezzo": 6.9,
+                    "quantita": [
+                        {
+                            "descrizione": "Casalmaggiore",
+                            "quantita": 2,
+                            "scontoMerce": 0,
+                            "sede": "SM18"
+                        }
+                    ],
+                    "scontoA": 0,
+                    "scontoB": 0,
+                    "scontoC": 0,
+                    "scontoD": 0,
+                    "scontoExtra": 0,
+                    "scontoImporto": 0,
+                    "sottoFamiglia": "4",
+                    "taglia": "",
+                    "tipoIva": 3
+                },
+                {
+                    "barcode": [
+                        "9788852223778"
+                    ],
+                    "codice": "0777476",
+                    "codiceArticoloFornitore": "",
+                    "descrizione": "INSIDE OUT                 CLA",
+                    "famiglia": "75",
+                    "iva": 0,
+                    "listino": 4.83,
+                    "marca": "OPPORTUNITY",
+                    "modello": "",
+                    "prezzo": 6.9,
+                    "quantita": [
+                        {
+                            "descrizione": "Casalmaggiore",
+                            "quantita": 2,
+                            "scontoMerce": 0,
+                            "sede": "SM18"
+                        }
+                    ],
+                    "scontoA": 0,
+                    "scontoB": 0,
+                    "scontoC": 0,
+                    "scontoD": 0,
+                    "scontoExtra": 0,
+                    "scontoImporto": 0,
+                    "sottoFamiglia": "10",
+                    "taglia": "",
+                    "tipoIva": 3
+                },
+                {
+                    "barcode": [
+                        "9788852220593"
+                    ],
+                    "codice": "0704214",
+                    "codiceArticoloFornitore": "",
+                    "descrizione": "FROZEN",
+                    "famiglia": "75",
+                    "iva": 0,
+                    "listino": 4.83,
+                    "marca": "OPPORTUNITY",
+                    "modello": "38229845",
+                    "prezzo": 6.9,
+                    "quantita": [
+                        {
+                            "descrizione": "Casalmaggiore",
+                            "quantita": 2,
+                            "scontoMerce": 0,
+                            "sede": "SM18"
+                        }
+                    ],
+                    "scontoA": 0,
+                    "scontoB": 0,
+                    "scontoC": 0,
+                    "scontoD": 0,
+                    "scontoExtra": 0,
+                    "scontoImporto": 0,
+                    "sottoFamiglia": "4",
+                    "taglia": "",
+                    "tipoIva": 3
+                },
+                {
+                    "barcode": [
+                        "9788852227028"
+                    ],
+                    "codice": "0609700",
+                    "codiceArticoloFornitore": "0609700",
+                    "descrizione": "CLASSICS - OCEANIA",
+                    "famiglia": "18",
+                    "iva": 0,
+                    "listino": 4.83,
+                    "marca": "OPPORTUNITY",
+                    "modello": "",
+                    "prezzo": 6.99,
+                    "quantita": [
+                        {
+                            "descrizione": "Casalmaggiore",
+                            "quantita": 2,
+                            "scontoMerce": 0,
+                            "sede": "SM18"
+                        }
+                    ],
+                    "scontoA": 0,
+                    "scontoB": 0,
+                    "scontoC": 0,
+                    "scontoD": 0,
+                    "scontoExtra": 0,
+                    "scontoImporto": 0,
+                    "sottoFamiglia": "9",
+                    "taglia": "",
+                    "tipoIva": 3
+                }
+            ],
+            "scontoCassa": 0,
+            "speseTrasporto": 0,
+            "speseTrasportoPerc": 0
+        },
+        {
+            "buyerCodice": "",
+            "buyerDescrizione": "",
+            "data": "2018-04-11T22:00:00.000Z",
+            "dataConsegna": "2018-04-11T22:00:00.000Z",
+            "dataConsegnaMassima": "2018-04-26T22:00:00.000Z",
+            "dataConsegnaMinima": "2018-04-11T22:00:00.000Z",
+            "fornitore": "FMFINGROSS",
+            "numero": "6601/18",
+            "pagamento": "",
+            "righe": [
+                {
+                    "barcode": [
+                        "9788817099431"
+                    ],
+                    "codice": "0776342",
+                    "codiceArticoloFornitore": "",
+                    "descrizione": "SARA AL TRAMONTO",
+                    "famiglia": "75",
+                    "iva": 0,
+                    "listino": 12.16,
+                    "marca": "OPPORTUNITY",
+                    "modello": "10071314",
+                    "prezzo": 16.15,
+                    "quantita": [
+                        {
+                            "descrizione": "Casalmaggiore",
+                            "quantita": 5,
+                            "scontoMerce": 0,
+                            "sede": "SM18"
+                        }
+                    ],
+                    "scontoA": 0,
+                    "scontoB": 0,
+                    "scontoC": 0,
+                    "scontoD": 0,
+                    "scontoExtra": 0,
+                    "scontoImporto": 0,
+                    "sottoFamiglia": "5",
+                    "taglia": "",
+                    "tipoIva": 3
+                },
+                {
+                    "barcode": [
+                        "9788838937804"
+                    ],
+                    "codice": "0776271",
+                    "codiceArticoloFornitore": "",
+                    "descrizione": "CLINICA DI RIPOSO & PACE (LA)",
+                    "famiglia": "75",
+                    "iva": 0,
+                    "listino": 8.96,
+                    "marca": "OPPORTUNITY",
+                    "modello": "",
+                    "prezzo": 11.9,
+                    "quantita": [
+                        {
+                            "descrizione": "Casalmaggiore",
+                            "quantita": 5,
+                            "scontoMerce": 0,
+                            "sede": "SM18"
+                        }
+                    ],
+                    "scontoA": 0,
+                    "scontoB": 0,
+                    "scontoC": 0,
+                    "scontoD": 0,
+                    "scontoExtra": 0,
+                    "scontoImporto": 0,
+                    "sottoFamiglia": "10",
+                    "taglia": "",
+                    "tipoIva": 3
+                },
+                {
+                    "barcode": [
+                        "9788869876059"
+                    ],
+                    "codice": "0776262",
+                    "codiceArticoloFornitore": "",
+                    "descrizione": "DIETA DEL MICROBIOMA (LA)",
+                    "famiglia": "75",
+                    "iva": 0,
+                    "listino": 10.82,
+                    "marca": "OPPORTUNITY",
+                    "modello": "",
+                    "prezzo": 14.37,
+                    "quantita": [
+                        {
+                            "descrizione": "Casalmaggiore",
+                            "quantita": 3,
+                            "scontoMerce": 0,
+                            "sede": "SM18"
+                        }
+                    ],
+                    "scontoA": 0,
+                    "scontoB": 0,
+                    "scontoC": 0,
+                    "scontoD": 0,
+                    "scontoExtra": 0,
+                    "scontoImporto": 0,
+                    "sottoFamiglia": "4",
+                    "taglia": "",
+                    "tipoIva": 3
+                },
+                {
+                    "barcode": [
+                        "9788806237639"
+                    ],
+                    "codice": "0776217",
+                    "codiceArticoloFornitore": "",
+                    "descrizione": "AGENTE DEL CAOS (L')",
+                    "famiglia": "75",
+                    "iva": 0,
+                    "listino": 12.16,
+                    "marca": "OPPORTUNITY",
+                    "modello": "38229845",
+                    "prezzo": 16.15,
+                    "quantita": [
+                        {
+                            "descrizione": "Casalmaggiore",
+                            "quantita": 4,
+                            "scontoMerce": 0,
+                            "sede": "SM18"
+                        }
+                    ],
+                    "scontoA": 0,
+                    "scontoB": 0,
+                    "scontoC": 0,
+                    "scontoD": 0,
+                    "scontoExtra": 0,
+                    "scontoImporto": 0,
+                    "sottoFamiglia": "4",
+                    "taglia": "",
+                    "tipoIva": 3
+                }
+            ],
+            "scontoCassa": 0,
+            "speseTrasporto": 0,
+            "speseTrasportoPerc": 0
+        }
+    ],
+    "path": "./"
+}
