@@ -1,9 +1,9 @@
 <?php
 	//@ini_set('memory_limit','8192M');
 
-	require './vendor/autoload.php';
+	require '../vendor/autoload.php';
 	// leggo i dati da un file
-    //$request = file_get_contents('./ordini.json');
+    //$request = file_get_contents('../examples/ordini.json');
     $request = file_get_contents('php://input');
     $data = json_decode($request, true);
 
@@ -20,9 +20,9 @@
 
 	// verifico l'esistenza della cartella temp e se serve la creo
 	// con mask 777.
-	if (! file_exists ( './temp' )) {
+	if (! file_exists ( '../temp' )) {
 		$oldMask = umask(0);
-		mkdir('./temp', 0777);
+		mkdir('../temp', 0777);
 		umask($oldMask);
 	}
 
@@ -30,7 +30,7 @@
 
     // leggo i parametri contenuti nel file
     $nomeFile = $data['nomeFile'];
-    $file = './temp/'.$nomeFile.'.xlsx';
+    $file = '../temp/'.$nomeFile.'.xlsx';
 
     $ordini = $data['ordini'];
     $ordinamento = array();
