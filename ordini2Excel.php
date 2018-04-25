@@ -6,7 +6,7 @@
     //$request = file_get_contents('./ordini.json');
     $request = file_get_contents('php://input');
     $data = json_decode($request, true);
-       
+
     use PhpOffice\PhpSpreadsheet\Cell\Coordinate;
     use PhpOffice\PhpSpreadsheet\Cell\DataType;
     use PhpOffice\PhpSpreadsheet\Spreadsheet;
@@ -17,15 +17,15 @@
     use PhpOffice\PhpSpreadsheet\Style\Fill;
     use PhpOffice\PhpSpreadsheet\Style\Border;
 	use PhpOffice\PhpSpreadsheet\Shared\Date;
-	
-	// verifico l'esistenza della cartella temp
-	
+
+	// verifico l'esistenza della cartella temp e se serve la creo
+	// con mask 777.
 	if (! file_exists ( './temp' )) {
-		$oldMask = umask(0); 
-		mkdir('./temp', 0777);  
-		umask($oldMask); 
+		$oldMask = umask(0);
+		mkdir('./temp', 0777);
+		umask($oldMask);
 	}
-	
+
     $style = new Style();
 
     // leggo i parametri contenuti nel file
@@ -61,14 +61,14 @@
         }
         $sheet = $workBook->setActiveSheetIndex($sheetNumber-1); // la numerazione dei worksheet parte da 0
         $sheet->setTitle(preg_replace('/\//','_',$ordine['numero']));
-		
+
 		$timeZone = new DateTimeZone('Europe/Rome');
-		
+
 		$dataOrdine = new \DateTime($ordine['data']);
 		$dataConsegna= new \DateTime($ordine['dataConsegna']);
 		$dataConsegnaMinima= new \DateTime($ordine['dataConsegnaMinima']);
 		$dataConsegnaMassima= new \DateTime($ordine['dataConsegnaMassima']);
-		
+
 		$filiali = $ordine['sedi'];
 		$ordinamento = array();
 		foreach ($filiali as $key => $row) {
@@ -76,8 +76,8 @@
 		}
 		array_multisort($ordinamento, SORT_ASC, $filiali);
 		$countFiliali = count($filiali);
-		
-		
+
+
         // riquadro di testata
         // --------------------------------------------------------------------------------
         $sheet->setCellValue('A1', strtoupper('fornitore'));
@@ -246,7 +246,7 @@
         	$ordinamento[$key] = $row['codice'];
     	}
     	array_multisort($ordinamento, SORT_ASC, $righe);
-    
+
         for ($i = 0; $i < count($righe); $i++) {
             $R = ($i+$primaRigaDati);
             $QFirst = $colQIndex['FIRST'];
@@ -398,10 +398,10 @@
 
         $workBook->setActiveSheetIndex(0);
 	}
-      
+
     $writer = new Xlsx($workBook);
     $writer->save($file);
-    
+
     if (file_exists($file)) {
 		header('Content-Description: File Transfer');
 		header('Content-Type: application/octet-stream');
