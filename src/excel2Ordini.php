@@ -14,6 +14,8 @@
     
     if (move_uploaded_file( $_FILES['userfile']['tmp_name'], "/phpUpload/".$_FILES['userfile']['name'])) {
         $inputFileName = "/phpUpload/".$_FILES['userfile']['name'];
+	
+		//$inputFileName = "/Users/marcognecchi/Desktop/test.xlsx";
         
         /** Create a new Xls Reader  **/
         $reader = new Xlsx();
@@ -109,10 +111,8 @@
                         }
                         $riga['quantita'] = $quantita;
                         
-                        $inizioSedi += $numeroSedi + 1;
-                        $fineSedi += $numeroSedi + 1;
                         $scontoMerce = [];
-                        for ($j = $inizioSedi; $j <= $fineSedi; $j++) {
+                        for ($j = ($inizioSedi + $numeroSedi + 1); $j <= ($fineSedi + $numeroSedi + 1); $j++) {
                             if (preg_match ( '/^(\w\w(?:\w|\d)+)\s\-.*$/', $rows[2][$j], $matches)) {
                                 if ($rows[$i][$j] != 0) {
                                     $scontoMerce[$matches[1]] = $rows[$i][$j];
