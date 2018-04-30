@@ -1,22 +1,23 @@
 <?php
     require '../vendor/autoload.php';
-    
+
     use PhpOffice\PhpSpreadsheet\Reader\Xlsx;
     use PhpOffice\PhpSpreadsheet\Shared\Date;
-    
+
     $timeZone = new DateTimeZone('Europe/Rome');
-    
+
     // verifico che il file sia stato effettivamente caricato
 	if (!isset($_FILES['userfile']) || !is_uploaded_file($_FILES['userfile']['tmp_name'])) {
 	  	echo 'Non hai inviato nessun file...';
+	  	//echo json_encode($_FILES, true);
 		exit;
 	}
-    
+
     if (move_uploaded_file( $_FILES['userfile']['tmp_name'], "/phpUpload/".$_FILES['userfile']['name'])) {
         $inputFileName = "/phpUpload/".$_FILES['userfile']['name'];
-	
+
 		//$inputFileName = "/Users/marcognecchi/Desktop/test.xlsx";
-        
+
         /** Create a new Xls Reader  **/
         $reader = new Xlsx();
         //    $reader = new \PhpOffice\PhpSpreadsheet\Reader\Xlsx();
@@ -28,9 +29,9 @@
         /** Load $inputFileName to a Spreadsheet Object  **/
         $reader->setReadDataOnly(true);
         $reader->setLoadAllSheets();
-        
+
         $ordini = [];
-        
+
         $spreadsheet = $reader->load($inputFileName);
         for ($sheetNumber = 0; $sheetNumber < $spreadsheet->getSheetCount(); $sheetNumber++) {
             $worksheet = $spreadsheet->getSheet($sheetNumber);
@@ -44,7 +45,7 @@
                 }
                 $rows[] = $cells;
             }
-            
+
             // verifica formale file
             if ($rows[0][0] == 'FORNITORE' and $rows[6][3] == 'TOTALE ORDINE' and $rows[8][23] == 'COSTO TOTALE') {
                 // determino la posizione di inzio e fine delle sedi
@@ -54,17 +55,17 @@
                     if ($rows[2][$i] == 'TOTALE PEZZI') {
                         $inizioSedi = $i + 1;
                     }
-                    
+
                     if ($rows[2][$i] == 'TOTALE SCONTO MERCE') {
                         $fineSedi = $i - 1;
                     }
                 }
-                
+
                 if ($inizioSedi != 0 and $fineSedi != 0) {
                     $numeroSedi = $fineSedi -$inizioSedi +1;
-                    
+
                     $ordine = [];
-                    
+
                     $ordine['fornitore'] = $rows[0][1];
                     $ordine['numeroOrdine'] = $rows[1][1];
                     $ordine['dataOrdine'] = Date::excelToDateTimeObject($rows[2][1], $timeZone)->format('c');
@@ -76,11 +77,11 @@
                     $ordine['scontoCassaPerc'] = $rows[1][4];
                     $ordine['speseTrasportoVal'] = $rows[2][4];
                     $ordine['speseTrasportoPerc'] = $rows[3][4];
-                    
+					
                     $righe = [];
                     for ($i = 10; $i < count($rows); $i++) {
                         $riga = [];
-                        
+
                         $riga['codiceArticoloFornitore'] = $rows[$i][0];
                         $riga['barcode'] = $rows[$i][1];
                         $riga['codiceArticolo'] = $rows[$i][2];
@@ -100,40 +101,44 @@
                         $riga['scontoExtra'] = $rows[$i][16];
                         $riga['scontoImporto'] = $rows[$i][17];
                         $riga['prezzoVendita'] = $rows[$i][19];
-                        
+						
+						$riga['quantitaTotale'] = 0;
                         $quantita = [];
                         for ($j = $inizioSedi; $j <= $fineSedi; $j++) {
                             if (preg_match ( '/^(\w\w(?:\w|\d)+)\s\-.*$/', $rows[2][$j], $matches)) {
-                                if ($rows[$i][$j] != 0) {
+                            	 if ($rows[$i][$j] != 0) {
                                     $quantita[$matches[1]] = $rows[$i][$j];
+                                    $riga['quantitaTotale'] += $rows[$i][$j];
                                 }
                             }
                         }
                         $riga['quantita'] = $quantita;
-                        
+						
+						$riga['scontoMerceTotale'] = 0;
                         $scontoMerce = [];
                         for ($j = ($inizioSedi + $numeroSedi + 1); $j <= ($fineSedi + $numeroSedi + 1); $j++) {
                             if (preg_match ( '/^(\w\w(?:\w|\d)+)\s\-.*$/', $rows[2][$j], $matches)) {
                                 if ($rows[$i][$j] != 0) {
                                     $scontoMerce[$matches[1]] = $rows[$i][$j];
+                                    $riga['scontoMerceTotale'] = $rows[$i][$j];
                                 }
                             }
                         }
                         $riga['scontoMerce'] = $scontoMerce;
-                        
+
                         $righe[] = $riga;
                     }
-                    
+
                     $ordine['righe'] = $righe;
-                    
+                    $ordine['sedi'] = $sedi;
+
                     $ordini[] = $ordine;
                 }
-                
+
             }
         }
-        
-        $ordiniJson = json_encode($ordini, true);
-        print_r($ordiniJson);
+
+        echo json_encode(array("recordCount" => count($ordini), "values" => $ordini));
     } else {
 		echo json_encode($_FILES, true);
 	}
