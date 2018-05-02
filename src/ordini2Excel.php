@@ -1,5 +1,5 @@
 <?php
-	@ini_set('memory_limit','8192M');
+	//@ini_set('memory_limit','8192M');
 
 	require '../vendor/autoload.php';
 	// leggo i dati da un file
@@ -295,7 +295,7 @@
             $sheet->getCell($colScontoMerceTotale.$R)->setValueExplicit($scontoMerceTotale,DataType::TYPE_FORMULA);
 
             foreach ($righe[$i]['quantita'] as $quantita) {
-                if ($quantita['quantita']) {
+				if ($quantita['quantita']) {
                     $col = $colQIndex[$quantita['sede']];
                     $sheet->getCell($col.$R)->setValueExplicit($quantita['quantita'],DataType::TYPE_NUMERIC);
                 }
