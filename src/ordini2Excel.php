@@ -1,5 +1,5 @@
 <?php
-	//@ini_set('memory_limit','8192M');
+	@ini_set('memory_limit','8192M');
 
 	require '../vendor/autoload.php';
 	// leggo i dati da un file
