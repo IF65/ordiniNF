@@ -86,7 +86,7 @@
 		$sheet->mergeCells('B5:G5');
         $sheet->setCellValue('A6', strtoupper('valore'));
         $sheet->mergeCells('B6:G6');
-        
+        $sheet->mergeCells('A7:G7');
 
         // testata colonne
         // --------------------------------------------------------------------------------
@@ -121,19 +121,21 @@
             $sheet->getCell('C'.$R)->setValueExplicit($righe[$i]['descrizioneArticolo'],DataType::TYPE_STRING);
             $sheet->getCell('D'.$R)->setValueExplicit($righe[$i]['modelloArticolo'],DataType::TYPE_STRING);
             $sheet->getCell('E'.$R)->setValueExplicit($righe[$i]['giacenza'],DataType::TYPE_NUMERIC);
-            $sheet->getCell('F'.$R)->setValueExplicit($righe[$i]['valore'],DataType::TYPE_NUMERIC);
+            $sheet->getCell('F'.$R)->setValueExplicit($righe[$i]['valoreUnitario'],DataType::TYPE_NUMERIC);
             $sheet->getCell('G'.$R)->setValueExplicit($valore,DataType::TYPE_FORMULA);
         }
 
         // riquadro di testata (formule)
         // --------------------------------------------------------------------------------
-        //$totaleMargine = '=SUM('.sprintf("%s%s%s%s%s",'W',$primaRigaDati,':','W',$primaRigaDati+count($righe)-1).')';
-        //$sheet->getCell('E5')->setValueExplicit($totaleMargine,DataType::TYPE_FORMULA);
+        $highestRow = $sheet->getHighestRow();
+		$highestColumn = $sheet->getHighestColumn();
+		
+        $totale = "=SUM(G$primaRigaDati:G$highestRow)";
+        $sheet->getCell('B6')->setValueExplicit($totale,DataType::TYPE_FORMULA);
+        $sheet->getStyle("B6")->getNumberFormat()->setFormatCode('###,###,##0.00;[Red][<0]-###,###,##0.00;');
     
         // formattazione
         // --------------------------------------------------------------------------------
-		$highestRow = $sheet->getHighestRow();
-		$highestColumn = $sheet->getHighestColumn();
 		$lastCellAddress = $sheet->getCellByColumnAndRow($highestColumn, $highestRow)->getCoordinate();
 		$sheet->getStyle('A1:'.$lastCellAddress)->getAlignment()->setVertical('center');
 		
@@ -166,7 +168,25 @@
         $sheet->getColumnDimension('E')->setWidth(12);
         $sheet->getColumnDimension('F')->setWidth(12);
         $sheet->getColumnDimension('G')->setWidth(12);
-
+        
+        $rigaTitoli = $primaRigaDati - 1;
+        $styleArray = array(
+        	'borders' => array(
+            	'outline' => array(
+                	'borderStyle' => \PhpOffice\PhpSpreadsheet\Style\Border::BORDER_THIN,
+                	'color' => array('argb' => 'FF0000FF'),
+            	),
+        	),
+    	);
+    	$sheet ->getStyle("A$rigaTitoli:G$rigaTitoli")->applyFromArray($styleArray);
+        $sheet ->getStyle("A$rigaTitoli:A$highestRow")->applyFromArray($styleArray);
+        $sheet ->getStyle("B$rigaTitoli:B$highestRow")->applyFromArray($styleArray);
+        $sheet ->getStyle("C$rigaTitoli:C$highestRow")->applyFromArray($styleArray);
+        $sheet ->getStyle("D$rigaTitoli:D$highestRow")->applyFromArray($styleArray);
+        $sheet ->getStyle("E$rigaTitoli:E$highestRow")->applyFromArray($styleArray);
+        $sheet ->getStyle("F$rigaTitoli:F$highestRow")->applyFromArray($styleArray);
+        $sheet ->getStyle("G$rigaTitoli:G$highestRow")->applyFromArray($styleArray);
+        
         $workBook->setActiveSheetIndex(0);
 	}
 
