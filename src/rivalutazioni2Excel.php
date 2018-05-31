@@ -136,7 +136,7 @@
     
         // formattazione
         // --------------------------------------------------------------------------------
-		$lastCellAddress = $sheet->getCellByColumnAndRow($highestColumn, $highestRow)->getCoordinate();
+		$lastCellAddress = "$highestColumn$highestRow";
 		$sheet->getStyle('A1:'.$lastCellAddress)->getAlignment()->setVertical('center');
 		
         $sheet->getDefaultRowDimension()->setRowHeight(20);
@@ -186,6 +186,15 @@
         $sheet ->getStyle("E$rigaTitoli:E$highestRow")->applyFromArray($styleArray);
         $sheet ->getStyle("F$rigaTitoli:F$highestRow")->applyFromArray($styleArray);
         $sheet ->getStyle("G$rigaTitoli:G$highestRow")->applyFromArray($styleArray);
+		
+		$sheet->getPageSetup()->setOrientation(\PhpOffice\PhpSpreadsheet\Worksheet\PageSetup::ORIENTATION_LANDSCAPE);
+		$sheet->getPageSetup()->setPaperSize(\PhpOffice\PhpSpreadsheet\Worksheet\PageSetup::PAPERSIZE_A4);
+		$sheet->getPageSetup()->setFitToWidth(1);
+		$sheet->getPageSetup()->setFitToHeight(0);
+		$sheet->getPageSetup()->setHorizontalCentered(true);
+		$sheet->getPageSetup()->setVerticalCentered(false);
+		$sheet->getHeaderFooter()->setOddHeader('&C&HDocumento confidenziale!');
+		$sheet->getHeaderFooter()->setOddFooter('&L&B' . $workBook->getProperties()->getTitle() . '&RPage &P of &N');
         
         $workBook->setActiveSheetIndex(0);
 	}
