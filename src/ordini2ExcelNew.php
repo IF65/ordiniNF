@@ -84,7 +84,7 @@
 		// --------------------------------------------------------------------------------
 		$sheet->getDefaultRowDimension()->setRowHeight(20);
 		$sheet->setShowGridlines(true);
-		$sheet->getProtection()->setSheet(true)->setSort(False);
+		//$sheet->getProtection()->setSheet(true)->setSort(False);
 		
         $sheet->setTitle(preg_replace('/\//','_',$ordine['numero']));
 
@@ -448,9 +448,16 @@
 				$x += 2;
 			}
 		}
-		$sheet->getStyleByColumnAndRow($xOffset + 25, $yOffset + 11, $xOffset + 25 + count($sedi)*2, $yOffset + 11 + count($ordine['righe'])*2)
+		
+		/*$sheet->getStyleByColumnAndRow($xOffset + 1, 11, $xOffset + 18, $yOffset + 1000)
 			->getProtection()
-			->setLocked(Protection::PROTECTION_PROTECTED);
+			->setLocked(Protection::PROTECTION_UNPROTECTED);
+		$sheet->getStyleByColumnAndRow($xOffset + 1, 20, $xOffset + 20, $yOffset + 1000)
+			->getProtection()
+			->setLocked(Protection::PROTECTION_UNPROTECTED);
+		$sheet->getStyleByColumnAndRow($xOffset + 26, 11, $xOffset + 89, $yOffset + 1000)
+			->getProtection()
+			->setLocked(Protection::PROTECTION_UNPROTECTED);*/ 
 		$sheet->getStyleByColumnAndRow($xOffset + 12, $yOffset + 11, $xOffset + 12 + 12, $yOffset + 11 + count($ordine['righe'])*2)->getNumberFormat()->setFormatCode('###,###,##0.00;[Red][<0]-###,###,##0.00; ');
 		$sheet->getStyleByColumnAndRow($xOffset + 25, $yOffset + 11, $xOffset + 25 + count($sedi)*2, $yOffset + 11 + count($ordine['righe'])*2)->getNumberFormat()->setFormatCode('###,###,##0;[Red][<0]-###,###,##0; ');
         

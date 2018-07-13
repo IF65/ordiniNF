@@ -3,8 +3,8 @@
 
 	require '../vendor/autoload.php';
 	// leggo i dati da un file
-    $request = file_get_contents('/Users/if65/Desktop/Stilnovo/ordini.json');
-    //$request = file_get_contents('php://input');
+    //$request = file_get_contents('../examples/ordini.json');
+    $request = file_get_contents('php://input');
     $data = json_decode($request, true);
 
     use PhpOffice\PhpSpreadsheet\Cell\Coordinate;
@@ -55,17 +55,6 @@
     // creazione degli Sheet (uno per ogni ordine)
     $sheetNumber = 0;
     foreach ($ordini as $ordine) {
-		//determino se c' una ventilazione
-		$ventilazionePresente = false;
-		foreach ($ordine['righe'] as $riga ) {
-			foreach ($riga['quantita'] as $quantita ) {
-				if (count(array_keys($quantita['ventilazione']))>0) {
-					$ventilazionePresente = true;
-					break 2;
-				}
-			}
-		}
-		
         $sheetNumber++;
         if ($workBook->getSheetCount() < $sheetNumber) {
             $workBook->createSheet();
@@ -406,27 +395,6 @@
         $sheet->getStyle('A9:X10')->getBorders()->getBottom()->setBorderStyle(Border::BORDER_THIN);*/
 
         //$sheet->getStyle('A9:X10')->getFill()->setFillType(Fill::FILL_SOLID)->getStartColor()->setARGB('FFF0FFF0');
-		
-		//if ($ventilazionePresente) {
-		//	$sheetNumber++;
-		//	$workBook->createSheet();
-		//	$sheet = $workBook->setActiveSheetIndex($sheetNumber-1); // la numerazione dei worksheet parte da 0
-		//	
-		//	$sheetName = preg_replace('/\//','_',$ordine['numero']);
-		//	$sheet->setTitle($sheetName.'V');
-		//	
-		//	$mainSheet = $workBook->getSheetByName($sheetName);
-		//	for ($i = 0; $i < count($righe); $i++) {
-		//		for ($j = 0; $j < 5; $j++) {
-		//			$style = $mainSheet->getCellByColumnAndRow($j, $primaRigaDati + $i)->getStyle();
-		//			$cell = $sheet->getCellByColumnAndRow($j, $primaRigaDati + $i);
-		//			$cell->setValueExplicit('='.$sheetName.'!'.$cell->getCoordinate(),DataType::TYPE_FORMULA);
-		//			
-		//			$sheet->getCellByColumnAndRow($j, $primaRigaDati + $i)->getStyle() = $style;
-		//		}
-		//	}
-		//}	
-		
 
         $workBook->setActiveSheetIndex(0);
 	}
@@ -434,7 +402,6 @@
     $writer = new Xlsx($workBook);
     $writer->save($file);
 
-	/*
     if (file_exists($file)) {
 		header('Content-Description: File Transfer');
 		header('Content-Type: application/octet-stream');
@@ -446,4 +413,4 @@
 		readfile($file);
 		exit;
 	}
-	*/
+
