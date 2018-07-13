@@ -140,25 +140,40 @@
 		$sheet->getStyleByColumnAndRow($xOffset + 2, $yOffset + 5)->getNumberFormat()->setFormatCode(NumberFormat::FORMAT_DATE_DDMMYYYY);
         $sheet->mergeCellsByColumnAndRow($xOffset + 2, $yOffset + 5, $xOffset + 3, $yOffset + 5);
         $sheet->setCellValueByColumnAndRow($xOffset + 4, $yOffset + 5, strtoupper('margine totale'));
-        $sheet->setCellValueByColumnAndRow($xOffset + 5, $yOffset + 5, 0.0);
 		
+		$x = $xOffset + 5;
+		$y = $yOffset + 5;
+		$formula = "=SUM(".RC(6, 18).":".RC(5 + count($ordine['righe'])*2, 18).")";
+		$sheet->setCellValueExplicitByColumnAndRow($x, $y, $formula,DataType::TYPE_FORMULA);
+		$sheet->getStyleByColumnAndRow($x, $y)->getNumberFormat()->setFormatCode('###,###,##0.00;[Red][<0]-###,###,##0.00; ');
+	
 		$sheet->setCellValueByColumnAndRow($xOffset + 1, $yOffset + 6, strtoupper('data consegna massimo'));
         $sheet->setCellValueByColumnAndRow($xOffset + 2, $yOffset + 6, Date::PHPToExcel($dataConsegnaMassima->setTimezone($timeZone)->format('Y-m-d')));
 		$sheet->getStyleByColumnAndRow($xOffset + 2, $yOffset + 6)->getNumberFormat()->setFormatCode(NumberFormat::FORMAT_DATE_DDMMYYYY);
         $sheet->mergeCellsByColumnAndRow($xOffset + 2, $yOffset + 6, $xOffset + 3, $yOffset + 6);
         $sheet->setCellValueByColumnAndRow($xOffset + 4, $yOffset + 6, strtoupper('margine %'));
-        $sheet->setCellValueByColumnAndRow($xOffset + 5, $yOffset + 6, 0.0);
+        
+		$x = $xOffset + 5;
+		$y = $yOffset + 6;
+		$formula = "=IF(".RC(1,0)."<>0,ROUND(".RC(-1,0)."/(SUMPRODUCT(".RC(5,4).":".RC(9,4).",".RC(5,19).":".RC(9,19).")/100+".RC(1,0).")*100,2),0)";
+		$sheet->setCellValueExplicitByColumnAndRow($x, $y, $formula,DataType::TYPE_FORMULA);
+		$sheet->getStyleByColumnAndRow($x, $y)->getNumberFormat()->setFormatCode('###,###,##0.00;[Red][<0]-###,###,##0.00; ');
 		
 		$sheet->setCellValueByColumnAndRow($xOffset + 1, $yOffset + 7, strtoupper('buyer'));
         $sheet->setCellValueByColumnAndRow($xOffset + 2, $yOffset + 7, $ordine['buyerCodice'].' - '.$ordine['buyerDescrizione']);
 		$sheet->mergeCellsByColumnAndRow($xOffset + 2, $yOffset + 7, $xOffset + 3, $yOffset + 7);
         $sheet->setCellValueByColumnAndRow($xOffset + 4, $yOffset + 7, strtoupper('totale ordine'));
-        $sheet->setCellValueByColumnAndRow($xOffset + 5, $yOffset + 7, 0.0);
+		
+		$x = $xOffset + 5;
+		$y = $yOffset + 7;
+		$formula = "=SUM(".RC(4, 19).":".RC(3 + count($ordine['righe'])*2, 19).")";
+		$sheet->setCellValueExplicitByColumnAndRow($x, $y, $formula,DataType::TYPE_FORMULA);
+		$sheet->getStyleByColumnAndRow($x, $y)->getNumberFormat()->setFormatCode('###,###,##0.00;[Red][<0]-###,###,##0.00; ');
 		
 		// formattazione
         $sheet->getStyleByColumnAndRow($xOffset + 1, $yOffset + 1, $xOffset + 1, $yOffset + 7)->getFont()->setBold(true);
 		$sheet->getStyleByColumnAndRow($xOffset + 1, $yOffset + 1, $xOffset + 2, $yOffset + 7)->getAlignment()->setHorizontal('left');
-		$sheet->getStyleByColumnAndRow($xOffset + 4, $yOffset + 1, $xOffset + 4, $yOffset + 7)->getAlignment()->setHorizontal('left');
+		$sheet->getStyleByColumnAndRow($xOffset + 4, $yOffset + 1, $xOffset + 5, $yOffset + 7)->getAlignment()->setHorizontal('left');
         $sheet->getStyleByColumnAndRow($xOffset + 4, $yOffset + 1, $xOffset + 4, $yOffset + 7)->getFont()->setBold(true);
 
         // testata colonne
@@ -406,7 +421,15 @@
 			$sheet->getColumnDimensionByColumn($x)->setWidth(9);
 			
 			$x = $xOffset + 24;
-			$formula = "=ROUND(".RC(0,-5)."*".RC(0,1).",2)";
+			//$formula = "=ROUND(".RC(0,-5)."*(".RC(0,1)."-(SUMPRODUCT(--(MOD(COLUMN(".RC(0,2).":".RC(0,65).")-COLUMN(".RC(0,2).")+1,2)=0),".RC(0,2).":".RC(0,65)."))),2)";
+			//$formula = "=ROUND(S$y*(Y$y-(SUMPRODUCT(--(MOD(COLUMN(Z$y:CK$y)-COLUMN(Z$y)+1,2)=0),Z$y:CK$y))),2)";
+			$formula = "=ROUND(".RC(0,-5)."*(".RC(0,1);
+			$offset = 3;
+			foreach ($sedi as $sede) {
+				$formula .= '-'.RC(0, $offset);
+				$offset += 2;
+			}
+			$formula .= "),2)";
 			$sheet->setCellValueExplicitByColumnAndRow($x, $y, $formula,DataType::TYPE_FORMULA);
 			$sheet->mergeCellsByColumnAndRow($x, $y, $x, $y + 1);
 			$sheet->getColumnDimensionByColumn($x)->setWidth(9);
