@@ -3,8 +3,8 @@
 
 	require '../vendor/autoload.php';
 	// leggo i dati da un file
-    //$request = file_get_contents('/Users/if65/Desktop/Stilnovo/ordini.json');
-    $request = file_get_contents('php://input');
+    $request = file_get_contents('/Users/if65/Desktop/Stilnovo/ordini.json');
+    //$request = file_get_contents('php://input');
     $data = json_decode($request, true);
 
     use PhpOffice\PhpSpreadsheet\Cell\Coordinate;
@@ -284,7 +284,7 @@
         // --------------------------------------------------------------------------------
 		$firstDataRow = 11;
 		
-		foreach ($ordine['righe'] as $index => $riga) {
+		foreach ($ordine['righe'] as $index => $riga) {		
 			$y = $yOffset + $firstDataRow + ($index * 2);
 			
 			$x = $xOffset + 1;
@@ -447,27 +447,52 @@
 			$x++;
 			foreach ($sedi as $codice => $sede) {
 				foreach($riga['quantita'] as $quantita) {
-					$quantitaInOrdine = 0;
-					$quantitaInScontoMerce = 0;
-					$quantitaVentilata = 0;
 					if ($quantita['sede'] == $sede['codice']) {
+						$quantitaVentilata = 0;
+						foreach ($quantita['ventilazione'] as $key => $value) {
+							$quantitaVentilata -= $value;
+						}
+						
 						$quantitaInOrdine = $quantita['quantita']*1;
 						$quantitaInScontoMerce =$quantita['scontoMerce']*1;
-						$quantitaVentilata = 0;
+						
+						$sheet->setCellValueExplicitByColumnAndRow($x, $y, $quantitaInOrdine, DataType::TYPE_NUMERIC);
+						$sheet->getStyleByColumnAndRow($x, $y)->getAlignment()->setHorizontal('center');
+						
+						$sheet->setCellValueExplicitByColumnAndRow($x + 1, $y, $quantitaInScontoMerce, DataType::TYPE_NUMERIC);
+						$sheet->getStyleByColumnAndRow($x + 1, $y)->getAlignment()->setHorizontal('center');
+						
+						if ($quantitaVentilata != 0) {
+							$sheet->setCellValueExplicitByColumnAndRow($x, $y + 1,($quantitaInOrdine + $quantitaInScontoMerce) * -1, DataType::TYPE_NUMERIC);
+						}
+						$sheet->getStyleByColumnAndRow($x, $y + 1)->getAlignment()->setHorizontal('center');
+						$sheet->getStyleByColumnAndRow($x, $y + 1)->getFont()->setItalic(true)->setBold(false);
+						$sheet->mergeCellsByColumnAndRow($x, $y + 1, $x + 1, $y + 1);
 					}
-					
-					$sheet->setCellValueExplicitByColumnAndRow($x, $y, $quantitaInOrdine, DataType::TYPE_NUMERIC);
-					$sheet->getStyleByColumnAndRow($x, $y)->getAlignment()->setHorizontal('center');
-					
-					$sheet->setCellValueExplicitByColumnAndRow($x + 1, $y, $quantitaInScontoMerce, DataType::TYPE_NUMERIC);
-					$sheet->getStyleByColumnAndRow($x + 1, $y)->getAlignment()->setHorizontal('center');
-					
-					$sheet->setCellValueExplicitByColumnAndRow($x, $y + 1,$quantitaVentilata, DataType::TYPE_NUMERIC);
-					$sheet->getStyleByColumnAndRow($x, $y + 1)->getAlignment()->setHorizontal('center');
-					$sheet->getStyleByColumnAndRow($x, $y + 1)->getFont()->setItalic(true)->setBold(false);
-					$sheet->mergeCellsByColumnAndRow($x, $y + 1, $x + 1, $y + 1);
 				}
 				
+				$x += 2;
+			}
+			
+			// calcolo della ventilazione totale della riga
+			$ventilazioneTotale = [];
+			foreach($riga['quantita'] as $quantita) {
+				foreach($quantita['ventilazione'] as $key => $value) {
+					if (array_key_exists($key, $ventilazioneTotale)) {
+						$ventilazioneTotale[$key] += $value;
+					} else {
+						$ventilazioneTotale[$key] = $value;
+					}
+				}
+			}
+			
+			$x = 26;
+			foreach ($sedi as $codice => $sede) {
+				foreach($ventilazioneTotale as $codiceSede => $quantitaVentilata) {
+					if ($codiceSede == $sede['codice']) {
+						$sheet->setCellValueExplicitByColumnAndRow($x, $y + 1,$quantitaVentilata, DataType::TYPE_NUMERIC);
+					}
+				}
 				$x += 2;
 			}
 		}
@@ -490,14 +515,14 @@
     $writer = new Xlsx($workBook);
     $writer->save($file);
 
-	if (file_exists($file)) {
-		header('Content-Description: File Transfer');
-		header('Content-Type: application/octet-stream');
-		header('Content-Disposition: attachment; filename="'.basename($file).'"');
-		header('Expires: 0');
-		header('Cache-Control: must-revalidate');
-		header('Pragma: public');
-		header('Content-Length: ' . filesize($file));
-		readfile($file);
-		exit;
-	}
+	//if (file_exists($file)) {
+	//	header('Content-Description: File Transfer');
+	//	header('Content-Type: application/octet-stream');
+	//	header('Content-Disposition: attachment; filename="'.basename($file).'"');
+	//	header('Expires: 0');
+	//	header('Cache-Control: must-revalidate');
+	//	header('Pragma: public');
+	//	header('Content-Length: ' . filesize($file));
+	//	readfile($file);
+	//	exit;
+	//}
