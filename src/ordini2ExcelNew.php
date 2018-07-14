@@ -465,12 +465,12 @@
 						if ($quantitaVentilata != 0) {
 							$sheet->setCellValueExplicitByColumnAndRow($x, $y + 1,($quantitaInOrdine + $quantitaInScontoMerce) * -1, DataType::TYPE_NUMERIC);
 						}
-						$sheet->getStyleByColumnAndRow($x, $y + 1)->getAlignment()->setHorizontal('center');
-						$sheet->getStyleByColumnAndRow($x, $y + 1)->getFont()->setItalic(true)->setBold(false);
-						$sheet->mergeCellsByColumnAndRow($x, $y + 1, $x + 1, $y + 1);
 					}
 				}
-				
+				$sheet->getStyleByColumnAndRow($x, $y + 1)->getAlignment()->setHorizontal('center');
+				$sheet->getStyleByColumnAndRow($x, $y + 1)->getFont()->setItalic(true)->setBold(true);
+				$sheet->mergeCellsByColumnAndRow($x, $y + 1, $x + 1, $y + 1);
+						
 				$x += 2;
 			}
 			
@@ -509,6 +509,8 @@
 		$sheet->getStyleByColumnAndRow($xOffset + 12, $yOffset + 11, $xOffset + 12 + 12, $yOffset + 11 + count($ordine['righe'])*2)->getNumberFormat()->setFormatCode('###,###,##0.00;[Red][<0]-###,###,##0.00; ');
 		$sheet->getStyleByColumnAndRow($xOffset + 25, $yOffset + 11, $xOffset + 25 + count($sedi)*2, $yOffset + 11 + count($ordine['righe'])*2)->getNumberFormat()->setFormatCode('###,###,##0;[Red][<0]-###,###,##0; ');
         
+		$sheet->freezePaneByColumnAndRow($yOffset + 6,$xOffset + 11);
+		
 		$workBook->setActiveSheetIndex(0);
 	}
 
