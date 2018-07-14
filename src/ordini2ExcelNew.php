@@ -155,7 +155,8 @@
         
 		$x = $xOffset + 5;
 		$y = $yOffset + 6;
-		$formula = "=IF(".RC(1,0)."<>0,ROUND(".RC(-1,0)."/(SUMPRODUCT(".RC(5,4).":".RC(9,4).",".RC(5,19).":".RC(9,19).")/100+".RC(1,0).")*100,2),0)";
+		//$formula = "=IF(".RC(1,0)."<>0,ROUND(".RC(-1,0)."/(SUMPRODUCT(".RC(5,4).":".RC(9,4).",".RC(5,19).":".RC(9,19).")/100+".RC(1,0).")*100,2),0)";
+		$formula = "=ROUND(".RC(-1,0)."/(".RC(-1,0)."+".RC(1,0).")*100;2)";
 		$sheet->setCellValueExplicitByColumnAndRow($x, $y, $formula,DataType::TYPE_FORMULA);
 		$sheet->getStyleByColumnAndRow($x, $y)->getNumberFormat()->setFormatCode('###,###,##0.00;[Red][<0]-###,###,##0.00; ');
 		
