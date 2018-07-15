@@ -7,16 +7,15 @@
     $timeZone = new DateTimeZone('Europe/Rome');
 
     // verifico che il file sia stato effettivamente caricato
-	if (!isset($_FILES['userfile']) || !is_uploaded_file($_FILES['userfile']['tmp_name'])) {
-	  	echo 'Non hai inviato nessun file...';
-	  	//echo json_encode($_FILES, true);
-		exit;
-	}
+	//if (!isset($_FILES['userfile']) || !is_uploaded_file($_FILES['userfile']['tmp_name'])) {
+	//  	echo 'Non hai inviato nessun file...';
+	//  	exit;
+	//}
 
-    if (move_uploaded_file( $_FILES['userfile']['tmp_name'], "/phpUpload/".$_FILES['userfile']['name'])) {
-        $inputFileName = "/phpUpload/".$_FILES['userfile']['name'];
-
-		//$inputFileName = "/Users/marcognecchi/Desktop/test.xlsx";
+    //if (move_uploaded_file( $_FILES['userfile']['tmp_name'], "/phpUpload/".$_FILES['userfile']['name'])) {
+        //$inputFileName = "/phpUpload/".$_FILES['userfile']['name'];
+    if(1) { //<-debug
+		$inputFileName = "/Users/if65/Desktop/Sviluppo/ordiniNF/temp/test.xlsx";//<-debug
 
         /** Create a new Xls Reader  **/
         $reader = new Xlsx();
@@ -49,21 +48,28 @@
             // verifica formale file
             if ($rows[0][0] == 'FORNITORE' and $rows[6][3] == 'TOTALE ORDINE' and $rows[8][23] == 'COSTO TOTALE') {
                 // determino la posizione di inzio e fine delle sedi
-                $inizioSedi = 0;
-                $fineSedi = 0;
-                for ($i = 0; $i < count($rows[2]); $i++) {
-                    if ($rows[2][$i] == 'TOTALE PEZZI') {
-                        $inizioSedi = $i + 1;
-                    }
-
-                    if ($rows[2][$i] == 'TOTALE SCONTO MERCE') {
-                        $fineSedi = $i - 1;
+                $colonnaInizioSedi = 25;
+                $colonnaFineSedi = 0;
+                for ($index = count($rows[0]); $index >= 0; $index--) {
+                    if (preg_match('/^(\w\w(?:\w|\d)+)\s\-.*$/', $rows[0][$index])) {
+                         $colonnaFineSedi = $index;
+                         break;
                     }
                 }
+                $numeroSedi = ($colonnaFineSedi - $colonnaInizioSedi) > 0 ? ($colonnaFineSedi - $colonnaInizioSedi)/2 + 1 : 0;
+                
+                $rigaInizioArticoli = 10;
+                $rigaFineArticoli = 0;
+                for ($index = count($rows); $index >= 0; $index--) {
+                    if (preg_match('/^\=SUM\(/', $rows[$index][24])) {
+                         $rigaFineArticoli = $index;
+                         break;
+                    }
+                }
+                $numeroArticoli = ($rigaFineArticoli - $rigaInizioArticoli + 1) > 0 ? ($rigaFineArticoli - $rigaInizioArticoli + 1)/2 : 0;
 
-                if ($inizioSedi != 0 and $fineSedi != 0) {
-                    $numeroSedi = $fineSedi -$inizioSedi +1;
-
+                
+                if ($numeroSedi && $numeroArticoli) {
                     $ordine = [];
 
                     $ordine['fornitore'] = $rows[0][1];
@@ -79,48 +85,67 @@
                     $ordine['speseTrasportoPerc'] = $rows[3][4];
 					
                     $righe = [];
-                    for ($i = 10; $i < count($rows); $i++) {
+                    for ($indexArticolo = 0; $indexArticolo < $numeroArticoli; $indexArticolo++) {
+                        
+                        $indexRow = $rigaInizioArticoli + $indexArticolo*2;
+                        
                         $riga = [];
-
-                        $riga['codiceArticoloFornitore'] = $rows[$i][0];
-                        $riga['barcode'] = $rows[$i][1];
-                        $riga['codiceArticolo'] = $rows[$i][2];
-                        $riga['descrizione'] = $rows[$i][3];
-                        $riga['marca'] = $rows[$i][4];
-                        $riga['modello'] = $rows[$i][5];
-                        $riga['famiglia'] = $rows[$i][6];
-                        $riga['sottoFamiglia'] = $rows[$i][7];
-                        $riga['ivaAliquota'] = $rows[$i][8];
-                        $riga['ivaCodice'] = $rows[$i][9];
-                        $riga['taglia'] = $rows[$i][10];
-                        $riga['costo'] = $rows[$i][11];
-                        $riga['scontoA'] = $rows[$i][12];
-                        $riga['scontoB'] = $rows[$i][13];
-                        $riga['scontoC'] = $rows[$i][14];
-                        $riga['scontoD'] = $rows[$i][15];
-                        $riga['scontoExtra'] = $rows[$i][16];
-                        $riga['scontoImporto'] = $rows[$i][17];
-                        $riga['prezzoVendita'] = $rows[$i][19];
+                        $riga['codiceArticoloFornitore'] = $rows[$indexRow][0];
+                        $riga['barcode'] = $rows[$indexRow][1];
+                        $riga['codiceArticolo'] = $rows[$indexRow][2];
+                        $riga['descrizione'] = $rows[$indexRow][3];
+                        $riga['marca'] = $rows[$indexRow][4];
+                        $riga['modello'] = $rows[$indexRow][5];
+                        $riga['famiglia'] = $rows[$indexRow][6];
+                        $riga['sottoFamiglia'] = $rows[$indexRow][7];
+                        $riga['ivaAliquota'] = $rows[$indexRow][8];
+                        $riga['ivaCodice'] = $rows[$indexRow][9];
+                        $riga['taglia'] = $rows[$indexRow][10];
+                        $riga['costo'] = $rows[$indexRow][11];
+                        $riga['scontoA'] = $rows[$indexRow][12];
+                        $riga['scontoB'] = $rows[$indexRow][13];
+                        $riga['scontoC'] = $rows[$indexRow][14];
+                        $riga['scontoD'] = $rows[$indexRow][15];
+                        $riga['scontoExtra'] = $rows[$indexRow][16];
+                        $riga['scontoImporto'] = $rows[$indexRow][17];
+                        $riga['prezzoVendita'] = $rows[$indexRow][19];
 						
 						$riga['quantitaTotale'] = 0;
                         $quantita = [];
-                        for ($j = $inizioSedi; $j <= $fineSedi; $j++) {
-                            if (preg_match ( '/^(\w\w(?:\w|\d)+)\s\-.*$/', $rows[2][$j], $matches)) {
-                            	 if ($rows[$i][$j] != 0) {
-                                    $quantita[$matches[1]] = $rows[$i][$j];
-                                    $riga['quantitaTotale'] += $rows[$i][$j];
+                        for ($indexSede = 0; $indexSede < $numeroSedi; $indexSede++) {
+                            $indexColumn = $colonnaInizioSedi + $indexSede*2;
+                            
+                            if (preg_match ( '/^(\w\w(?:\w|\d)+)\s\-.*$/', $rows[0][$indexColumn], $matches)) {
+                            	 if ($rows[$indexRow][$indexColumn] != 0) {
+                                    $quantita[$matches[1]] = $rows[$indexRow][$indexColumn]*1;
+                                    $riga['quantitaTotale'] += $rows[$indexRow][$indexColumn]*1;
                                 }
                             }
+                        }
+                        $ventilazione = [];
+                        for ($indexSede = 0; $indexSede < $numeroSedi; $indexSede++) {
+                            $indexColumn = $colonnaInizioSedi + $indexSede*2;
+                            
+                            if (preg_match ( '/^(\w\w(?:\w|\d)+)\s\-.*$/', $rows[0][$indexColumn], $matches)) {
+                            	 if ($rows[$indexRow + 1][$indexColumn] > 0) {
+                                    $ventilazione[$matches[1]] = $rows[$indexRow + 1][$indexColumn]*1;
+                                }
+                            }
+                        }
+                        if (! empty($ventilazione)) {
+                            $quantita['ventilazione'] = $ventilazione;
                         }
                         $riga['quantita'] = $quantita;
 						
 						$riga['scontoMerceTotale'] = 0;
                         $scontoMerce = [];
-                        for ($j = ($inizioSedi + $numeroSedi + 1); $j <= ($fineSedi + $numeroSedi + 1); $j++) {
-                            if (preg_match ( '/^(\w\w(?:\w|\d)+)\s\-.*$/', $rows[2][$j], $matches)) {
-                                if ($rows[$i][$j] != 0) {
-                                    $scontoMerce[$matches[1]] = $rows[$i][$j];
-                                    $riga['scontoMerceTotale'] = $rows[$i][$j];
+                        for ($indexSede = 0; $indexSede < $numeroSedi; $indexSede++) {
+                            $indexColumn = $colonnaInizioSedi + $indexSede*2 + 1;
+                            
+                            if (preg_match ( '/^(\w\w(?:\w|\d)+)\s\-.*$/', $rows[0][$indexColumn], $matches)) {
+                                if ($rows[$indexRow][$indexColumn] != 0) {
+                                    $scontoMerce[$matches[1]] = $rows[$indexRow][$indexColumn]*1;
+                                    $riga['scontoMerceTotale'] = $rows[$indexRow][$indexColumn]*1;
                                 }
                             }
                         }
