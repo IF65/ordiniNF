@@ -127,7 +127,7 @@
                             $indexColumn = $colonnaInizioSedi + $indexSede*2;
                             
                             if (preg_match ( '/^(\w\w(?:\w|\d)+)\s\-.*$/', $rows[0][$indexColumn], $matches)) {
-                            	 if ($rows[$indexRow + 1][$indexColumn] > 0) {
+                            	 if ($rows[$indexRow + 1][$indexColumn] != 0) {
                                     $ventilazione[$matches[1]] = $rows[$indexRow + 1][$indexColumn]*1;
                                 }
                             }
@@ -164,11 +164,8 @@
         }
         
         // trasformo l'array associativo in formato test
-        $txtResponse = "";
+        $txtResponse = "ORDINI\t".count($ordini)."\n";
         foreach ($ordini as $ordine) {
-            $txtResponse .= "INIZIO ORDINE\n";
-
-            
             $txtResponse .= $ordine['fornitore'] . "\t";
             $txtResponse .= $ordine['numeroOrdine'] . "\t";
             $txtResponse .= (new DateTime($ordine['dataOrdine']))->format('d/m/Y') . "\t";
@@ -181,7 +178,7 @@
             $txtResponse .= number_format($ordine['speseTrasportoVal']*1,2,',','') . "\t";
             $txtResponse .= number_format($ordine['speseTrasportoPerc']*1,2,',','') . "\n";
             
-            $txtResponse .= "INIZIO RIGHE\n";
+            $txtResponse .= "RIGHE\t".count($ordine['righe'])."\n";
             foreach($ordine['righe'] as $riga) {
                 $txtResponse .= $riga['codiceArticoloFornitore'] . "\t";
                 $txtResponse .= $riga['barcode'] . "\t";
@@ -203,7 +200,16 @@
                 $txtResponse .= number_format($riga['scontoImporto']*1,2,',','') . "\t";
                 $txtResponse .= number_format($riga['prezzoVendita']*1,2,',','') . "\t";
                 $txtResponse .= number_format($riga['quantitaTotale']*1,2,',','') . "\n";
-                $txtResponse .= "INIZIO QUANTITA\n";
+                
+                //calcolo le righe quantita
+                $numeroRigheQuantita = 0;
+                foreach($riga['quantita'] as $key => $value) {
+                    if ($key != 'ventilazione') {
+                        $numeroRigheQuantita++;
+                    }
+                }
+                
+                $txtResponse .= "QUANTITA\t$numeroRigheQuantita\n";
                 foreach($riga['quantita'] as $key => $value) {
                     if ($key != 'ventilazione') {
                         if ($value > 0) {
@@ -211,26 +217,19 @@
                             $txtResponse .= number_format($value*1,2,',','') . "\n";
                         }
                     } else {
-                        $txtResponse .= "INIZIO VENTILAZIONE\n";
+                        $txtResponse .= "VENTILAZIONE\t".count($value)."\n";
                         foreach($value as $sede => $quantita) {
-                            if ($quantita > 0) {
+                            if ($quantita != 0) {
                                 $txtResponse .= $sede . "\t";
                                 $txtResponse .= number_format($quantita*1,2,',','') . "\n";
                             }
                         }
-                        $txtResponse .= "FINE VENTILAZIONE\n";
                     }
                     
                 }
-                $txtResponse .= "FINE QUANTITA\n";
-                
-        }
-            $txtResponse .= "FINE RIGHE\n";
-            
+            }
             $txtResponse .= "FINE ORDINE\n";
         }
-        
-
         echo $txtResponse;
     } else {
 		echo json_encode($_FILES, true);
