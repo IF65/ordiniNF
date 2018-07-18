@@ -186,7 +186,9 @@
                     $riga['scontoMerceTotale'] = 0;
                     $scontoMerce = [];
                 
-                    $righe[] = $riga;
+                    if (preg_match('/^(\d{13}|\d{12}|\d{8})$/',$riga['barcode'])) {
+                        $righe[] = $riga;
+                    }
                 }
             }
 
