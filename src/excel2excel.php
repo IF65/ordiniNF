@@ -9,7 +9,7 @@
     // verifico che il file sia stato effettivamente caricato
 	if (!isset($_FILES['userfile']) || !is_uploaded_file($_FILES['userfile']['tmp_name'])) {
 	  	echo 'Non hai inviato nessun file...';
-	  	//echo json_encode($_FILES, true);
+	  	echo json_encode($_FILES, true);
 		exit;
 	}
 
@@ -59,6 +59,7 @@
             $ordine['scontoCassaPerc'] = '';
             $ordine['speseTrasportoVal'] = '';
             $ordine['speseTrasportoPerc'] = '';
+            $ordine['nomeFoglio'] = $spreadsheet->getTitle();
             
             $colonne = [];
             $colonne['codiceArticoloFornitore'] = -1;
