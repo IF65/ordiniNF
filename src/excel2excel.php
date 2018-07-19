@@ -95,29 +95,29 @@
                 if ($rowIndex == 0) {
                     // riconoscimento colonne
                     foreach ($row as $columnIndex => $column) {
-                        if (preg_match('/^articolo fornitore$/i', $column)): 
+                        if (preg_match('/^ART$/i', $column)): 
                             $colonne['codiceArticoloFornitore'] = $columnIndex;
-                        elseif (preg_match('/^descrizione$/i', $column)): 
+                        elseif (preg_match('/^DES$/i', $column)): 
                             $colonne['descrizione'] = $columnIndex;
-                        elseif (preg_match('/^multiplo$/i', $column)): 
+                        elseif (preg_match('/^UXI$/i', $column)): 
                             $colonne['multiplo'] = $columnIndex;
-                        elseif (preg_match('/^ean$/i', $column)): 
+                        elseif (preg_match('/^EAN$/i', $column)): 
                             $colonne['barcode'] = $columnIndex;
-                        elseif (preg_match('/^prezzo$/i', $column)): 
+                        elseif (preg_match('/^PRV$/i', $column)): 
                             $colonne['prezzoVendita'] = $columnIndex;
-                        elseif (preg_match('/^costo$/i', $column)): 
+                        elseif (preg_match('/^PRZ$/i', $column)): 
                             $colonne['costo'] = $columnIndex;
-                        elseif (preg_match('/^A$/i', $column)): 
+                        elseif (preg_match('/^SCA$/i', $column)): 
                             $colonne['scontoA'] = $columnIndex;
-                        elseif (preg_match('/^B$/i', $column)): 
+                        elseif (preg_match('/^SCB$/i', $column)): 
                             $colonne['scontoB'] = $columnIndex;
-                        elseif (preg_match('/^C$/i', $column)): 
+                        elseif (preg_match('/^SCC$/i', $column)): 
                             $colonne['scontoC'] = $columnIndex;
-                        elseif (preg_match('/^D$/i', $column)): 
+                        elseif (preg_match('/^SCD$/i', $column)): 
                             $colonne['scontoD'] = $columnIndex;
-                        elseif (preg_match('/^importo$/i', $column)): 
+                        elseif (preg_match('/^SCI$/i', $column)): 
                             $colonne['scontoImporto'] = $columnIndex;
-                        elseif (preg_match('/^extra$/i', $column)): 
+                        elseif (preg_match('/^SCE$/i', $column)): 
                             $colonne['scontoExtra'] = $columnIndex;
                         elseif (preg_match('/^EB1$/i', $column)): 
                             $colonne['EB1'] = $columnIndex;
