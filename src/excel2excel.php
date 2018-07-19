@@ -105,6 +105,10 @@
                             $colonne['barcode'] = $columnIndex;
                         elseif (preg_match('/^PRV$/i', $column)): 
                             $colonne['prezzoVendita'] = $columnIndex;
+                        elseif (preg_match('/^IAL$/i', $column)): 
+                            $colonne['ivaAliquota'] = $columnIndex;
+                         elseif (preg_match('/^ICO$/i', $column)): 
+                            $colonne['ivaCodice'] = $columnIndex;
                         elseif (preg_match('/^PRZ$/i', $column)): 
                             $colonne['costo'] = $columnIndex;
                         elseif (preg_match('/^SCA$/i', $column)): 
@@ -143,8 +147,9 @@
                     $riga['modello'] = '';
                     $riga['famiglia'] = '';
                     $riga['sottoFamiglia'] = '';
-                    $riga['ivaAliquota'] = 22;
-                    $riga['ivaCodice'] = 16;
+                    $riga['ivaAliquota'] = ($colonne['ivaAliquota'] >= 0 && isset($row[$colonne['ivaAliquota']])) ?  $row[$colonne['ivaAliquota']]*1 : 22;
+                    $riga['ivaCodice'] = ($colonne['ivaCodice'] >= 0 && isset($row[$colonne['ivaCodice']])) ?  $row[$colonne['ivaCodice']]*1 : 16;
+                    $riga['uxi'] = ($colonne['multiplo'] >= 0 && isset($row[$colonne['multiplo']])) ?  $row[$colonne['multiplo']]*1 : 0;
                     $riga['taglia'] = '';
                     $riga['costo'] = ($colonne['costo'] >= 0 && isset($row[$colonne['costo']])) ?  $row[$colonne['costo']]*1 : 0;
                     $riga['scontoA'] = ($colonne['scontoA'] >= 0 && isset($row[$colonne['scontoA']])) ?  $row[$colonne['scontoA']]*1 : 0;
