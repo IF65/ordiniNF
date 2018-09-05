@@ -86,6 +86,12 @@
                     $scontoC = isset($row[14]) ? $row[14]*1 : 0;
                     $scontoExtra = isset($row[15]) ? $row[15]*1 : 0;
                     
+                    $quantitaEB1 = isset($row[18]) ? $row[18]*1 : 0;
+                    $quantitaEB3 = isset($row[19]) ? $row[19]*1 : 0;
+                    $quantitaEB4 = isset($row[20]) ? $row[20]*1 : 0;
+                    $quantitaEB5 = isset($row[21]) ? $row[21]*1 : 0;
+                    $quantitaEBM1 = isset($row[22]) ? $row[22]*1 : 0;
+                    
                     if (preg_match('/^F\w+/', $fornitore) && preg_match('/^\d{9}/', $famiglia) && preg_match('/^\d{3}/', $sottofamiglia) &&
                         $descrizione != '' && $marca != '' && $costo != 0 && $prezzoVendita != 0) {
                         
@@ -110,11 +116,26 @@
                         $riga['scontoExtra'] = $scontoExtra;
                         $riga['costoFinito'] = round($costo * (100 - $scontoA/100)/100 * (100 - $scontoB/100)/100 * (100 - $scontoC/100)/100 * (100 - $scontoExtra/100)/100,2);
                         $riga['prezzoVendita'] = $prezzoVendita;
-                        $riga['EB1'] = isset($row[18]) ? $row[18]*1 : 0;
-                        $riga['EB3'] = isset($row[19]) ? $row[19]*1 : 0;
-                        $riga['EB4'] = isset($row[20]) ? $row[20]*1 : 0;
-                        $riga['EB5'] = isset($row[21]) ? $row[21]*1 : 0;
-                        $riga['EBM1'] = isset($row[22]) ? $row[22]*1 : 0;
+                        $riga['quantitaTotale'] = $quantitaEB1 + $quantitaEB3 + $quantitaEB4 + $quantitaEB5 + $quantitaEBM1;
+                        $riga['scontoMerceTotale'] = 0;
+                        $quantita = [];
+                        if ($quantitaEB1 != 0) {
+                            $quantita[] = ['descrizione' => 'EB1 - Sonico', 'quantita' => $quantitaEB1, 'scontoMerce' => 0, 'sede' => 'EB1'];
+                        }
+                        if ($quantitaEB3 != 0) {
+                            $quantita[] = ['descrizione' => 'EB3 - Roe\' Volciano', 'quantita' => $quantitaEB3, 'scontoMerce' => 0, 'sede' => 'EB3'];
+                        }
+                        if ($quantitaEB4 != 0) {
+                            $quantita[] = ['descrizione' => 'EB4 - Castel Goffredo', 'quantita' => $quantitaEB4, 'scontoMerce' => 0, 'sede' => 'EB4'];
+                        }
+                        if ($quantitaEB5 != 0) {
+                            $quantita[] = ['descrizione' => 'EB5 - Pralboino', 'quantita' => $quantitaEB5, 'scontoMerce' => 0, 'sede' => 'EB5'];
+                        }
+                        if ($quantitaEBM1 != 0) {
+                            $quantita[] = ['descrizione' => 'EBM1 - Magazzino', 'quantita' => $quantitaEBM1, 'scontoMerce' => 0, 'sede' => 'EBM1'];
+                        }
+                        $riga['quantita'] = $quantita;
+                        
                         $righe[] = $riga;
                     }
                 }
