@@ -62,8 +62,8 @@
             $ordine['dataConsegnaPrevista'] = Date::excelToDateTimeObject($dataCorrente, $timeZone)->format('c');
             $ordine['dataConsegnaMinima'] = Date::excelToDateTimeObject($dataCorrente, $timeZone)->format('c');
             $ordine['dataConsegnaMassima'] = Date::excelToDateTimeObject($dataCorrente, $timeZone)->format('c');
-            $ordine['category'] = '';
-            $ordine['formaPagamento'] = '';
+            $ordine['category'] = '0002';
+            $ordine['formaPagamento'] = 'FEB';
             $ordine['scontoCassaPerc'] = 0;
             $ordine['speseTrasportoVal'] = 0;
             $ordine['speseTrasportoPerc'] = 0;
