@@ -7,15 +7,15 @@
     $timeZone = new DateTimeZone('Europe/Rome');
 
     // verifico che il file sia stato effettivamente caricato
-	/*if (!isset($_FILES['userfile']) || !is_uploaded_file($_FILES['userfile']['tmp_name'])) {
+	if (!isset($_FILES['userfile']) || !is_uploaded_file($_FILES['userfile']['tmp_name'])) {
 	  	echo 'Non hai inviato nessun file...';
 	  	exit;
 	}
 
     if (move_uploaded_file( $_FILES['userfile']['tmp_name'], "/phpUpload/".$_FILES['userfile']['name'])) {
-        $inputFileName = "/phpUpload/".$_FILES['userfile']['name'];*/
-    if(1) { //<-debug
-		$inputFileName = "/Users/if65/Desktop/Sviluppo/ordiniNF/temp/ERREBI Ecobrico - Errebi 2018.06.08 proposta d'assortimento 4x100.xlsx";//<-debug
+        $inputFileName = "/phpUpload/".$_FILES['userfile']['name'];
+        //if(1) { //<-debug
+		//$inputFileName = "/Users/if65/Desktop/Sviluppo/ordiniNF/temp/FAB.xlsx";//<-debug
 
         /** Create a new Xls Reader  **/
         $reader = new Xlsx();
@@ -40,105 +40,88 @@
             $highestColumnIndex = \PhpOffice\PhpSpreadsheet\Cell\Coordinate::columnIndexFromString($highestColumn);
             
             $indiceColonne = [];
-            // leggo le intestazioni delle colonne
-            for ($col = 1; $col <= $highestColumnIndex; ++$col) {
-                $value = $worksheet->getCellByColumnAndRow($col, 3)->getValue();
-                if (preg_match ( '/descrizione/i', $value, $matches)) {
-                    $indiceColonne['descrizione'] = $i;
-                }
-                if (preg_match ( '/EAN/i', $value, $matches)) {
-                    $indiceColonne['ean'] = $col;
-                }
-                if (preg_match ( '/codice/i', $value, $matches)) {
-                    $indiceColonne['codice'] = $col;
-                }
-                if (preg_match ( '/descrizione/i', $value, $matches)) {
-                    $indiceColonne['descrizione'] = $col;
-                }
-                if (preg_match ( '/prezzo/i', $value, $matches)) {
-                    $indiceColonne['prezzo'] = $col;
-                }
-                if (preg_match ( '/sconto extra/i', $value, $matches)) {
-                    $indiceColonne['sconto extra'] = $col;
-                }
-                if (preg_match ( '/vendita/i', $value, $matches)) {
-                    $indiceColonne['vendita'] = $col;
-                }
-                if (preg_match ( '/famiglia/i', $value, $matches)) {
-                    $indiceColonne['famiglia'] = $col;
-                }
-                if (preg_match ( '/quantita/i', $value, $matches)) {
-                    $indiceColonne['quantita'] = $col;
-                }
-                if (preg_match ( '/conf/i', $value, $matches)) {
-                    $indiceColonne['confezione'] = $col;
-                }
-            }
             
             $dataCorrente = new DateTime(null, $timeZone);
             
             $rows = [];
-            foreach ($worksheet->getRowIterator() AS $row) {
+            foreach ($worksheet->getRowIterator() as $row) {
                 $cellIterator = $row->getCellIterator();
-                $cellIterator->setIterateOnlyExistingCells(FALSE); // This loops through all cells,
+                $cellIterator->setIterateOnlyExistingCells(False); // This loops through all cells,
                 $cells = [];
                 foreach ($cellIterator as $cell) {
                     $cells[] = $cell->getValue();
                 }
                 $rows[] = $cells;
             }
-
-            // verifica formale file
-            if ($rows[0][0] == 'FORNITORE') {
                          
-                $ordine = [];
-                
-                $ordine['fornitore'] = 'FERREBI';
-                $ordine['numeroOrdine'] = '';
-                $ordine['dataOrdine'] = Date::excelToDateTimeObject($dataCorrente, $timeZone)->format('c');
-                $ordine['dataConsegnaPrevista'] = Date::excelToDateTimeObject($dataCorrente, $timeZone)->format('c');
-                $ordine['dataConsegnaMinima'] = Date::excelToDateTimeObject($dataCorrente, $timeZone)->format('c');
-                $ordine['dataConsegnaMassima'] = Date::excelToDateTimeObject($dataCorrente, $timeZone)->format('c');
-                $ordine['category'] = '';
-                $ordine['formaPagamento'] = '';
-                $ordine['scontoCassaPerc'] = 0;
-                $ordine['speseTrasportoVal'] = 0;
-                $ordine['speseTrasportoPerc'] = 0;
-                
-                $righe = [];
-                for ($indexArticolo = 3; $indexArticolo < $highestRow; $indexArticolo++) {
+            $ordine = [];
+            
+            $ordine['fornitore'] = 'FAB';
+            $ordine['numeroOrdine'] = '';
+            $ordine['dataOrdine'] = Date::excelToDateTimeObject($dataCorrente, $timeZone)->format('c');
+            $ordine['dataConsegnaPrevista'] = Date::excelToDateTimeObject($dataCorrente, $timeZone)->format('c');
+            $ordine['dataConsegnaMinima'] = Date::excelToDateTimeObject($dataCorrente, $timeZone)->format('c');
+            $ordine['dataConsegnaMassima'] = Date::excelToDateTimeObject($dataCorrente, $timeZone)->format('c');
+            $ordine['category'] = '';
+            $ordine['formaPagamento'] = '';
+            $ordine['scontoCassaPerc'] = 0;
+            $ordine['speseTrasportoVal'] = 0;
+            $ordine['speseTrasportoPerc'] = 0;
+            
+            $righe = [];
+            foreach ($rows as $row) {
+               
+                $barcode = isset($row[1]) ? trim($row[1]) : '';
+                if (preg_match('/^(\d{8}|\d{13}|\d{12})$/', $barcode)) {
                     
-                    $riga = [];
-                    $riga['codiceArticoloFornitore'] = $rows[$indexRow][$indiceColonne['codice']];
-                    $riga['barcode'] = $rows[$indexRow][$indiceColonne['ean']];
-                    $riga['codiceArticolo'] = '';
-                    $riga['descrizione'] = $rows[$indexRow][$indiceColonne['descrizione']];
-                    $riga['marca'] = '';
-                    $riga['modello'] = '';
-                    $riga['famiglia'] = $rows[$indexRow][$indiceColonne['famiglia']];
-                    $riga['sottoFamiglia'] ='';
-                    $riga['ivaAliquota'] = 22;
-                    $riga['ivaCodice'] = 16;
-                    $riga['taglia'] = '';
-                    $riga['costo'] = $rows[$indexRow][$indiceColonne['prezzo']];
-                    $riga['scontoA'] = 0;
-                    $riga['scontoB'] = 0;
-                    $riga['scontoC'] = 0;
-                    $riga['scontoD'] = 0;
-                    $riga['scontoExtra'] = $indiceColonne['sconto extra'];
-                    $riga['scontoImporto'] = 0;
-                    $riga['prezzoVendita'] = $rows[$indexRow][$indiceColonne['vendita']];
-                    $riga['quantita'] = $rows[$indexRow][$indiceColonne['quantita']];
+                    $fornitore = strtoupper(trim($row[7]));
+                    $famiglia = isset($row[3]) ? trim($row[3]) : '';
+                    $sottofamiglia = isset($row[4]) ? trim($row[4]) : '999';
+                    $descrizione = strtoupper(trim($row[5]));
+                    $marca = strtoupper(trim($row[6]));
+                    $costo = isset($row[11]) ? $row[11]*1 : 0;
+                    $prezzoVendita = isset($row[17]) ? $row[17]*1 : 0;
+                    $scontoA = isset($row[12]) ? $row[12]*1 : 0;
+                    $scontoB = isset($row[13]) ? $row[13]*1 : 0;
+                    $scontoC = isset($row[14]) ? $row[14]*1 : 0;
+                    $scontoExtra = isset($row[15]) ? $row[15]*1 : 0;
                     
-                    $righe[] = $riga;
+                    if (preg_match('/^F\w+/', $fornitore) && preg_match('/^\d{9}/', $famiglia) && preg_match('/^\d{3}/', $sottofamiglia) &&
+                        $descrizione != '' && $marca != '' && $costo != 0 && $prezzoVendita != 0) {
+                        
+                        $riga = [];
+                        $riga['codiceArticolo'] = isset($row[0]) ? trim($row[0]) : '';
+                        $riga['barcode'] = $barcode;
+                        $riga['codiceArticoloFornitore'] = isset($row[2]) ? trim($row[2]) : '';
+                        $riga['famiglia'] = $famiglia;
+                        $riga['sottoFamiglia'] = $sottofamiglia;
+                        $riga['descrizione'] = $descrizione;
+                        $riga['marca'] = $marca;
+                        $riga['fornitore'] = $fornitore;
+                        $riga['uxi'] = isset($row[8]) ? $row[8]*1 : 1;
+                        $riga['ivaCodice'] = isset($row[9]) ? $row[9]*1 : 16;
+                        $riga['ivaAliquota'] = isset($row[10]) ? $row[10]*1 : 22;
+                        $riga['costo'] = $costo;
+                        $riga['scontoA'] = $scontoA;
+                        $riga['scontoB'] = $scontoB;
+                        $riga['scontoC'] = $scontoC;
+                        $riga['scontoExtra'] = $scontoExtra;
+                        $riga['costoFinito'] = round($costo * (100 - $scontoA/100)/100 * (100 - $scontoB/100)/100 * (100 - $scontoC/100)/100 * (100 - $scontoExtra/100)/100,2);
+                        $riga['prezzoVendita'] = $prezzoVendita;
+                        $riga['EB1'] = isset($row[18]) ? $row[18]*1 : 0;
+                        $riga['EB3'] = isset($row[19]) ? $row[19]*1 : 0;
+                        $riga['EB4'] = isset($row[20]) ? $row[20]*1 : 0;
+                        $riga['EB5'] = isset($row[21]) ? $row[21]*1 : 0;
+                        $riga['EBM1'] = isset($row[22]) ? $row[22]*1 : 0;
+                        $righe[] = $riga;
+                    }
                 }
-
-                $ordine['righe'] = $righe;
-                $ordine['sedi'] = $sedi;
-
-                $ordini[] = $ordine;
-                
             }
+
+            $ordine['righe'] = $righe;
+
+            $ordini[] = $ordine;
+            
         }
 
         echo json_encode(array("recordCount" => count($ordini), "values" => $ordini));
