@@ -56,7 +56,7 @@
                          
             $ordine = [];
             
-            $ordine['fornitore'] = 'FAB';
+            $ordine['fornitore'] = '';
             $ordine['numeroOrdine'] = '';
             $ordine['dataOrdine'] = Date::excelToDateTimeObject($dataCorrente, $timeZone)->format('c');
             $ordine['dataConsegnaPrevista'] = Date::excelToDateTimeObject($dataCorrente, $timeZone)->format('c');
@@ -88,6 +88,8 @@
                     
                     if (preg_match('/^F\w+/', $fornitore) && preg_match('/^\d{9}/', $famiglia) && preg_match('/^\d{3}/', $sottofamiglia) &&
                         $descrizione != '' && $marca != '' && $costo != 0 && $prezzoVendita != 0) {
+                        
+                        $ordine['fornitore'] = $fornitore;
                         
                         $riga = [];
                         $riga['codiceArticolo'] = isset($row[0]) ? trim($row[0]) : '';
