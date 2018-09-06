@@ -93,7 +93,7 @@
                     $quantitaEBM1 = isset($row[22]) ? $row[22]*1 : 0;
                     
                     if (preg_match('/^F\w+/', $fornitore) && preg_match('/^\d{9}/', $famiglia) && preg_match('/^\d{3}/', $sottofamiglia) &&
-                        $descrizione != '' && $marca != '' && $costo != 0 && $prezzoVendita != 0) {
+                        $descrizione != '' && $marca != '' && $costo != 0) {
                         
                         $ordine['fornitore'] = $fornitore;
                         
