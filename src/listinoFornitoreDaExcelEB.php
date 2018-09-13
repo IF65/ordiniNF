@@ -68,7 +68,7 @@
                 $scontoA = isset($row[7]) ? $row[7]*1 : 0;
                 $scontoB = isset($row[8]) ? $row[8]*1 : 0;
                 $scontoC = isset($row[9]) ? $row[9]*1 : 0;
-                $prezzoVendita = isset($row[10]) ? $row[10]*1 : 0;
+                $prezzoVendita = isset($row[11]) ? $row[11]*1 : 0;
                 
                 if ($lordo != 0) {
                     $listino[$barcode] = [
