@@ -114,7 +114,7 @@
 		$sheet->getCellByColumnAndRow(10, $row)->setValueExplicit(strtoupper($riga['codiceArticoloGCC']),DataType::TYPE_STRING);
 		$sheet->getCellByColumnAndRow(11, $row)->setValueExplicit(strtoupper($riga['barcode']),DataType::TYPE_STRING);
 		$sheet->getCellByColumnAndRow(12, $row)->setValueExplicit(strtoupper($riga['descrizione']),DataType::TYPE_STRING);
-		$sheet->getCellByColumnAndRow(13, $row)->setValueExplicit(strtoupper($riga['marchio']),DataType::TYPE_STRING);
+		$sheet->getCellByColumnAndRow(13, $row)->setValueExplicit(strtoupper($riga['modello']),DataType::TYPE_STRING);
 		$sheet->getCellByColumnAndRow(14, $row)->setValueExplicit(strtoupper($riga['marchio']),DataType::TYPE_STRING);
 		
 		$sheet->getCellByColumnAndRow(15, $row)->setValueExplicit($riga['giacenza'],DataType::TYPE_NUMERIC);
