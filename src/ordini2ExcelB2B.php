@@ -55,7 +55,7 @@
 	$integerFormat = '###,###,##0;[Red][<0]-###,###,##0;';
 	$currencyFormat = '###,###,##0.00;[Red][<0]-###,###,##0.00;';
 	
-	$highestRow = 1;
+	$highestRowIndex = 1;
     $highestColumnIndex = 28;
 	
 	// testata
@@ -142,18 +142,25 @@
 		$sheet->getCellByColumnAndRow(28, $row)->setValueExplicit(strtoupper($riga['note']),DataType::TYPE_STRING);
 	}
 	
-	$highestRow = $row;
+	$highestRowIndex = $row + 1;
 	
 	// formattazione colonne	
-	$sheet->getStyle(Coordinate::stringFromColumnIndex(4).'1:'.Coordinate::stringFromColumnIndex(5)."$highestColumnIndex")->getAlignment()->setHorizontal('center');
-	$sheet->getStyle(Coordinate::stringFromColumnIndex(7).'1:'.Coordinate::stringFromColumnIndex(11)."$highestColumnIndex")->getAlignment()->setHorizontal('center');
-	$sheet->getStyle(Coordinate::stringFromColumnIndex(15).'1:'.Coordinate::stringFromColumnIndex(16)."$highestColumnIndex")->getNumberFormat()->setFormatCode($integerFormat);
-	$sheet->getStyle(Coordinate::stringFromColumnIndex(15).'1:'.Coordinate::stringFromColumnIndex(16)."$highestColumnIndex")->getAlignment()->setHorizontal('center');
-	$sheet->getStyle(Coordinate::stringFromColumnIndex(17).'1:'.Coordinate::stringFromColumnIndex(17)."$highestColumnIndex")->getNumberFormat()->setFormatCode($currencyFormat);
-	$sheet->getStyle(Coordinate::stringFromColumnIndex(18).'1:'.Coordinate::stringFromColumnIndex(20)."$highestColumnIndex")->getNumberFormat()->setFormatCode($integerFormat);
-	$sheet->getStyle(Coordinate::stringFromColumnIndex(18).'1:'.Coordinate::stringFromColumnIndex(20)."$highestColumnIndex")->getAlignment()->setHorizontal('center');
-	$sheet->getStyle(Coordinate::stringFromColumnIndex(21).'1:'.Coordinate::stringFromColumnIndex(25)."$highestColumnIndex")->getNumberFormat()->setFormatCode($currencyFormat);
-	$sheet->getStyle(Coordinate::stringFromColumnIndex(26).'1:'.Coordinate::stringFromColumnIndex(26)."$highestColumnIndex")->getAlignment()->setHorizontal('center');
+	$sheet->getStyle(Coordinate::stringFromColumnIndex(4).'1:'.Coordinate::stringFromColumnIndex(5)."$highestRowIndex")->getAlignment()->setHorizontal('center');
+	$sheet->getStyle(Coordinate::stringFromColumnIndex(7).'1:'.Coordinate::stringFromColumnIndex(11)."$highestRowIndex")->getAlignment()->setHorizontal('center');
+	$sheet->getStyle(Coordinate::stringFromColumnIndex(15).'1:'.Coordinate::stringFromColumnIndex(16)."$highestRowIndex")->getNumberFormat()->setFormatCode($integerFormat);
+	$sheet->getStyle(Coordinate::stringFromColumnIndex(15).'1:'.Coordinate::stringFromColumnIndex(16)."$highestRowIndex")->getAlignment()->setHorizontal('center');
+	$sheet->getStyle(Coordinate::stringFromColumnIndex(17).'1:'.Coordinate::stringFromColumnIndex(17)."$highestRowIndex")->getNumberFormat()->setFormatCode($currencyFormat);
+	$sheet->getStyle(Coordinate::stringFromColumnIndex(18).'1:'.Coordinate::stringFromColumnIndex(20)."$highestRowIndex")->getNumberFormat()->setFormatCode($integerFormat);
+	$sheet->getStyle(Coordinate::stringFromColumnIndex(18).'1:'.Coordinate::stringFromColumnIndex(20)."$highestRowIndex")->getAlignment()->setHorizontal('center');
+	$sheet->getStyle(Coordinate::stringFromColumnIndex(21).'1:'.Coordinate::stringFromColumnIndex(25)."$highestRowIndex")->getNumberFormat()->setFormatCode($currencyFormat);
+	$sheet->getStyle(Coordinate::stringFromColumnIndex(26).'1:'.Coordinate::stringFromColumnIndex(26)."$highestRowIndex")->getAlignment()->setHorizontal('center');
+	        
+	$sheet->getStyle(Coordinate::stringFromColumnIndex(1).'1:'.Coordinate::stringFromColumnIndex($highestColumnIndex).'1')->getFont()->setBold(true);
+	$sheet->getStyle(Coordinate::stringFromColumnIndex(1).'1:'.Coordinate::stringFromColumnIndex($highestColumnIndex).'1')->getAlignment()->setHorizontal('center');
+	
+	for ($i = 1;$i <= $highestColumnIndex; $i++) $sheet->getColumnDimension(Coordinate::stringFromColumnIndex($i))->setAutoSize(true);
+	
+	$sheet->freezePane('A2');
 	
     $writer = new Xlsx($workBook);
     $writer->save($file);
