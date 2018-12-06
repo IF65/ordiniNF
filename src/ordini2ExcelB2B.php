@@ -55,6 +55,8 @@
 	$integerFormat = '###,###,##0;[Red][<0]-###,###,##0;';
 	$currencyFormat = '###,###,##0.00;[Red][<0]-###,###,##0.00;';
 	
+	$highestRow = 1;
+    $highestColumnIndex = 28;
 	
 	// testata
 	// --------------------------------------------------------------------------------
@@ -140,12 +142,9 @@
 		$sheet->getCellByColumnAndRow(28, $row)->setValueExplicit(strtoupper($riga['note']),DataType::TYPE_STRING);
 	}
 	
+	$highestRow = $row;
 	
-	// formattazione colonne
-	$highestRow = $sheet->getHighestRow(); // e.g. 10
-    $highestColumn = $sheet->getHighestColumn(); // e.g 'F'     
-    $highestColumnIndex = Coordinate::columnIndexFromString($highestColumn);
-	
+	// formattazione colonne	
 	$sheet->getStyle(Coordinate::stringFromColumnIndex(4).'1:'.Coordinate::stringFromColumnIndex(5)."$highestColumnIndex")->getAlignment()->setHorizontal('center');
 	$sheet->getStyle(Coordinate::stringFromColumnIndex(7).'1:'.Coordinate::stringFromColumnIndex(11)."$highestColumnIndex")->getAlignment()->setHorizontal('center');
 	$sheet->getStyle(Coordinate::stringFromColumnIndex(15).'1:'.Coordinate::stringFromColumnIndex(16)."$highestColumnIndex")->getNumberFormat()->setFormatCode($integerFormat);
