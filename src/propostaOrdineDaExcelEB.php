@@ -7,15 +7,15 @@
     $timeZone = new DateTimeZone('Europe/Rome');
 
     // verifico che il file sia stato effettivamente caricato
-	if (!isset($_FILES['userfile']) || !is_uploaded_file($_FILES['userfile']['tmp_name'])) {
+	/*if (!isset($_FILES['userfile']) || !is_uploaded_file($_FILES['userfile']['tmp_name'])) {
 	  	echo 'Non hai inviato nessun file...';
 	  	exit;
-	}
+	}*/
 
-    if (move_uploaded_file( $_FILES['userfile']['tmp_name'], "/phpUpload/".$_FILES['userfile']['name'])) {
-        $inputFileName = "/phpUpload/".$_FILES['userfile']['name'];
-        //if(1) { //<-debug
-		//$inputFileName = "/Users/if65/Desktop/orecaProposta.xlsx";//<-debug
+    //if (move_uploaded_file( $_FILES['userfile']['tmp_name'], "/phpUpload/".$_FILES['userfile']['name'])) {
+        //$inputFileName = "/phpUpload/".$_FILES['userfile']['name'];
+        if(1) { //<-debug
+		$inputFileName = "/Users/if65/Desktop/Sviluppo/ordiniNF/temp/listino FISCHER.xlsx";//<-debug
 
         /** Create a new Xls Reader  **/
         $reader = new Xlsx();

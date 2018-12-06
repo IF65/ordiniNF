@@ -9,15 +9,15 @@
     $timeZone = new DateTimeZone('Europe/Rome');
 
     // verifico che il file sia stato effettivamente caricato
-	if (!isset($_FILES['userfile']) || !is_uploaded_file($_FILES['userfile']['tmp_name'])) {
+	/*if (!isset($_FILES['userfile']) || !is_uploaded_file($_FILES['userfile']['tmp_name'])) {
 	  	echo 'Non hai inviato nessun file...';
 	  	exit;
 	}
 
     if (move_uploaded_file( $_FILES['userfile']['tmp_name'], "/phpUpload/".$_FILES['userfile']['name'])) {
-        $inputFileName = "/phpUpload/".$_FILES['userfile']['name'];
-        //if(1) { //<-debug
-		//$inputFileName = "/Users/if65/Desktop/ORECA del 01.01.2013 agg.articoli dal 14.03.2018.xlsx";//<-debug
+        $inputFileName = "/phpUpload/".$_FILES['userfile']['name'];*/
+        if(1) { //<-debug
+		$inputFileName = "/Users/if65/Desktop/listino GIACOMINI dal 05.05.2017.xlsx";//<-debug
 
         /** Create a new Xls Reader  **/
         $reader = new Xlsx();
@@ -82,7 +82,7 @@
                         'scontoC' => $scontoC,
                         'prezzoVendita' => $prezzoVendita
                     ];
-                }
+                } 
             }
         }            
 
