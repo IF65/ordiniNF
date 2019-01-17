@@ -5,7 +5,7 @@
     use PhpOffice\PhpSpreadsheet\Reader\Xlsx;
     use PhpOffice\PhpSpreadsheet\Shared\Date;
 
-    $debug = true;
+    $debug = false;
     
     $timeZone = new DateTimeZone('Europe/Rome');
     
