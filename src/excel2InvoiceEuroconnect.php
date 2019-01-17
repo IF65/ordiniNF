@@ -5,7 +5,7 @@
     use PhpOffice\PhpSpreadsheet\Reader\Xlsx;
     use PhpOffice\PhpSpreadsheet\Shared\Date;
 
-    $debug = false;
+    $debug = true;
     
     $timeZone = new DateTimeZone('Europe/Rome');
     
@@ -128,12 +128,12 @@
                     $riga['codice2Tipo'] = isset($row[8]) ? $row[8] : '';
                     $riga['codice2Valore'] = isset($row[9]) ? $row[9] : '';
                     $riga['codice3Tipo'] = isset($row[10]) ? $row[10] : '';
-                    $riga['codice4Valore'] = isset($row[11]) ? $row[11] : '';
+                    $riga['codice3Valore'] = isset($row[11]) ? $row[11] : '';
                     
                     $riga['descrizione'] = isset($row[12]) ? $row[12] : '';
                     $riga['quantita'] = isset($row[13]) ? $row[13] * 1: 0;
                     $riga['unitaMisura'] = isset($row[14]) ? $row[14] : '';
-                    $riga['codice4Valore'] = isset($row[15]) ? $row[15] * 1: 0;
+                    $riga['prezzoUnitario'] = isset($row[15]) ? $row[15] * 1: 0;
                     
                     $riga['sconto1Tipo'] = isset($row[16]) ? $row[16] : '';
                     $riga['sconto1Percentuale'] = isset($row[17]) ? $row[17] * 1: 0;
@@ -142,7 +142,7 @@
                     $riga['sconto2Percentuale'] = isset($row[20]) ? $row[20] * 1: 0;
                     $riga['sconto2Importo'] = isset($row[21]) ? $row[21] * 1: 0;
                     
-                    $riga['prezzoTotale'] = isset($row[22]) ? $row[22] * 1: 0;
+                    $riga['prezzoTotale'] = $riga['prezzoUnitario'] * $riga['quantita'];//isset($row[22]) ? $row[22] * 1: 0;
                     $riga['aliquotaIva'] = isset($row[23]) ? $row[23] * 1: 0;
                     $riga['natura'] = isset($row[24]) ? $row[24] : '';
                     $riga['riferimentoNormativo'] = isset($row[25]) ? $row[25] : '';
