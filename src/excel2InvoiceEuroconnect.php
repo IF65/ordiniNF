@@ -152,6 +152,11 @@
                     $riga['riferimentoTesto'] = isset($row[28]) ? $row[28] : '';
                     $riga['riferimentoNumero'] = isset($row[29]) ? $row[29] * 1: 0;
                     $riga['riferimentoData'] = isset($row[30]) ? Date::excelToDateTimeObject($row[30])->format('c') : '';
+                    
+                    $riga['tipoDato2'] = isset($row[31]) ? $row[31] : '';
+                    $riga['riferimentoTesto2'] = isset($row[32]) ? $row[32] : '';
+                    $riga['riferimentoNumero2'] = isset($row[33]) ? $row[33] * 1: 0;
+                    $riga['riferimentoData2'] = isset($row[34]) ? Date::excelToDateTimeObject($row[34])->format('c') : '';
                     $righe[] = $riga;
                 }
             }
