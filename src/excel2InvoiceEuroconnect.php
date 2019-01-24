@@ -145,7 +145,7 @@
                     $riga['unitaMisura'] = isset($row[16]) ? $row[16] : '';
                     $riga['prezzoUnitario'] = isset($row[17]) ? $row[17] * 1: 0;
                     
-                    $riga['sconto1Tipo'] = isset($row[18]) ? $row[28] : '';
+                    $riga['sconto1Tipo'] = isset($row[18]) ? $row[18] : '';
                     $riga['sconto1Percentuale'] = isset($row[19]) ? $row[19] * 1: 0;
                     $riga['sconto1Importo'] = isset($row[20]) ? $row[20] * 1: 0;
                     $riga['sconto2Tipo'] = isset($row[21]) ? $row[21] : '';
