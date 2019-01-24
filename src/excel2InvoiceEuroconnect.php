@@ -12,7 +12,7 @@
     $inputFileName = '';
 
     if ($debug) {
-        $inputFileName = "/Users/if65/Desktop/001-21-2019tracciato_excel_importazione_righe_dett_Fattura_versione_1.2_REV-2.xlsx";
+        $inputFileName = "/Users/if65/Desktop/euroconnect2/tracciato_excel_19-1.xlsx";
         $sheetName = '2.2   <DatiBeniServizi>';
     } else {
         if (!isset($_FILES['userfile']) || !is_uploaded_file($_FILES['userfile']['tmp_name'])) {
@@ -98,65 +98,76 @@
             
             $testata['causale'] = isset($rows[37][3]) ? $rows[37][3] : '';
             
-            $testata['codiceCommessaConvenzione'] = isset($rows[39][3]) ? $rows[39][3] : '';
-            $testata['codiceCup'] = isset($rows[40][3]) ? $rows[40][3] : '';
-            $testata['codiceCig'] = isset($rows[41][3]) ? $rows[41][3] : '';
+            $testata['tipoRitenuta'] = isset($rows[39][3]) ? $rows[39][3] : '';
+            $testata['importoRitenuta'] = isset($rows[40][3]) ? $rows[40][3] : '0';
+            $testata['aliquotaRitenuta'] = isset($rows[41][3]) ? $rows[42][3] : '0';
+            $testata['causalePagamentoRitenuta'] = isset($rows[42][3]) ? $rows[42][3] : '';
             
-            $testata['condizioniPagamento'] = isset($rows[43][3]) ? $rows[43][3] : '';
+            $testata['codiceCommessaConvenzione'] = isset($rows[44][3]) ? $rows[44][3] : '';
+            $testata['codiceCup'] = isset($rows[45][3]) ? $rows[45][3] : '';
+            $testata['codiceCig'] = isset($rows[46][3]) ? $rows[46][3] : '';
             
-            $testata['modalitaPagamento'] = isset($rows[45][3]) ? $rows[45][3] : '';
-            $testata['dataPagamento'] = isset($rows[28][3]) ? Date::excelToDateTimeObject($rows[28][3])->format('c') : '';
-            $testata['giorniPagamento'] = isset($rows[47][3]) ? $rows[47][3] : '';
-            $testata['dataScadenzaPagamento'] = isset($rows[48][3]) ? Date::excelToDateTimeObject($rows[48][3])->format('c') : '';
-            $testata['iban'] = isset($rows[49][3]) ? $rows[49][3] : '';
+            $testata['idDocumento'] = isset($rows[48][3]) ? $rows[48][3] : '';
+            $testata['dataDocumento'] = isset($rows[49][3]) ? Date::excelToDateTimeObject($rows[49][3])->format('c') : '';
+
+            $testata['condizioniPagamento'] = isset($rows[51][3]) ? $rows[51][3] : '';
             
+            $testata['modalitaPagamento'] = isset($rows[53][3]) ? $rows[53][3] : '';
+            $testata['dataPagamento'] = isset($rows[54][3]) ? Date::excelToDateTimeObject($rows[54][3])->format('c') : '';
+            $testata['giorniPagamento'] = isset($rows[55][3]) ? $rows[55][3] : '';
+            $testata['dataScadenzaPagamento'] = isset($rows[56][3]) ? Date::excelToDateTimeObject($rows[56][3])->format('c') : '';
+            $testata['iban'] = isset($rows[57][3]) ? $rows[57][3] : '';
             
             $righe = [];
             foreach ($rows as $num => $row) {
-                if ($num > 53) {
+                if ($num > 61) {
                     $riga = [];
                     
                     $riga['idDocumento'] = isset($row[0]) ? $row[0] : '';
                     $riga['data'] = isset($row[1]) ? Date::excelToDateTimeObject($row[1])->format('c') : '';
                     $riga['numItem'] = isset($row[2]) ? $row[2] : '';
-                    $riga['numeroDdt'] = isset($row[3]) ? $row[3] : '';
-                    $riga['dataDdt'] = isset($row[4]) ? Date::excelToDateTimeObject($row[4])->format('c') : '';
-                    $riga['tipoCessione'] = isset($row[5]) ? $row[5] : '';
+                    $riga['idDocumento2'] = isset($row[3]) ? $row[3] : '';
+                    $riga['data2'] = isset($row[4]) ? Date::excelToDateTimeObject($row[4])->format('c') : '';
                     
-                    $riga['codice1Tipo'] = isset($row[6]) ? $row[6] : '';
-                    $riga['codice1Valore'] = isset($row[7]) ? $row[7] : '';
-                    $riga['codice2Tipo'] = isset($row[8]) ? $row[8] : '';
-                    $riga['codice2Valore'] = isset($row[9]) ? $row[9] : '';
-                    $riga['codice3Tipo'] = isset($row[10]) ? $row[10] : '';
-                    $riga['codice3Valore'] = isset($row[11]) ? $row[11] : '';
+                    $riga['numeroDdt'] = isset($row[5]) ? $row[5] : '';
+                    $riga['dataDdt'] = isset($row[6]) ? Date::excelToDateTimeObject($row[6])->format('c') : '';
+                    $riga['tipoCessione'] = isset($row[7]) ? $row[7] : '';
                     
-                    $riga['descrizione'] = isset($row[12]) ? $row[12] : '';
-                    $riga['quantita'] = isset($row[13]) ? $row[13] * 1: 0;
-                    $riga['unitaMisura'] = isset($row[14]) ? $row[14] : '';
-                    $riga['prezzoUnitario'] = isset($row[15]) ? $row[15] * 1: 0;
+                    $riga['codice1Tipo'] = isset($row[8]) ? $row[8] : '';
+                    $riga['codice1Valore'] = isset($row[9]) ? $row[9] : '';
+                    $riga['codice2Tipo'] = isset($row[10]) ? $row[10] : '';
+                    $riga['codice2Valore'] = isset($row[11]) ? $row[11] : '';
+                    $riga['codice3Tipo'] = isset($row[12]) ? $row[12] : '';
+                    $riga['codice3Valore'] = isset($row[13]) ? $row[13] : '';
                     
-                    $riga['sconto1Tipo'] = isset($row[16]) ? $row[16] : '';
-                    $riga['sconto1Percentuale'] = isset($row[17]) ? $row[17] * 1: 0;
-                    $riga['sconto1Importo'] = isset($row[18]) ? $row[18] * 1: 0;
-                    $riga['sconto2Tipo'] = isset($row[19]) ? $row[19] : '';
-                    $riga['sconto2Percentuale'] = isset($row[20]) ? $row[20] * 1: 0;
-                    $riga['sconto2Importo'] = isset($row[21]) ? $row[21] * 1: 0;
+                    $riga['descrizione'] = isset($row[14]) ? $row[14] : '';
+                    $riga['quantita'] = isset($row[15]) ? $row[15] * 1: 0;
+                    $riga['unitaMisura'] = isset($row[16]) ? $row[16] : '';
+                    $riga['prezzoUnitario'] = isset($row[17]) ? $row[17] * 1: 0;
+                    
+                    $riga['sconto1Tipo'] = isset($row[18]) ? $row[28] : '';
+                    $riga['sconto1Percentuale'] = isset($row[19]) ? $row[19] * 1: 0;
+                    $riga['sconto1Importo'] = isset($row[20]) ? $row[20] * 1: 0;
+                    $riga['sconto2Tipo'] = isset($row[21]) ? $row[21] : '';
+                    $riga['sconto2Percentuale'] = isset($row[22]) ? $row[22] * 1: 0;
+                    $riga['sconto2Importo'] = isset($row[23]) ? $row[23] * 1: 0;
                     
                     $riga['prezzoTotale'] = $riga['prezzoUnitario'] * $riga['quantita'];//isset($row[22]) ? $row[22] * 1: 0;
-                    $riga['aliquotaIva'] = isset($row[23]) ? $row[23] * 1: 0;
-                    $riga['natura'] = isset($row[24]) ? $row[24] : '';
-                    $riga['riferimentoNormativo'] = isset($row[25]) ? $row[25] : '';
-                    $riga['riferimentoAmministrativo'] = isset($row[26]) ? $row[26] : '';
+                    $riga['aliquotaIva'] = isset($row[25]) ? $row[25] * 1: 0;
+                    $riga['ritenuta'] = isset($row[26]) ? $row[26] : '';
+                    $riga['natura'] = isset($row[27]) ? $row[27] : '';
+                    $riga['riferimentoNormativo'] = isset($row[28]) ? $row[28] : '';
+                    $riga['riferimentoAmministrativo'] = isset($row[29]) ? $row[29] : '';
                     
-                    $riga['tipoDato'] = isset($row[27]) ? $row[27] : '';
-                    $riga['riferimentoTesto'] = isset($row[28]) ? $row[28] : '';
-                    $riga['riferimentoNumero'] = isset($row[29]) ? $row[29] * 1: 0;
-                    $riga['riferimentoData'] = isset($row[30]) ? Date::excelToDateTimeObject($row[30])->format('c') : '';
+                    $riga['tipoDato'] = isset($row[30]) ? $row[30] : '';
+                    $riga['riferimentoTesto'] = isset($row[31]) ? $row[31] : '';
+                    $riga['riferimentoNumero'] = isset($row[32]) ? $row[32] * 1: 0;
+                    $riga['riferimentoData'] = isset($row[33]) ? Date::excelToDateTimeObject($row[33])->format('c') : '';
                     
-                    $riga['tipoDato2'] = isset($row[31]) ? $row[31] : '';
-                    $riga['riferimentoTesto2'] = isset($row[32]) ? $row[32] : '';
-                    $riga['riferimentoNumero2'] = isset($row[33]) ? $row[33] * 1: 0;
-                    $riga['riferimentoData2'] = isset($row[34]) ? Date::excelToDateTimeObject($row[34])->format('c') : '';
+                    $riga['tipoDato2'] = isset($row[34]) ? $row[34] : '';
+                    $riga['riferimentoTesto2'] = isset($row[35]) ? $row[35] : '';
+                    $riga['riferimentoNumero2'] = isset($row[36]) ? $row[36] * 1: 0;
+                    $riga['riferimentoData2'] = isset($row[37]) ? Date::excelToDateTimeObject($row[37])->format('c') : '';
                     $righe[] = $riga;
                 }
             }
