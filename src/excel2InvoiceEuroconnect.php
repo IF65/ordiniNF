@@ -100,7 +100,7 @@
             
             $testata['tipoRitenuta'] = isset($rows[39][3]) ? $rows[39][3] : '';
             $testata['importoRitenuta'] = isset($rows[40][3]) ? $rows[40][3] : '0';
-            $testata['aliquotaRitenuta'] = isset($rows[41][3]) ? $rows[42][3] : '0';
+            $testata['aliquotaRitenuta'] = isset($rows[41][3]) ? $rows[41][3] : '0';
             $testata['causalePagamentoRitenuta'] = isset($rows[42][3]) ? $rows[42][3] : '';
             
             $testata['codiceCommessaConvenzione'] = isset($rows[44][3]) ? $rows[44][3] : '';
