@@ -1,19 +1,21 @@
 <?php
+    @ini_set('memory_limit','8192M');
+    
     require '../vendor/autoload.php';
 
     use PhpOffice\PhpSpreadsheet\IOFactory;
     use PhpOffice\PhpSpreadsheet\Reader\Xlsx;
     use PhpOffice\PhpSpreadsheet\Shared\Date;
 
-    $debug = false;
+    $debug = true;
     
     $timeZone = new DateTimeZone('Europe/Rome');
     
     $inputFileName = '';
 
     if ($debug) {
-        $inputFileName = "/Users/if65/Desktop/euroconnect2/tracciato_excel_19-1.xlsx";
-        $sheetName = '2.2   <DatiBeniServizi>';
+        $inputFileName = "/Users/if65/Desktop/test_fatture_excel.xlsx";
+        $sheetName = ' ITMK 2019';
     } else {
         if (!isset($_FILES['userfile']) || !is_uploaded_file($_FILES['userfile']['tmp_name'])) {
             echo 'Non hai inviato nessun file...';

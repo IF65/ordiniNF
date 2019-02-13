@@ -16,8 +16,8 @@
 
     if (move_uploaded_file( $_FILES['userfile']['tmp_name'], "/phpUpload/".$_FILES['userfile']['name'])) {
         $inputFileName = "/phpUpload/".$_FILES['userfile']['name'];
-        //if(1) { //<-debug
-		//$inputFileName = "/Users/if65/Desktop/listino GIACOMINI dal 05.05.2017.xlsx";//<-debug
+    //if(1) { //<-debug
+		//$inputFileName = "/Users/if65/Desktop/test_fatture_excel.xlsx";//<-debug
 
         /** Create a new Xls Reader  **/
         $reader = new Xlsx();
