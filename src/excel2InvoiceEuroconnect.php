@@ -155,7 +155,7 @@
                     $riga['sconto2Importo'] = isset($row[23]) ? $row[23] * 1: 0;
                     
                     $riga['prezzoTotale'] = isset($row[24]) ? $row[24] * 1: 0;
-                    $riga['aliquotaIva'] = isset($row[25]) ? $row[25] * 1: 0;
+                    $riga['aliquotaIva'] = isset($row[25]) ? $row[25] : '0';
                     $riga['ritenuta'] = isset($row[26]) ? $row[26] : '';
                     $riga['natura'] = isset($row[27]) ? $row[27] : '';
                     $riga['riferimentoNormativo'] = isset($row[28]) ? $row[28] : '';
