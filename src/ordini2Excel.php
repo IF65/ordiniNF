@@ -277,7 +277,7 @@
             $sheet->getCell('H'.$R)->setValueExplicit($righe[$i]['sottoFamiglia'],DataType::TYPE_STRING);
             $sheet->getCell('I'.$R)->setValueExplicit($righe[$i]['iva'],DataType::TYPE_NUMERIC);
             $sheet->getCell('J'.$R)->setValueExplicit($righe[$i]['tipoIva'],DataType::TYPE_NUMERIC);
-            $sheet->getCell('K'.$R)->setValueExplicit($righe[$i]['taglia'],DataType::TYPE_NUMERIC);
+            $sheet->getCell('K'.$R)->setValueExplicit($righe[$i]['taglia'],DataType::TYPE_STRING);
             $sheet->getCell('L'.$R)->setValueExplicit($righe[$i]['listino'],DataType::TYPE_NUMERIC);
             $sheet->getCell('M'.$R)->setValueExplicit($righe[$i]['scontoA'],DataType::TYPE_NUMERIC);
             $sheet->getCell('N'.$R)->setValueExplicit($righe[$i]['scontoB'],DataType::TYPE_NUMERIC);
