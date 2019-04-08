@@ -151,7 +151,7 @@
                     $riga['sconto1Percentuale'] = isset($row[19]) ? $row[19] * 100: 0;
                     $riga['sconto1Importo'] = isset($row[20]) ? $row[20] * 1: 0;
                     $riga['sconto2Tipo'] = isset($row[21]) ? $row[21] : '';
-                    $riga['sconto2Percentuale'] = isset($row[22]) ? $row[22] * 1: 0;
+                    $riga['sconto2Percentuale'] = isset($row[22]) ? $row[22] * 100: 0;
                     $riga['sconto2Importo'] = isset($row[23]) ? $row[23] * 1: 0;
                     
                     $riga['prezzoTotale'] = isset($row[24]) ? $row[24] * 1: 0;
