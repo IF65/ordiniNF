@@ -47,7 +47,7 @@ foreach ($spreadsheet->getSheetNames() as $sheetName) {
     $currentSheetRows = [];
     foreach ($rows as $row) {
         $currentSheetRow['codiceArticoloFornitore'] = "$row[0]";
-        $currentSheetRow['taglie'] = "$row[1]";
+        $currentSheetRow['taglia'] = "$row[1]";
         $currentSheetRow['barcode'] = "$row[2]";
         $currentSheetRows[] = $currentSheetRow;
     }
