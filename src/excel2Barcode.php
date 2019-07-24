@@ -44,7 +44,6 @@ foreach ($spreadsheet->getSheetNames() as $sheetName) {
         $rows[] = $cells;
     }
 
-    $currentSheet = [];
     $currentSheetRows = [];
     foreach ($rows as $row) {
         $currentSheetRow['codiceArticoloFornitore'] = "$row[0]";
@@ -52,10 +51,7 @@ foreach ($spreadsheet->getSheetNames() as $sheetName) {
         $currentSheetRow['barcode'] = "$row[2]";
         $currentSheetRows[] = $currentSheetRow;
     }
-    $currentSheet['name'] = $sheetName;
-    $currentSheet['rows'] = $currentSheetRows;
-
-    $dati[] = $currentSheet;
+    $dati[$sheetName] = $currentSheetRows;
 }
 
 echo json_encode($dati);
