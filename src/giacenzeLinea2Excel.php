@@ -3,8 +3,8 @@
 
 require '../vendor/autoload.php';
 // leggo i dati da un file
-//$request = file_get_contents('../examples/giacenze.json');
-$request = file_get_contents('php://input');
+$request = file_get_contents('../examples/giacenze.json');
+//$request = file_get_contents('php://input');
 $data = json_decode($request, true);
 
 use PhpOffice\PhpSpreadsheet\Cell\Coordinate;
@@ -55,15 +55,15 @@ $workBook->getProperties()
 
     // testata colonne
     // --------------------------------------------------------------------------------
-    $sheet->setCellValue('A1', strtoupper('Sede'));
-    $sheet->setCellValue('B1', strtoupper('Giacenza Iniziale'));
-    $sheet->setCellValue('C1', strtoupper('Valore Giacenza Iniziale'));
-    $sheet->setCellValue('D1', strtoupper('Giacenza'));
-    $sheet->setCellValue('E1', strtoupper('Valore Giacenza'));
-    $sheet->setCellValue('F1', strtoupper('Giacenza Eliminati'));
-    $sheet->setCellValue('G1', strtoupper('Valore Giacenza Eliminati'));
-    $sheet->setCellValue('H1', strtoupper('Giacenza Obsoleti'));
-    $sheet->setCellValue('I1', strtoupper('Valore Giacenza Obsoleti'));
+    $sheet->setCellValue('A1', strtoupper("Sede"));
+    $sheet->setCellValue('B1', strtoupper("Giacenza\nIniziale"));
+    $sheet->setCellValue('C1', strtoupper("Valore\nGiacenza Iniziale"));
+    $sheet->setCellValue('D1', strtoupper("Giacenza"));
+    $sheet->setCellValue('E1', strtoupper("Valore\nGiacenza"));
+    $sheet->setCellValue('F1', strtoupper("Giacenza\nEliminati"));
+    $sheet->setCellValue('G1', strtoupper("Valore\nGiacenza Eliminati"));
+    $sheet->setCellValue('H1', strtoupper("Giacenza\nObsoleti"));
+    $sheet->setCellValue('I1', strtoupper("Valore\nGiacenza Obsoleti"));
 
     // scrittura righe
     // --------------------------------------------------------------------------------
@@ -88,15 +88,27 @@ $workBook->getProperties()
     // formattazione
     // --------------------------------------------------------------------------------
     $sheet->getDefaultRowDimension()->setRowHeight(20);
+    $sheet->getRowDimension('1')->setRowHeight(40);
     $sheet->setShowGridlines(true);
 
     foreach (range('A','I') as $col) {$sheet->getColumnDimension($col)->setAutoSize(true);}
 
     // colonne descrizione articolo + prezzi
     $sheet->getStyle(sprintf("%s%s%s%s%s",'A',$primaRigaDati - 1,':','I',$primaRigaDati - 1))->
-    getAlignment()->setHorizontal('center');
+    getAlignment()->setHorizontal('center')->setVertical('center');
+    $sheet->getStyle(sprintf("%s%s%s%s%s",'A',$primaRigaDati - 1,':','I',$primaRigaDati - 1))->
+    getAlignment()->setWrapText(true);
+    $sheet->getStyle('A1:I1')->getAlignment()->applyFromArray(['font' => ['bold' => true]]);
     $sheet->getStyle(sprintf("%s%s%s%s%s",'B',$primaRigaDati,':','I',$ultimaRigaDati))->
     getNumberFormat()->setFormatCode('###,###,##0.00;[Red][<0]-###,###,##0.00;');
+    $sheet->getStyle(sprintf("%s%s%s%s%s",'B',$primaRigaDati,':','B',$ultimaRigaDati))->
+    getNumberFormat()->setFormatCode('###,###,##0;[Red][<0]-###,###,##0;');
+    $sheet->getStyle(sprintf("%s%s%s%s%s",'D',$primaRigaDati,':','D',$ultimaRigaDati))->
+    getNumberFormat()->setFormatCode('###,###,##0;[Red][<0]-###,###,##0;');
+    $sheet->getStyle(sprintf("%s%s%s%s%s",'F',$primaRigaDati,':','F',$ultimaRigaDati))->
+    getNumberFormat()->setFormatCode('###,###,##0;[Red][<0]-###,###,##0;');
+    $sheet->getStyle(sprintf("%s%s%s%s%s",'H',$primaRigaDati,':','H',$ultimaRigaDati))->
+    getNumberFormat()->setFormatCode('###,###,##0;[Red][<0]-###,###,##0;');
 /*
     // quantita + sconto merce
     $sheet->getStyle(sprintf("%s%s%s%s",$colQuantitaTotale,'1:',$colSCIndex['LAST'],$primaRigaDati-1))->getFont()->setBold(true);
