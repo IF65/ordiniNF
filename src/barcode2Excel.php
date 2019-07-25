@@ -81,7 +81,7 @@ for ($i = 0; $i < count($righe); $i++) {
 
     $caricato = 'No';
     if ($righe[$i]['caricato']) {
-        $stato = 'Sì';
+        $caricato = 'Sì';
     }
 
     /// righe
