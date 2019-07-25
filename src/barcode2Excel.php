@@ -74,14 +74,24 @@ $primaRigaDati = 2; // attenzione le righe in Excel partono da 1
 for ($i = 0; $i < count($righe); $i++) {
     $R = ($i+$primaRigaDati);
 
+    $stato = '';
+    if ($righe[$i]['stato']) {
+        $stato = 'OK';
+    }
+
+    $caricato = 'No';
+    if ($righe[$i]['caricato']) {
+        $stato = 'Sì';
+    }
+
     /// righe
     $sheet->getCell('A'.$R)->setValueExplicit($righe[$i]['codiceArticoloFornitore'],DataType::TYPE_STRING);
     $sheet->getCell('B'.$R)->setValueExplicit($righe[$i]['codiceArticolo'],DataType::TYPE_STRING);
     $sheet->getCell('C'.$R)->setValueExplicit($righe[$i]['descrizione'],DataType::TYPE_STRING);
     $sheet->getCell('D'.$R)->setValueExplicit($righe[$i]['taglia'],DataType::TYPE_STRING);
     $sheet->getCell('E'.$R)->setValueExplicit($righe[$i]['barcode'],DataType::TYPE_STRING);
-    $sheet->getCell('F'.$R)->setValueExplicit($righe[$i]['stato'],DataType::TYPE_BOOL);
-    $sheet->getCell('G'.$R)->setValueExplicit($righe[$i]['caricato'],DataType::TYPE_BOOL);
+    $sheet->getCell('F'.$R)->setValueExplicit($stato,DataType::TYPE_STRING);
+    $sheet->getCell('G'.$R)->setValueExplicit($caricato,DataType::TYPE_STRING);
     $sheet->getCell('H'.$R)->setValueExplicit($righe[$i]['note'],DataType::TYPE_STRING);
 }
 
@@ -99,7 +109,7 @@ $sheet->getColumnDimension('D')->setWidth(15);
 $sheet->getColumnDimension('E')->setWidth(14);
 $sheet->getColumnDimension('F')->setWidth(14);
 $sheet->getColumnDimension('G')->setWidth(10);
-$sheet->getColumnDimension('H')->setWidth(10);
+$sheet->getColumnDimension('H')->setWidth(30);
 
 $workBook->setActiveSheetIndex(0);
 
