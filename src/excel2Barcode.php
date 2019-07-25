@@ -41,7 +41,7 @@ foreach ($spreadsheet->getSheetNames() as $sheetName) {
     }
 }
 
-if ($maxRowCount > 10000) {
+if ($maxRowCount < 10000) {
     foreach ($spreadsheet->getSheetNames() as $sheetName) {
         $worksheet = $spreadsheet->getSheetByName( $sheetName );
         $rows = [];
