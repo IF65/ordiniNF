@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="5ba9a39a-6692-4f3c-b7df-938c53d18a9a" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/barcode2Excel.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/barcode2Excel.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/excel2Barcode.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/excel2Barcode.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -86,7 +86,8 @@
       <workItem from="1563971373748" duration="3069000" />
       <workItem from="1564045270707" duration="2145000" />
       <workItem from="1564049580050" duration="112000" />
-      <workItem from="1564061017503" duration="561000" />
+      <workItem from="1564061017503" duration="624000" />
+      <workItem from="1564062167902" duration="349000" />
     </task>
     <task id="LOCAL-00001" summary="Sistemato Excel molto basico per giacenze linee">
       <created>1555408363753</created>
@@ -117,21 +118,5 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Sistemato Excel molto basico per giacenze linee" />
     <option name="LAST_COMMIT_MESSAGE" value="Sistemato Excel molto basico per giacenze linee" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="php">
-          <url>file://$PROJECT_DIR$/src/excel2Barcode.php</url>
-          <line>34</line>
-          <option name="timeStamp" value="5" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="php">
-          <url>file://$PROJECT_DIR$/src/excel2Barcode.php</url>
-          <line>43</line>
-          <option name="timeStamp" value="6" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>

@@ -31,27 +31,42 @@ $reader->setLoadAllSheets();
 $dati = [];
 
 $spreadsheet = $reader->load($inputFileName);
+
+$maxRowCount = 0;
 foreach ($spreadsheet->getSheetNames() as $sheetName) {
     $worksheet = $spreadsheet->getSheetByName($sheetName);
-    $rows = [];
-    foreach ($worksheet->getRowIterator() AS $row) {
-        $cellIterator = $row->getCellIterator();
-        $cellIterator->setIterateOnlyExistingCells(FALSE); // This loops through all cells,
-        $cells = [];
-        foreach ($cellIterator as $cell) {
-            $cells[] = $cell->getValue();
-        }
-        $rows[] = $cells;
+    $count = $worksheet->getHighestRow();
+    if ($maxRowCount < $count) {
+        $maxRowCount = $count;
     }
-
-    $currentSheetRows = [];
-    foreach ($rows as $row) {
-        $currentSheetRow['codiceArticoloFornitore'] = "$row[0]";
-        $currentSheetRow['taglia'] = "$row[1]";
-        $currentSheetRow['barcode'] = "$row[2]";
-        $currentSheetRows[] = $currentSheetRow;
-    }
-    $dati[$sheetName] = $currentSheetRows;
 }
 
-echo json_encode($dati);
+if ($maxRowCount > 10000) {
+    foreach ($spreadsheet->getSheetNames() as $sheetName) {
+        $worksheet = $spreadsheet->getSheetByName( $sheetName );
+        $rows = [];
+        foreach ($worksheet->getRowIterator() AS $row) {
+            $cellIterator = $row->getCellIterator();
+            $cellIterator->setIterateOnlyExistingCells( FALSE ); // This loops through all cells,
+            $cells = [];
+            foreach ($cellIterator as $cell) {
+                $cells[] = $cell->getValue();
+            }
+            $rows[] = $cells;
+        }
+
+        $currentSheetRows = [];
+        foreach ($rows as $row) {
+            $currentSheetRow['codiceArticoloFornitore'] = "$row[0]";
+            $currentSheetRow['taglia'] = "$row[1]";
+            $currentSheetRow['barcode'] = "$row[2]";
+            $currentSheetRows[] = $currentSheetRow;
+        }
+        $dati[$sheetName] = $currentSheetRows;
+    }
+
+    echo json_encode($dati);
+} else {
+    http_response_code(408);//troppe righe
+}
+
