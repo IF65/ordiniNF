@@ -64,7 +64,7 @@ $sheet->setCellValue('C1', strtoupper('Descrizione'));
 $sheet->setCellValue('D1', strtoupper('Taglia'));
 $sheet->setCellValue('E1', strtoupper('Barcode'));
 $sheet->setCellValue('F1', strtoupper('Stato'));
-$sheet->setCellValue('G1', strtoupper('Presente'));
+$sheet->setCellValue('G1', strtoupper('Caricato'));
 $sheet->setCellValue('H1', strtoupper('Note'));
 
 // scrittura righe
@@ -105,11 +105,11 @@ $sheet->setShowGridlines(true);
 $sheet->getColumnDimension('A')->setWidth(25);
 $sheet->getColumnDimension('B')->setWidth(15);
 $sheet->getColumnDimension('C')->setWidth(40);
-$sheet->getColumnDimension('D')->setWidth(15);
-$sheet->getColumnDimension('E')->setWidth(14);
+$sheet->getColumnDimension('D')->setWidth(10);
+$sheet->getColumnDimension('E')->setWidth(15);
 $sheet->getColumnDimension('F')->setWidth(14);
 $sheet->getColumnDimension('G')->setWidth(10);
-$sheet->getColumnDimension('H')->setWidth(30);
+$sheet->getColumnDimension('H')->setWidth(50);
 
 $workBook->setActiveSheetIndex(0);
 
