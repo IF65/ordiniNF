@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5ba9a39a-6692-4f3c-b7df-938c53d18a9a" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/excel2Barcode.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/excel2Barcode.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/buffaloControlloAE.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -58,12 +59,12 @@
     </option>
   </component>
   <component name="RunManager">
-    <configuration name="barcode2Excel.php" type="PhpLocalRunConfigurationType" factoryName="PHP Console" temporary="true" path="$PROJECT_DIR$/src/barcode2Excel.php">
+    <configuration name="buffaloControlloAE.php" type="PhpLocalRunConfigurationType" factoryName="PHP Console" temporary="true" path="$PROJECT_DIR$/src/buffaloControlloAE.php">
       <method v="2" />
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="PHP Script.barcode2Excel.php" />
+        <item itemvalue="PHP Script.buffaloControlloAE.php" />
       </list>
     </recent_temporary>
   </component>
@@ -86,7 +87,11 @@
       <workItem from="1564045270707" duration="2145000" />
       <workItem from="1564049580050" duration="112000" />
       <workItem from="1564061017503" duration="624000" />
-      <workItem from="1564062167902" duration="476000" />
+      <workItem from="1564062167902" duration="650000" />
+      <workItem from="1564068885935" duration="240000" />
+      <workItem from="1564407662296" duration="871000" />
+      <workItem from="1564503153259" duration="492000" />
+      <workItem from="1567575580691" duration="2635000" />
     </task>
     <task id="LOCAL-00001" summary="Sistemato Excel molto basico per giacenze linee">
       <created>1555408363753</created>
