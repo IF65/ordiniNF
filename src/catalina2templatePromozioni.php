@@ -52,7 +52,7 @@ if (move_uploaded_file( $_FILES['userfile']['tmp_name'], "/phpUpload/".$_FILES['
             $promozione = [];
             $promozione['mclu'] = $rows[$i][0];
             $promozione['fascia'] = $rows[$i][1];
-            $promozione['valoreFaccciale'] = $rows[$i][2];
+            $promozione['valoreFacciale'] = $rows[$i][2];
             $promozione['tipologia'] = $rows[$i][3];
             $promozione['minimoSpesa'] = $rows[$i][4];
             $promozione['inizioValidita'] = Date::excelToDateTimeObject($rows[$i][5], Date::getDefaultTimezone())->format('Y-m-d');

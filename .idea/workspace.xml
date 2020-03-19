@@ -2,10 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5ba9a39a-6692-4f3c-b7df-938c53d18a9a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/catalina2templatePromozioni.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/examples/report.json" beforeDir="false" afterPath="$PROJECT_DIR$/examples/report.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/buffaloControlloAE.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/buffaloControlloAE.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/catalina2templatePromozioni.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/catalina2templatePromozioni.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -105,7 +103,7 @@
       <workItem from="1567698692461" duration="3000" />
       <workItem from="1579254180652" duration="571000" />
       <workItem from="1580378617218" duration="8000" />
-      <workItem from="1584614996636" duration="3814000" />
+      <workItem from="1584614996636" duration="4451000" />
     </task>
     <task id="LOCAL-00001" summary="Sistemato Excel molto basico per giacenze linee">
       <created>1555408363753</created>
@@ -138,22 +136,22 @@
     <option name="LAST_COMMIT_MESSAGE" value="Sistemato Excel molto basico per giacenze linee" />
   </component>
   <component name="WindowStateProjectService">
-    <state width="1318" height="233" key="GridCell.Tab.0.bottom" timestamp="1584629641640">
+    <state width="1318" height="233" key="GridCell.Tab.0.bottom" timestamp="1584629744506">
       <screen x="0" y="23" width="1920" height="1057" />
     </state>
-    <state width="1318" height="233" key="GridCell.Tab.0.bottom/0.23.1920.1057@0.23.1920.1057" timestamp="1584629641640" />
-    <state width="1318" height="233" key="GridCell.Tab.0.center" timestamp="1584629641639">
+    <state width="1318" height="233" key="GridCell.Tab.0.bottom/0.23.1920.1057@0.23.1920.1057" timestamp="1584629744506" />
+    <state width="1318" height="233" key="GridCell.Tab.0.center" timestamp="1584629744505">
       <screen x="0" y="23" width="1920" height="1057" />
     </state>
-    <state width="1318" height="233" key="GridCell.Tab.0.center/0.23.1920.1057@0.23.1920.1057" timestamp="1584629641639" />
-    <state width="1318" height="233" key="GridCell.Tab.0.left" timestamp="1584629641639">
+    <state width="1318" height="233" key="GridCell.Tab.0.center/0.23.1920.1057@0.23.1920.1057" timestamp="1584629744505" />
+    <state width="1318" height="233" key="GridCell.Tab.0.left" timestamp="1584629744505">
       <screen x="0" y="23" width="1920" height="1057" />
     </state>
-    <state width="1318" height="233" key="GridCell.Tab.0.left/0.23.1920.1057@0.23.1920.1057" timestamp="1584629641639" />
-    <state width="1318" height="233" key="GridCell.Tab.0.right" timestamp="1584629641639">
+    <state width="1318" height="233" key="GridCell.Tab.0.left/0.23.1920.1057@0.23.1920.1057" timestamp="1584629744505" />
+    <state width="1318" height="233" key="GridCell.Tab.0.right" timestamp="1584629744506">
       <screen x="0" y="23" width="1920" height="1057" />
     </state>
-    <state width="1318" height="233" key="GridCell.Tab.0.right/0.23.1920.1057@0.23.1920.1057" timestamp="1584629641639" />
+    <state width="1318" height="233" key="GridCell.Tab.0.right/0.23.1920.1057@0.23.1920.1057" timestamp="1584629744506" />
     <state width="1318" height="207" key="GridCell.Tab.1.bottom" timestamp="1584629631462">
       <screen x="0" y="23" width="1920" height="1057" />
     </state>
