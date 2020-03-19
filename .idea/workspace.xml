@@ -2,10 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5ba9a39a-6692-4f3c-b7df-938c53d18a9a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/buffaloControlloAE.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/catalina2templatePromozioni.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/report.json" beforeDir="false" afterPath="$PROJECT_DIR$/examples/report.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/buffaloControlloAE.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/buffaloControlloAE.php" afterDir="false" />
     </list>
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -31,6 +32,11 @@
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
   </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
   <component name="PropertiesComponent">
     <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
@@ -46,27 +52,31 @@
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="settings.editor.selected.configurable" value="reference.settings.deploy.options" />
   </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
-      <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
-      </list>
-    </option>
-  </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="PHP Script.catalina2templatePromozioni.php">
     <configuration name="buffaloControlloAE.php" type="PhpLocalRunConfigurationType" factoryName="PHP Console" temporary="true" path="$PROJECT_DIR$/src/buffaloControlloAE.php">
+      <method v="2" />
+    </configuration>
+    <configuration name="catalina2templatePromozioni.php" type="PhpLocalRunConfigurationType" factoryName="PHP Console" temporary="true" path="$PROJECT_DIR$/src/catalina2templatePromozioni.php">
       <method v="2" />
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="PHP Script.catalina2templatePromozioni.php" />
         <item itemvalue="PHP Script.buffaloControlloAE.php" />
       </list>
     </recent_temporary>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -91,7 +101,11 @@
       <workItem from="1564068885935" duration="240000" />
       <workItem from="1564407662296" duration="871000" />
       <workItem from="1564503153259" duration="492000" />
-      <workItem from="1567575580691" duration="2635000" />
+      <workItem from="1567575580691" duration="2780000" />
+      <workItem from="1567698692461" duration="3000" />
+      <workItem from="1579254180652" duration="571000" />
+      <workItem from="1580378617218" duration="8000" />
+      <workItem from="1584614996636" duration="3814000" />
     </task>
     <task id="LOCAL-00001" summary="Sistemato Excel molto basico per giacenze linee">
       <created>1555408363753</created>
@@ -122,5 +136,59 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Sistemato Excel molto basico per giacenze linee" />
     <option name="LAST_COMMIT_MESSAGE" value="Sistemato Excel molto basico per giacenze linee" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state width="1318" height="233" key="GridCell.Tab.0.bottom" timestamp="1584629641640">
+      <screen x="0" y="23" width="1920" height="1057" />
+    </state>
+    <state width="1318" height="233" key="GridCell.Tab.0.bottom/0.23.1920.1057@0.23.1920.1057" timestamp="1584629641640" />
+    <state width="1318" height="233" key="GridCell.Tab.0.center" timestamp="1584629641639">
+      <screen x="0" y="23" width="1920" height="1057" />
+    </state>
+    <state width="1318" height="233" key="GridCell.Tab.0.center/0.23.1920.1057@0.23.1920.1057" timestamp="1584629641639" />
+    <state width="1318" height="233" key="GridCell.Tab.0.left" timestamp="1584629641639">
+      <screen x="0" y="23" width="1920" height="1057" />
+    </state>
+    <state width="1318" height="233" key="GridCell.Tab.0.left/0.23.1920.1057@0.23.1920.1057" timestamp="1584629641639" />
+    <state width="1318" height="233" key="GridCell.Tab.0.right" timestamp="1584629641639">
+      <screen x="0" y="23" width="1920" height="1057" />
+    </state>
+    <state width="1318" height="233" key="GridCell.Tab.0.right/0.23.1920.1057@0.23.1920.1057" timestamp="1584629641639" />
+    <state width="1318" height="207" key="GridCell.Tab.1.bottom" timestamp="1584629631462">
+      <screen x="0" y="23" width="1920" height="1057" />
+    </state>
+    <state width="1318" height="207" key="GridCell.Tab.1.bottom/0.23.1920.1057@0.23.1920.1057" timestamp="1584629631462" />
+    <state width="1318" height="207" key="GridCell.Tab.1.center" timestamp="1584629631461">
+      <screen x="0" y="23" width="1920" height="1057" />
+    </state>
+    <state width="1318" height="207" key="GridCell.Tab.1.center/0.23.1920.1057@0.23.1920.1057" timestamp="1584629631461" />
+    <state width="1318" height="207" key="GridCell.Tab.1.left" timestamp="1584629631460">
+      <screen x="0" y="23" width="1920" height="1057" />
+    </state>
+    <state width="1318" height="207" key="GridCell.Tab.1.left/0.23.1920.1057@0.23.1920.1057" timestamp="1584629631460" />
+    <state width="1318" height="207" key="GridCell.Tab.1.right" timestamp="1584629631461">
+      <screen x="0" y="23" width="1920" height="1057" />
+    </state>
+    <state width="1318" height="207" key="GridCell.Tab.1.right/0.23.1920.1057@0.23.1920.1057" timestamp="1584629631461" />
+    <state x="544" y="463" key="NewPhpFileDialog" timestamp="1584615102988">
+      <screen x="0" y="23" width="1920" height="1057" />
+    </state>
+    <state x="544" y="463" key="NewPhpFileDialog/0.23.1920.1057@0.23.1920.1057" timestamp="1584615102988" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/src/buffaloControlloAE.php</url>
+          <line>28</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/src/buffaloControlloAE.php</url>
+          <line>79</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
