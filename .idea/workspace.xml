@@ -4,7 +4,6 @@
     <list default="true" id="5ba9a39a-6692-4f3c-b7df-938c53d18a9a" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/buffaloControlloAE.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/buffaloControlloAE.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ordiniST2Excel.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/ordiniST2Excel.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -105,7 +104,8 @@
       <workItem from="1579254180652" duration="571000" />
       <workItem from="1580378617218" duration="8000" />
       <workItem from="1584614996636" duration="4659000" />
-      <workItem from="1585132854907" duration="2118000" />
+      <workItem from="1585132854907" duration="2202000" />
+      <workItem from="1585148568269" duration="24000" />
     </task>
     <task id="LOCAL-00001" summary="Sistemato Excel molto basico per giacenze linee">
       <created>1555408363753</created>
@@ -138,38 +138,38 @@
     <option name="LAST_COMMIT_MESSAGE" value="Sistemato Excel molto basico per giacenze linee" />
   </component>
   <component name="WindowStateProjectService">
-    <state width="1460" height="233" key="GridCell.Tab.0.bottom" timestamp="1585148427664">
+    <state width="1460" height="207" key="GridCell.Tab.0.bottom" timestamp="1585148510479">
       <screen x="0" y="23" width="1920" height="1057" />
     </state>
-    <state width="1460" height="233" key="GridCell.Tab.0.bottom/0.23.1920.1057@0.23.1920.1057" timestamp="1585148427664" />
-    <state width="1460" height="233" key="GridCell.Tab.0.center" timestamp="1585148427663">
+    <state width="1460" height="207" key="GridCell.Tab.0.bottom/0.23.1920.1057@0.23.1920.1057" timestamp="1585148510479" />
+    <state width="1460" height="207" key="GridCell.Tab.0.center" timestamp="1585148510478">
       <screen x="0" y="23" width="1920" height="1057" />
     </state>
-    <state width="1460" height="233" key="GridCell.Tab.0.center/0.23.1920.1057@0.23.1920.1057" timestamp="1585148427663" />
-    <state width="1460" height="233" key="GridCell.Tab.0.left" timestamp="1585148427663">
+    <state width="1460" height="207" key="GridCell.Tab.0.center/0.23.1920.1057@0.23.1920.1057" timestamp="1585148510478" />
+    <state width="1460" height="207" key="GridCell.Tab.0.left" timestamp="1585148510478">
       <screen x="0" y="23" width="1920" height="1057" />
     </state>
-    <state width="1460" height="233" key="GridCell.Tab.0.left/0.23.1920.1057@0.23.1920.1057" timestamp="1585148427663" />
-    <state width="1460" height="233" key="GridCell.Tab.0.right" timestamp="1585148427664">
+    <state width="1460" height="207" key="GridCell.Tab.0.left/0.23.1920.1057@0.23.1920.1057" timestamp="1585148510478" />
+    <state width="1460" height="207" key="GridCell.Tab.0.right" timestamp="1585148510478">
       <screen x="0" y="23" width="1920" height="1057" />
     </state>
-    <state width="1460" height="233" key="GridCell.Tab.0.right/0.23.1920.1057@0.23.1920.1057" timestamp="1585148427664" />
-    <state width="1460" height="207" key="GridCell.Tab.1.bottom" timestamp="1585148345932">
+    <state width="1460" height="207" key="GridCell.Tab.0.right/0.23.1920.1057@0.23.1920.1057" timestamp="1585148510478" />
+    <state width="1460" height="207" key="GridCell.Tab.1.bottom" timestamp="1585148510480">
       <screen x="0" y="23" width="1920" height="1057" />
     </state>
-    <state width="1460" height="207" key="GridCell.Tab.1.bottom/0.23.1920.1057@0.23.1920.1057" timestamp="1585148345932" />
-    <state width="1460" height="207" key="GridCell.Tab.1.center" timestamp="1585148345932">
+    <state width="1460" height="207" key="GridCell.Tab.1.bottom/0.23.1920.1057@0.23.1920.1057" timestamp="1585148510480" />
+    <state width="1460" height="207" key="GridCell.Tab.1.center" timestamp="1585148510479">
       <screen x="0" y="23" width="1920" height="1057" />
     </state>
-    <state width="1460" height="207" key="GridCell.Tab.1.center/0.23.1920.1057@0.23.1920.1057" timestamp="1585148345932" />
-    <state width="1460" height="207" key="GridCell.Tab.1.left" timestamp="1585148345931">
+    <state width="1460" height="207" key="GridCell.Tab.1.center/0.23.1920.1057@0.23.1920.1057" timestamp="1585148510479" />
+    <state width="1460" height="207" key="GridCell.Tab.1.left" timestamp="1585148510479">
       <screen x="0" y="23" width="1920" height="1057" />
     </state>
-    <state width="1460" height="207" key="GridCell.Tab.1.left/0.23.1920.1057@0.23.1920.1057" timestamp="1585148345931" />
-    <state width="1460" height="207" key="GridCell.Tab.1.right" timestamp="1585148345932">
+    <state width="1460" height="207" key="GridCell.Tab.1.left/0.23.1920.1057@0.23.1920.1057" timestamp="1585148510479" />
+    <state width="1460" height="207" key="GridCell.Tab.1.right" timestamp="1585148510479">
       <screen x="0" y="23" width="1920" height="1057" />
     </state>
-    <state width="1460" height="207" key="GridCell.Tab.1.right/0.23.1920.1057@0.23.1920.1057" timestamp="1585148345932" />
+    <state width="1460" height="207" key="GridCell.Tab.1.right/0.23.1920.1057@0.23.1920.1057" timestamp="1585148510479" />
     <state x="544" y="463" key="NewPhpFileDialog" timestamp="1584615102988">
       <screen x="0" y="23" width="1920" height="1057" />
     </state>
