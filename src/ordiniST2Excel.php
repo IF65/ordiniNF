@@ -208,6 +208,7 @@
         $colScontoMerceTotale = $col;
         $sheet->setCellValue($col.'3', strtoupper('totale sconto merce'))
             ->getStyle($col.'3')
+            ->getStyle($col.'3')
             ->getAlignment()
             ->setTextRotation(90)
             ->setHorizontal('center')
