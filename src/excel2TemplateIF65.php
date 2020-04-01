@@ -59,8 +59,6 @@
                             "dataFine" => Date::excelToDateTimeObject( $rows[$i][6], $timeZone )->format( 'c' ),
                             "barcodeGruppo1" => $rows[$i][7] == null ? "" : $rows[$i][7],
                             "barcodeGruppo2" => $rows[$i][8] == null ? "" : $rows[$i][8],
-                            "codiciArticoloGruppo1" => $rows[$i][9] == null ? "" : $rows[$i][9],
-                            "codiciArticoloGruppo2" => $rows[$i][10] == null ? "" : $rows[$i][10],
                             "aderenti" => $rows[$i][11] == null ? "" : $rows[$i][11],
                             "aderentiGruppo" => $rows[$i][12] == null ? "" : $rows[$i][12]
                         ];
