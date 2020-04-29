@@ -2,9 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5ba9a39a-6692-4f3c-b7df-938c53d18a9a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/templateIF652Excel.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/excel2TemplateIF65.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/excel2TemplateIF65.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/buffaloControlloAE.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/buffaloControlloAE.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -13,9 +12,7 @@
   </component>
   <component name="ComposerSettings" doNotAsk="true" synchronizationState="SYNCHRONIZE">
     <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
-    <execution>
-      <executable />
-    </execution>
+    <execution />
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -33,7 +30,6 @@
   </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
-    <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
@@ -78,18 +74,6 @@
       </list>
     </recent_temporary>
   </component>
-  <component name="ServiceViewManager">
-    <option name="viewStates">
-      <list>
-        <serviceView>
-          <treeState>
-            <expand />
-            <select />
-          </treeState>
-        </serviceView>
-      </list>
-    </option>
-  </component>
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -127,7 +111,11 @@
       <workItem from="1585575004259" duration="11614000" />
       <workItem from="1585656426829" duration="7784000" />
       <workItem from="1585768475711" duration="2000" />
-      <workItem from="1585768497177" duration="176000" />
+      <workItem from="1585768497177" duration="536000" />
+      <workItem from="1585816102796" duration="123000" />
+      <workItem from="1585830517585" duration="62000" />
+      <workItem from="1586242219804" duration="75000" />
+      <workItem from="1588178184955" duration="435000" />
     </task>
     <task id="LOCAL-00001" summary="Sistemato Excel molto basico per giacenze linee">
       <created>1555408363753</created>
@@ -140,20 +128,19 @@
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="1" />
+    <option name="version" value="2" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
       <map>
         <entry key="MAIN">
           <value>
-            <State>
-              <option name="COLUMN_ORDER" />
-            </State>
+            <State />
           </value>
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Sistemato Excel molto basico per giacenze linee" />
