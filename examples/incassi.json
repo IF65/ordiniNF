@@ -1,0 +1,5834 @@
+{
+	"inizio": "2020-08-23T22:00:00.000Z",
+	"fine": "2020-08-29T22:00:00.000Z",
+	"inizioAP": "2019-08-25T22:00:00.000Z",
+	"fineAP": "2019-08-31T22:00:00.000Z",
+	"elencoReparti": {
+		"1": "SCATOLAME",
+		"2": "LATTICINI",
+		"3": "CARNI",
+		"4": "ORTOFRUTTA",
+		"5": "GASTRONOMIA/CUCINA",
+		"6": "BAR",
+		"7": "PANE/PASTICCERIA",
+		"8": "SUSHI",
+		"9": "PESCE",
+		"10": "SERVIZI"
+	},
+	"dati": {
+		"0101": {
+			"descrizioneSede": "0101 - PIAVE",
+			"categoriaSede": "A - SUP. VICINATO",
+			"areaSede": "Area 0",
+			"clienti": 5383,
+			"clientiAP": 5446,
+			"reparti": {
+				"1": {
+					"incassato": 52639.07,
+					"ore": 327,
+					"incassatoAP": 46416.8,
+					"oreAP": 295.5
+				},
+				"2": {
+					"incassato": 24557.53,
+					"ore": 131.5,
+					"incassatoAP": 20385.18,
+					"oreAP": 125.5
+				},
+				"3": {
+					"incassato": 10378.04,
+					"ore": 58,
+					"incassatoAP": 8013.38,
+					"oreAP": 56.5
+				},
+				"4": {
+					"incassato": 18196.37,
+					"ore": 78,
+					"incassatoAP": 15405.75,
+					"oreAP": 77
+				},
+				"5": {
+					"incassato": 3655.55,
+					"ore": 47,
+					"incassatoAP": 3505.78,
+					"oreAP": 66
+				},
+				"6": {
+					"incassato": 5.4,
+					"ore": 0,
+					"incassatoAP": 298.04,
+					"oreAP": 19
+				},
+				"7": {
+					"incassato": 5937.2,
+					"ore": 130,
+					"incassatoAP": 5103.61,
+					"oreAP": 79.5
+				},
+				"8": {
+					"incassato": 0,
+					"ore": 3,
+					"incassatoAP": 0,
+					"oreAP": 0
+				},
+				"9": {
+					"incassato": 1781.81,
+					"ore": 15,
+					"incassatoAP": 1247.6,
+					"oreAP": 16
+				}
+			}
+		},
+		"0102": {
+			"descrizioneSede": "0102 - MARCHETTI",
+			"categoriaSede": "A - SUP. VICINATO",
+			"areaSede": "Area 5",
+			"clienti": 2485,
+			"clientiAP": 2454,
+			"reparti": {
+				"1": {
+					"incassato": 20791.87,
+					"ore": 146,
+					"incassatoAP": 18127.68,
+					"oreAP": 139.5
+				},
+				"2": {
+					"incassato": 7664.02,
+					"ore": 64.5,
+					"incassatoAP": 6943.25,
+					"oreAP": 61
+				},
+				"3": {
+					"incassato": 3093.37,
+					"ore": 25,
+					"incassatoAP": 2576.71,
+					"oreAP": 23
+				},
+				"4": {
+					"incassato": 3935.55,
+					"ore": 24.5,
+					"incassatoAP": 3478.62,
+					"oreAP": 25.5
+				},
+				"5": {
+					"incassato": 333.07,
+					"ore": 0,
+					"incassatoAP": 420.98,
+					"oreAP": 0
+				},
+				"7": {
+					"incassato": 1212.5,
+					"ore": 12,
+					"incassatoAP": 1102.13,
+					"oreAP": 14.5
+				},
+				"9": {
+					"incassato": 392.38,
+					"ore": 0,
+					"incassatoAP": 74.83,
+					"oreAP": 0
+				},
+				"10": {
+					"incassato": 256,
+					"ore": 0,
+					"incassatoAP": 180,
+					"oreAP": 0
+				}
+			}
+		},
+		"0103": {
+			"descrizioneSede": "0103 - COLLEBEATO",
+			"categoriaSede": "A - SUP. VICINATO",
+			"areaSede": "Area 5",
+			"clienti": 3082,
+			"clientiAP": 3508,
+			"reparti": {
+				"1": {
+					"incassato": 34671.92,
+					"ore": 190,
+					"incassatoAP": 34648.97,
+					"oreAP": 234
+				},
+				"2": {
+					"incassato": 14615.72,
+					"ore": 113.5,
+					"incassatoAP": 13422.86,
+					"oreAP": 103.5
+				},
+				"3": {
+					"incassato": 6069.27,
+					"ore": 34.5,
+					"incassatoAP": 5751.72,
+					"oreAP": 30
+				},
+				"4": {
+					"incassato": 7463.39,
+					"ore": 38,
+					"incassatoAP": 7447.77,
+					"oreAP": 35
+				},
+				"5": {
+					"incassato": 276.48,
+					"ore": 0,
+					"incassatoAP": 350.48,
+					"oreAP": 0
+				},
+				"7": {
+					"incassato": 1667.74,
+					"ore": 0,
+					"incassatoAP": 1754.86,
+					"oreAP": 0
+				},
+				"9": {
+					"incassato": 819.32,
+					"ore": 0,
+					"incassatoAP": 367.88,
+					"oreAP": 0
+				}
+			}
+		},
+		"0104": {
+			"descrizioneSede": "0104 - ROSA",
+			"categoriaSede": "A - SUP. VICINATO",
+			"areaSede": "Area 5",
+			"clienti": 4518,
+			"clientiAP": 3723,
+			"reparti": {
+				"1": {
+					"incassato": 44145.44,
+					"ore": 312.5,
+					"incassatoAP": 32961.98,
+					"oreAP": 176
+				},
+				"2": {
+					"incassato": 18264.78,
+					"ore": 123,
+					"incassatoAP": 12034.79,
+					"oreAP": 82
+				},
+				"3": {
+					"incassato": 7872.08,
+					"ore": 74,
+					"incassatoAP": 4446.16,
+					"oreAP": 34.5
+				},
+				"4": {
+					"incassato": 15818.68,
+					"ore": 85,
+					"incassatoAP": 8551.7,
+					"oreAP": 41
+				},
+				"5": {
+					"incassato": 2729.89,
+					"ore": 43.5,
+					"incassatoAP": 582.17,
+					"oreAP": 0
+				},
+				"6": {
+					"incassato": 0,
+					"ore": 0,
+					"incassatoAP": 0,
+					"oreAP": 0
+				},
+				"7": {
+					"incassato": 4759.43,
+					"ore": 127.5,
+					"incassatoAP": 1482.99,
+					"oreAP": 0
+				},
+				"8": {
+					"incassato": 0,
+					"ore": 0,
+					"incassatoAP": 0,
+					"oreAP": 0
+				},
+				"9": {
+					"incassato": 1786.1,
+					"ore": 30.5,
+					"incassatoAP": 322.57,
+					"oreAP": 0
+				},
+				"10": {
+					"incassato": 100,
+					"ore": 0,
+					"incassatoAP": 0,
+					"oreAP": 0
+				}
+			}
+		},
+		"0105": {
+			"descrizioneSede": "0105 - MOMPIANO",
+			"categoriaSede": "A - SUP. VICINATO",
+			"areaSede": "Area 5",
+			"clienti": 3920,
+			"clientiAP": 4982,
+			"reparti": {
+				"1": {
+					"incassato": 43567.11,
+					"ore": 213.5,
+					"incassatoAP": 43487.8,
+					"oreAP": 234.5
+				},
+				"2": {
+					"incassato": 18676.48,
+					"ore": 172.5,
+					"incassatoAP": 19347.3,
+					"oreAP": 148
+				},
+				"3": {
+					"incassato": 9038.13,
+					"ore": 58.5,
+					"incassatoAP": 9430.06,
+					"oreAP": 71.5
+				},
+				"4": {
+					"incassato": 13372.35,
+					"ore": 74.5,
+					"incassatoAP": 13938.44,
+					"oreAP": 76
+				},
+				"5": {
+					"incassato": 895.17,
+					"ore": 0,
+					"incassatoAP": 812.46,
+					"oreAP": 0
+				},
+				"7": {
+					"incassato": 1543.89,
+					"ore": 0,
+					"incassatoAP": 1840.95,
+					"oreAP": 0
+				},
+				"9": {
+					"incassato": 1117.77,
+					"ore": 0,
+					"incassatoAP": 888.08,
+					"oreAP": 0
+				},
+				"10": {
+					"incassato": 0,
+					"ore": 0,
+					"incassatoAP": 0.99,
+					"oreAP": 0
+				}
+			}
+		},
+		"0106": {
+			"descrizioneSede": "0106 - ARGENTINA",
+			"categoriaSede": "A - SUP. VICINATO",
+			"areaSede": "Area 5",
+			"clienti": 3085,
+			"clientiAP": 3353,
+			"reparti": {
+				"1": {
+					"incassato": 29079.83,
+					"ore": 196.5,
+					"incassatoAP": 26823.46,
+					"oreAP": 189
+				},
+				"2": {
+					"incassato": 10187.76,
+					"ore": 74,
+					"incassatoAP": 9590.56,
+					"oreAP": 70
+				},
+				"3": {
+					"incassato": 5406.23,
+					"ore": 34.5,
+					"incassatoAP": 4869.15,
+					"oreAP": 32
+				},
+				"4": {
+					"incassato": 6478.56,
+					"ore": 38,
+					"incassatoAP": 6305.41,
+					"oreAP": 37.5
+				},
+				"5": {
+					"incassato": 372.81,
+					"ore": 0,
+					"incassatoAP": 381.02,
+					"oreAP": 0
+				},
+				"7": {
+					"incassato": 1263.64,
+					"ore": 12,
+					"incassatoAP": 1285.08,
+					"oreAP": 12
+				},
+				"8": {
+					"incassato": 1.19,
+					"ore": 0,
+					"incassatoAP": 0,
+					"oreAP": 0
+				},
+				"9": {
+					"incassato": 302.39,
+					"ore": 0,
+					"incassatoAP": 117.36,
+					"oreAP": 0
+				},
+				"10": {
+					"incassato": 0,
+					"ore": 0,
+					"incassatoAP": 150,
+					"oreAP": 0
+				}
+			}
+		},
+		"0107": {
+			"descrizioneSede": "0107 - PIADENA",
+			"categoriaSede": "A - SUP. VICINATO",
+			"areaSede": "Area 5",
+			"clienti": 2956,
+			"clientiAP": 2864,
+			"reparti": {
+				"1": {
+					"incassato": 45742.84,
+					"ore": 217,
+					"incassatoAP": 37114.73,
+					"oreAP": 195
+				},
+				"2": {
+					"incassato": 14763,
+					"ore": 64.5,
+					"incassatoAP": 11927.29,
+					"oreAP": 70
+				},
+				"3": {
+					"incassato": 5674.12,
+					"ore": 36,
+					"incassatoAP": 4305.15,
+					"oreAP": 35
+				},
+				"4": {
+					"incassato": 8575.48,
+					"ore": 48,
+					"incassatoAP": 7480.27,
+					"oreAP": 48.5
+				},
+				"5": {
+					"incassato": 548.64,
+					"ore": 5,
+					"incassatoAP": 377.16,
+					"oreAP": 1
+				},
+				"7": {
+					"incassato": 3177.83,
+					"ore": 42.5,
+					"incassatoAP": 2731.92,
+					"oreAP": 38
+				},
+				"9": {
+					"incassato": 289.57,
+					"ore": 0,
+					"incassatoAP": 180.58,
+					"oreAP": 0
+				}
+			}
+		},
+		"0108": {
+			"descrizioneSede": "0108 - DESENZANO",
+			"categoriaSede": "B - SUPERMERCATI",
+			"areaSede": "Area 3",
+			"clienti": 4816,
+			"clientiAP": 5305,
+			"reparti": {
+				"1": {
+					"incassato": 74841.12,
+					"ore": 316,
+					"incassatoAP": 63522.68,
+					"oreAP": 311
+				},
+				"2": {
+					"incassato": 27538.11,
+					"ore": 137,
+					"incassatoAP": 24137.02,
+					"oreAP": 128.5
+				},
+				"3": {
+					"incassato": 8241.35,
+					"ore": 42,
+					"incassatoAP": 7945.8,
+					"oreAP": 40
+				},
+				"4": {
+					"incassato": 17735.32,
+					"ore": 78.5,
+					"incassatoAP": 15262.59,
+					"oreAP": 70
+				},
+				"5": {
+					"incassato": 4082.13,
+					"ore": 44.5,
+					"incassatoAP": 4013.22,
+					"oreAP": 50
+				},
+				"6": {
+					"incassato": 15.12,
+					"ore": 0,
+					"incassatoAP": 314.17,
+					"oreAP": 14
+				},
+				"7": {
+					"incassato": 5932.38,
+					"ore": 103,
+					"incassatoAP": 4990.7,
+					"oreAP": 82.5
+				},
+				"8": {
+					"incassato": 5.39,
+					"ore": 2,
+					"incassatoAP": 6.2,
+					"oreAP": 0
+				},
+				"9": {
+					"incassato": 1510.12,
+					"ore": 16,
+					"incassatoAP": 1033.72,
+					"oreAP": 12
+				},
+				"10": {
+					"incassato": 40,
+					"ore": 0,
+					"incassatoAP": 20,
+					"oreAP": 0
+				}
+			}
+		},
+		"0109": {
+			"descrizioneSede": "0109 - SALO'",
+			"categoriaSede": "A - SUP. VICINATO",
+			"areaSede": "Area 4",
+			"clienti": 3111,
+			"clientiAP": 4038,
+			"reparti": {
+				"1": {
+					"incassato": 19807.06,
+					"ore": 138.5,
+					"incassatoAP": 21956.93,
+					"oreAP": 157.5
+				},
+				"2": {
+					"incassato": 9217.49,
+					"ore": 53,
+					"incassatoAP": 9749.77,
+					"oreAP": 63
+				},
+				"3": {
+					"incassato": 2917.2,
+					"ore": 17,
+					"incassatoAP": 2959.13,
+					"oreAP": 21
+				},
+				"4": {
+					"incassato": 5926.5,
+					"ore": 35,
+					"incassatoAP": 6152.71,
+					"oreAP": 35
+				},
+				"5": {
+					"incassato": 361.15,
+					"ore": 0,
+					"incassatoAP": 411.05,
+					"oreAP": 0
+				},
+				"7": {
+					"incassato": 1117.87,
+					"ore": 0,
+					"incassatoAP": 1372.74,
+					"oreAP": 0
+				},
+				"9": {
+					"incassato": 290.5,
+					"ore": 0,
+					"incassatoAP": 250.1,
+					"oreAP": 0
+				}
+			}
+		},
+		"0110": {
+			"descrizioneSede": "0110 - SAREZZO",
+			"categoriaSede": "A - SUP. VICINATO",
+			"areaSede": "Area 4",
+			"clienti": 4341,
+			"clientiAP": 5303,
+			"reparti": {
+				"1": {
+					"incassato": 48259.09,
+					"ore": 233.5,
+					"incassatoAP": 45259.89,
+					"oreAP": 248.5
+				},
+				"2": {
+					"incassato": 19927.16,
+					"ore": 114,
+					"incassatoAP": 19576.05,
+					"oreAP": 113
+				},
+				"3": {
+					"incassato": 10582.79,
+					"ore": 66.5,
+					"incassatoAP": 8924.89,
+					"oreAP": 51
+				},
+				"4": {
+					"incassato": 11319.8,
+					"ore": 49,
+					"incassatoAP": 11316.85,
+					"oreAP": 68.5
+				},
+				"5": {
+					"incassato": 3649.3,
+					"ore": 44,
+					"incassatoAP": 3186.53,
+					"oreAP": 47
+				},
+				"6": {
+					"incassato": 1.2,
+					"ore": 0,
+					"incassatoAP": 391.04,
+					"oreAP": 26
+				},
+				"7": {
+					"incassato": 7294.05,
+					"ore": 125,
+					"incassatoAP": 7171.26,
+					"oreAP": 102
+				},
+				"8": {
+					"incassato": 0,
+					"ore": 23,
+					"incassatoAP": 1.74,
+					"oreAP": 0
+				},
+				"9": {
+					"incassato": 2742.58,
+					"ore": 0,
+					"incassatoAP": 2384.76,
+					"oreAP": 20
+				},
+				"10": {
+					"incassato": 1500,
+					"ore": 0,
+					"incassatoAP": 0,
+					"oreAP": 0
+				},
+				"11": {
+					"incassato": 0,
+					"ore": 0,
+					"incassatoAP": 2.07,
+					"oreAP": 0
+				}
+			}
+		},
+		"0111": {
+			"descrizioneSede": "0111 - VALCENTER",
+			"categoriaSede": "A - SUP. VICINATO",
+			"areaSede": "Area 5",
+			"clienti": 3377,
+			"clientiAP": 3727,
+			"reparti": {
+				"1": {
+					"incassato": 60906.65,
+					"ore": 274,
+					"incassatoAP": 50587.58,
+					"oreAP": 263.5
+				},
+				"2": {
+					"incassato": 23510.28,
+					"ore": 143,
+					"incassatoAP": 21612.37,
+					"oreAP": 146
+				},
+				"3": {
+					"incassato": 9033.63,
+					"ore": 67,
+					"incassatoAP": 8058.45,
+					"oreAP": 69
+				},
+				"4": {
+					"incassato": 9914.57,
+					"ore": 63,
+					"incassatoAP": 9112.4,
+					"oreAP": 56.5
+				},
+				"5": {
+					"incassato": 728.09,
+					"ore": 0,
+					"incassatoAP": 625.13,
+					"oreAP": 0
+				},
+				"7": {
+					"incassato": 2950.59,
+					"ore": 13,
+					"incassatoAP": 2973.68,
+					"oreAP": 14
+				},
+				"9": {
+					"incassato": 827.32,
+					"ore": 0,
+					"incassatoAP": 520.23,
+					"oreAP": 0
+				}
+			}
+		},
+		"0112": {
+			"descrizioneSede": "0112 - GORLE",
+			"categoriaSede": "X - INDEFINITA",
+			"areaSede": "Area 4",
+			"clienti": 129,
+			"clientiAP": 136,
+			"reparti": {
+				"1": {
+					"incassato": 24044.71,
+					"ore": 101,
+					"incassatoAP": 19745.84,
+					"oreAP": 115
+				},
+				"2": {
+					"incassato": 3591.35,
+					"ore": 9,
+					"incassatoAP": 3725.31,
+					"oreAP": 7.5
+				},
+				"4": {
+					"incassato": 278.88,
+					"ore": 0,
+					"incassatoAP": 0,
+					"oreAP": 0
+				}
+			}
+		},
+		"0113": {
+			"descrizioneSede": "0113 - LENO",
+			"categoriaSede": "A - SUP. VICINATO",
+			"areaSede": "Area 0",
+			"clienti": 4510,
+			"clientiAP": 3920,
+			"reparti": {
+				"1": {
+					"incassato": 60335.55,
+					"ore": 335,
+					"incassatoAP": 42537.61,
+					"oreAP": 237
+				},
+				"2": {
+					"incassato": 21934.5,
+					"ore": 120.5,
+					"incassatoAP": 15543.27,
+					"oreAP": 100
+				},
+				"3": {
+					"incassato": 10316,
+					"ore": 50,
+					"incassatoAP": 8325.18,
+					"oreAP": 45
+				},
+				"4": {
+					"incassato": 11166.5,
+					"ore": 62,
+					"incassatoAP": 8776.31,
+					"oreAP": 46
+				},
+				"5": {
+					"incassato": 613.01,
+					"ore": 0,
+					"incassatoAP": 350.04,
+					"oreAP": 0
+				},
+				"7": {
+					"incassato": 1495.01,
+					"ore": 9,
+					"incassatoAP": 1064.06,
+					"oreAP": 15
+				},
+				"9": {
+					"incassato": 573.96,
+					"ore": 0,
+					"incassatoAP": 364.18,
+					"oreAP": 0
+				},
+				"10": {
+					"incassato": 200,
+					"ore": 0,
+					"incassatoAP": 330,
+					"oreAP": 0
+				}
+			}
+		},
+		"0114": {
+			"descrizioneSede": "0114 - ROE' VOLCIANO",
+			"categoriaSede": "C - SUPERSTORE",
+			"areaSede": "Area 3",
+			"clienti": 6784,
+			"clientiAP": 7464,
+			"reparti": {
+				"1": {
+					"incassato": 117559.7,
+					"ore": 509,
+					"incassatoAP": 96224.72,
+					"oreAP": 432
+				},
+				"2": {
+					"incassato": 40262.16,
+					"ore": 215.5,
+					"incassatoAP": 35474.68,
+					"oreAP": 202
+				},
+				"3": {
+					"incassato": 17507.94,
+					"ore": 112.5,
+					"incassatoAP": 14920.5,
+					"oreAP": 106
+				},
+				"4": {
+					"incassato": 21982.29,
+					"ore": 90,
+					"incassatoAP": 19420.38,
+					"oreAP": 87
+				},
+				"5": {
+					"incassato": 7628.95,
+					"ore": 95.5,
+					"incassatoAP": 10757.03,
+					"oreAP": 147
+				},
+				"6": {
+					"incassato": 3.6,
+					"ore": 0,
+					"incassatoAP": 695.25,
+					"oreAP": 13
+				},
+				"7": {
+					"incassato": 8231.46,
+					"ore": 115,
+					"incassatoAP": 7635.48,
+					"oreAP": 124
+				},
+				"8": {
+					"incassato": 0,
+					"ore": 20,
+					"incassatoAP": 0,
+					"oreAP": 0
+				},
+				"9": {
+					"incassato": 2851.69,
+					"ore": 2.5,
+					"incassatoAP": 1956.05,
+					"oreAP": 15
+				},
+				"10": {
+					"incassato": 67.5,
+					"ore": 0,
+					"incassatoAP": 0,
+					"oreAP": 0
+				}
+			}
+		},
+		"0115": {
+			"descrizioneSede": "0115 - PALAZZOLO",
+			"categoriaSede": "C - SUPERSTORE",
+			"areaSede": "Area 4",
+			"clienti": 3971,
+			"clientiAP": 3581,
+			"reparti": {
+				"1": {
+					"incassato": 80965.29,
+					"ore": 337.5,
+					"incassatoAP": 58390.09,
+					"oreAP": 289
+				},
+				"2": {
+					"incassato": 29429.64,
+					"ore": 159,
+					"incassatoAP": 21355.45,
+					"oreAP": 124.5
+				},
+				"3": {
+					"incassato": 8665.18,
+					"ore": 50,
+					"incassatoAP": 5832.45,
+					"oreAP": 63.5
+				},
+				"4": {
+					"incassato": 17546.78,
+					"ore": 67.5,
+					"incassatoAP": 12312.06,
+					"oreAP": 65
+				},
+				"5": {
+					"incassato": 1180.65,
+					"ore": 0,
+					"incassatoAP": 1302.15,
+					"oreAP": 0
+				},
+				"7": {
+					"incassato": 3542.77,
+					"ore": 42,
+					"incassatoAP": 3269.38,
+					"oreAP": 36
+				},
+				"9": {
+					"incassato": 745.1,
+					"ore": 0,
+					"incassatoAP": 372.14,
+					"oreAP": 0
+				}
+			}
+		},
+		"0116": {
+			"descrizioneSede": "0116 - VILLA CARCINA",
+			"categoriaSede": "X - INDEFINITA",
+			"areaSede": "Area 1",
+			"clienti": 269,
+			"clientiAP": 246,
+			"reparti": {
+				"1": {
+					"incassato": 23012.46,
+					"ore": 104,
+					"incassatoAP": 17500.38,
+					"oreAP": 86.5
+				},
+				"2": {
+					"incassato": 8267.08,
+					"ore": 31,
+					"incassatoAP": 7336.79,
+					"oreAP": 37
+				},
+				"3": {
+					"incassato": 2277.97,
+					"ore": 12,
+					"incassatoAP": 2158.71,
+					"oreAP": 13
+				},
+				"4": {
+					"incassato": 2190.47,
+					"ore": 23,
+					"incassatoAP": 2241.03,
+					"oreAP": 24
+				}
+			}
+		},
+		"0118": {
+			"descrizioneSede": "0118 - VESTONE",
+			"categoriaSede": "X - INDEFINITA",
+			"areaSede": "Area 0",
+			"clienti": 366,
+			"clientiAP": 362,
+			"reparti": {
+				"1": {
+					"incassato": 45733.66,
+					"ore": 112,
+					"incassatoAP": 38670.72,
+					"oreAP": 107
+				},
+				"2": {
+					"incassato": 12838.59,
+					"ore": 33,
+					"incassatoAP": 10541.28,
+					"oreAP": 33
+				},
+				"3": {
+					"incassato": 2455.05,
+					"ore": 11,
+					"incassatoAP": 1927.48,
+					"oreAP": 11
+				},
+				"4": {
+					"incassato": 5218.71,
+					"ore": 33,
+					"incassatoAP": 4570.28,
+					"oreAP": 33
+				}
+			}
+		},
+		"0119": {
+			"descrizioneSede": "0119 - PRALBOINO",
+			"categoriaSede": "B - SUPERMERCATI",
+			"areaSede": "Area 0",
+			"clienti": 5142,
+			"clientiAP": 5667,
+			"reparti": {
+				"1": {
+					"incassato": 88790.7,
+					"ore": 362.5,
+					"incassatoAP": 76072.92,
+					"oreAP": 397
+				},
+				"2": {
+					"incassato": 36361.55,
+					"ore": 188,
+					"incassatoAP": 31666.5,
+					"oreAP": 148.5
+				},
+				"3": {
+					"incassato": 11663.42,
+					"ore": 66.5,
+					"incassatoAP": 11366.4,
+					"oreAP": 68
+				},
+				"4": {
+					"incassato": 17781.15,
+					"ore": 74.5,
+					"incassatoAP": 17052.32,
+					"oreAP": 79.5
+				},
+				"5": {
+					"incassato": 5158.85,
+					"ore": 76,
+					"incassatoAP": 5491.62,
+					"oreAP": 76
+				},
+				"6": {
+					"incassato": 1.8,
+					"ore": 0,
+					"incassatoAP": 184.56,
+					"oreAP": 3.5
+				},
+				"7": {
+					"incassato": 6164.68,
+					"ore": 108,
+					"incassatoAP": 5865.39,
+					"oreAP": 94
+				},
+				"8": {
+					"incassato": 0,
+					"ore": 6,
+					"incassatoAP": 0,
+					"oreAP": 0
+				},
+				"9": {
+					"incassato": 1709.61,
+					"ore": 6,
+					"incassatoAP": 1462.03,
+					"oreAP": 13
+				}
+			}
+		},
+		"0121": {
+			"descrizioneSede": "0121 - BREGNANO",
+			"categoriaSede": "A - SUP. VICINATO",
+			"areaSede": "Area 3",
+			"clienti": 2727,
+			"clientiAP": 2839,
+			"reparti": {
+				"1": {
+					"incassato": 48031.47,
+					"ore": 257,
+					"incassatoAP": 40358.09,
+					"oreAP": 315.5
+				},
+				"2": {
+					"incassato": 19084.06,
+					"ore": 110,
+					"incassatoAP": 16168.78,
+					"oreAP": 152
+				},
+				"3": {
+					"incassato": 7871.32,
+					"ore": 76.5,
+					"incassatoAP": 6617.09,
+					"oreAP": 40
+				},
+				"4": {
+					"incassato": 11158.3,
+					"ore": 40,
+					"incassatoAP": 8822.25,
+					"oreAP": 49
+				},
+				"5": {
+					"incassato": 698.25,
+					"ore": 7,
+					"incassatoAP": 726.97,
+					"oreAP": 20
+				},
+				"7": {
+					"incassato": 2050.89,
+					"ore": 13,
+					"incassatoAP": 1725.99,
+					"oreAP": 27
+				},
+				"9": {
+					"incassato": 1908.26,
+					"ore": 49,
+					"incassatoAP": 1383.61,
+					"oreAP": 38
+				}
+			}
+		},
+		"0122": {
+			"descrizioneSede": "0122 - COGLIATE",
+			"categoriaSede": "A - SUP. VICINATO",
+			"areaSede": "Area 1",
+			"clienti": 2152,
+			"clientiAP": 2235,
+			"reparti": {
+				"1": {
+					"incassato": 25035.45,
+					"ore": 125,
+					"incassatoAP": 22321.16,
+					"oreAP": 179
+				},
+				"2": {
+					"incassato": 12476.79,
+					"ore": 92,
+					"incassatoAP": 11661.05,
+					"oreAP": 123.5
+				},
+				"3": {
+					"incassato": 6518.54,
+					"ore": 43,
+					"incassatoAP": 5868.16,
+					"oreAP": 74.5
+				},
+				"4": {
+					"incassato": 7104.78,
+					"ore": 38,
+					"incassatoAP": 5424.9,
+					"oreAP": 35
+				},
+				"5": {
+					"incassato": 266.49,
+					"ore": 0,
+					"incassatoAP": 257.91,
+					"oreAP": 0
+				},
+				"7": {
+					"incassato": 1359.16,
+					"ore": 3,
+					"incassatoAP": 1368.37,
+					"oreAP": 13
+				},
+				"9": {
+					"incassato": 348.14,
+					"ore": 0,
+					"incassatoAP": 52.37,
+					"oreAP": 0
+				}
+			}
+		},
+		"0123": {
+			"descrizioneSede": "0123 - SOVERE",
+			"categoriaSede": "A - SUP. VICINATO",
+			"areaSede": "Area 1",
+			"clienti": 3149,
+			"clientiAP": 3791,
+			"reparti": {
+				"1": {
+					"incassato": 44951.2,
+					"ore": 220.5,
+					"incassatoAP": 45021.2,
+					"oreAP": 244
+				},
+				"2": {
+					"incassato": 22056.23,
+					"ore": 145,
+					"incassatoAP": 22338.34,
+					"oreAP": 143.5
+				},
+				"3": {
+					"incassato": 4458.86,
+					"ore": 27.5,
+					"incassatoAP": 4452.98,
+					"oreAP": 25
+				},
+				"4": {
+					"incassato": 9247.28,
+					"ore": 34.5,
+					"incassatoAP": 8851.86,
+					"oreAP": 37.5
+				},
+				"5": {
+					"incassato": 1885.92,
+					"ore": 31.5,
+					"incassatoAP": 1880.15,
+					"oreAP": 32.5
+				},
+				"7": {
+					"incassato": 2230.52,
+					"ore": 35,
+					"incassatoAP": 2785.65,
+					"oreAP": 35
+				},
+				"8": {
+					"incassato": 0,
+					"ore": 1,
+					"incassatoAP": 0,
+					"oreAP": 0
+				},
+				"9": {
+					"incassato": 142.4,
+					"ore": 0,
+					"incassatoAP": 159.15,
+					"oreAP": 1
+				}
+			}
+		},
+		"0124": {
+			"descrizioneSede": "0124 - MOZZANICA",
+			"categoriaSede": "A - SUP. VICINATO",
+			"areaSede": "Area 2",
+			"clienti": 4629,
+			"clientiAP": 6055,
+			"reparti": {
+				"1": {
+					"incassato": 90910.2,
+					"ore": 410.5,
+					"incassatoAP": 82314.74,
+					"oreAP": 361
+				},
+				"2": {
+					"incassato": 35206.83,
+					"ore": 182.5,
+					"incassatoAP": 32271.63,
+					"oreAP": 174
+				},
+				"3": {
+					"incassato": 9566.37,
+					"ore": 49,
+					"incassatoAP": 9586.55,
+					"oreAP": 49.5
+				},
+				"4": {
+					"incassato": 18987.42,
+					"ore": 91,
+					"incassatoAP": 16544.52,
+					"oreAP": 95
+				},
+				"5": {
+					"incassato": 3632.15,
+					"ore": 48,
+					"incassatoAP": 4620.54,
+					"oreAP": 55.5
+				},
+				"6": {
+					"incassato": 14.32,
+					"ore": 0,
+					"incassatoAP": 844.82,
+					"oreAP": 38
+				},
+				"7": {
+					"incassato": 5574.69,
+					"ore": 100,
+					"incassatoAP": 6967.66,
+					"oreAP": 132
+				},
+				"8": {
+					"incassato": 0,
+					"ore": 39.5,
+					"incassatoAP": 6.5,
+					"oreAP": 0
+				},
+				"9": {
+					"incassato": 3788.51,
+					"ore": 0,
+					"incassatoAP": 3116.54,
+					"oreAP": 53
+				},
+				"11": {
+					"incassato": 0,
+					"ore": 0,
+					"incassatoAP": 2.56,
+					"oreAP": 0
+				}
+			}
+		},
+		"0125": {
+			"descrizioneSede": "0125 - CISANO",
+			"categoriaSede": "A - SUP. VICINATO",
+			"areaSede": "Area 1",
+			"clienti": 4435,
+			"clientiAP": 4536,
+			"reparti": {
+				"1": {
+					"incassato": 62867.34,
+					"ore": 303.5,
+					"incassatoAP": 49410.22,
+					"oreAP": 291
+				},
+				"2": {
+					"incassato": 25919.26,
+					"ore": 121,
+					"incassatoAP": 21356.87,
+					"oreAP": 99.5
+				},
+				"3": {
+					"incassato": 9276.62,
+					"ore": 41.5,
+					"incassatoAP": 7264.13,
+					"oreAP": 40
+				},
+				"4": {
+					"incassato": 14357.64,
+					"ore": 65,
+					"incassatoAP": 11429.74,
+					"oreAP": 47.5
+				},
+				"5": {
+					"incassato": 3109.84,
+					"ore": 45.5,
+					"incassatoAP": 2897.37,
+					"oreAP": 42.5
+				},
+				"6": {
+					"incassato": 42.16,
+					"ore": 0,
+					"incassatoAP": 295.21,
+					"oreAP": 21
+				},
+				"7": {
+					"incassato": 5865.97,
+					"ore": 89,
+					"incassatoAP": 5143.37,
+					"oreAP": 67.5
+				},
+				"8": {
+					"incassato": 0,
+					"ore": 3,
+					"incassatoAP": 3.62,
+					"oreAP": 0
+				},
+				"9": {
+					"incassato": 2267.12,
+					"ore": 17,
+					"incassatoAP": 1750.18,
+					"oreAP": 19
+				},
+				"10": {
+					"incassato": 0,
+					"ore": 0,
+					"incassatoAP": 200,
+					"oreAP": 0
+				}
+			}
+		},
+		"0126": {
+			"descrizioneSede": "0126 - CORNATE",
+			"categoriaSede": "A - SUP. VICINATO",
+			"areaSede": "Area 1",
+			"clienti": 1933,
+			"clientiAP": 1999,
+			"reparti": {
+				"1": {
+					"incassato": 23357.76,
+					"ore": 179.5,
+					"incassatoAP": 19907.49,
+					"oreAP": 187
+				},
+				"2": {
+					"incassato": 11643.46,
+					"ore": 90.5,
+					"incassatoAP": 9993.23,
+					"oreAP": 83.5
+				},
+				"3": {
+					"incassato": 4351.41,
+					"ore": 26,
+					"incassatoAP": 4174.78,
+					"oreAP": 70.5
+				},
+				"4": {
+					"incassato": 5897.14,
+					"ore": 27.5,
+					"incassatoAP": 4367.63,
+					"oreAP": 35
+				},
+				"5": {
+					"incassato": 347.21,
+					"ore": 3,
+					"incassatoAP": 187.91,
+					"oreAP": 3
+				},
+				"7": {
+					"incassato": 1168.61,
+					"ore": 6,
+					"incassatoAP": 1360.7,
+					"oreAP": 10
+				},
+				"8": {
+					"incassato": 0,
+					"ore": 1.5,
+					"incassatoAP": 0,
+					"oreAP": 0
+				},
+				"9": {
+					"incassato": 411.45,
+					"ore": 0,
+					"incassatoAP": 203.6,
+					"oreAP": 6
+				}
+			}
+		},
+		"0127": {
+			"descrizioneSede": "0127 - MANERBIO",
+			"categoriaSede": "A - SUP. VICINATO",
+			"areaSede": "Area 1",
+			"clienti": 3088,
+			"clientiAP": 3271,
+			"reparti": {
+				"1": {
+					"incassato": 44501.49,
+					"ore": 232.5,
+					"incassatoAP": 36978.46,
+					"oreAP": 247
+				},
+				"2": {
+					"incassato": 18234.28,
+					"ore": 99.5,
+					"incassatoAP": 14915.32,
+					"oreAP": 106
+				},
+				"3": {
+					"incassato": 5366.52,
+					"ore": 35.5,
+					"incassatoAP": 4666.51,
+					"oreAP": 38.5
+				},
+				"4": {
+					"incassato": 10029.54,
+					"ore": 50,
+					"incassatoAP": 9128.24,
+					"oreAP": 43.5
+				},
+				"5": {
+					"incassato": 3184.04,
+					"ore": 50,
+					"incassatoAP": 3324.22,
+					"oreAP": 40
+				},
+				"6": {
+					"incassato": 28,
+					"ore": 0,
+					"incassatoAP": 104.13,
+					"oreAP": 7
+				},
+				"7": {
+					"incassato": 2433.49,
+					"ore": 45,
+					"incassatoAP": 2095.18,
+					"oreAP": 41
+				},
+				"8": {
+					"incassato": 8.19,
+					"ore": 6,
+					"incassatoAP": 0,
+					"oreAP": 0
+				},
+				"9": {
+					"incassato": 577.95,
+					"ore": 0,
+					"incassatoAP": 610.61,
+					"oreAP": 0
+				},
+				"10": {
+					"incassato": 300,
+					"ore": 0,
+					"incassatoAP": 0,
+					"oreAP": 0
+				}
+			}
+		},
+		"0128": {
+			"descrizioneSede": "0128 - NEW-SALO'",
+			"categoriaSede": "B - SUPERMERCATI",
+			"areaSede": "Area 2",
+			"clienti": 8566,
+			"clientiAP": 9244,
+			"reparti": {
+				"1": {
+					"incassato": 150682.52,
+					"ore": 534,
+					"incassatoAP": 118642.73,
+					"oreAP": 479
+				},
+				"2": {
+					"incassato": 56796.41,
+					"ore": 265,
+					"incassatoAP": 45164.28,
+					"oreAP": 235
+				},
+				"3": {
+					"incassato": 16363.5,
+					"ore": 93,
+					"incassatoAP": 12598.92,
+					"oreAP": 69
+				},
+				"4": {
+					"incassato": 32946.7,
+					"ore": 142,
+					"incassatoAP": 25216.7,
+					"oreAP": 90
+				},
+				"5": {
+					"incassato": 8875.5,
+					"ore": 110,
+					"incassatoAP": 10349.06,
+					"oreAP": 133
+				},
+				"6": {
+					"incassato": 42,
+					"ore": 0,
+					"incassatoAP": 1125.07,
+					"oreAP": 27
+				},
+				"7": {
+					"incassato": 12352.31,
+					"ore": 126,
+					"incassatoAP": 10446.11,
+					"oreAP": 110
+				},
+				"8": {
+					"incassato": 0,
+					"ore": 25,
+					"incassatoAP": 3.06,
+					"oreAP": 0
+				},
+				"9": {
+					"incassato": 3852.87,
+					"ore": 10,
+					"incassatoAP": 2419.66,
+					"oreAP": 28
+				}
+			}
+		},
+		"0129": {
+			"descrizioneSede": "0129 - CASTEL GOFFREDO",
+			"categoriaSede": "C - SUPERSTORE",
+			"areaSede": "Area 4",
+			"clienti": 2184,
+			"clientiAP": 4594,
+			"reparti": {
+				"1": {
+					"incassato": 58770.85,
+					"ore": 268,
+					"incassatoAP": 49100.58,
+					"oreAP": 240.5
+				},
+				"2": {
+					"incassato": 13894.15,
+					"ore": 97.5,
+					"incassatoAP": 18027.44,
+					"oreAP": 123.5
+				},
+				"3": {
+					"incassato": 8070.54,
+					"ore": 53.5,
+					"incassatoAP": 5275.04,
+					"oreAP": 62
+				},
+				"4": {
+					"incassato": 17600.11,
+					"ore": 78,
+					"incassatoAP": 9446.53,
+					"oreAP": 56
+				},
+				"5": {
+					"incassato": 938.07,
+					"ore": 24,
+					"incassatoAP": 1151.14,
+					"oreAP": 42.5
+				},
+				"6": {
+					"incassato": 0,
+					"ore": 0,
+					"incassatoAP": 420.5,
+					"oreAP": 6
+				},
+				"7": {
+					"incassato": 4377.74,
+					"ore": 78.5,
+					"incassatoAP": 4525.07,
+					"oreAP": 77
+				},
+				"8": {
+					"incassato": 0.85,
+					"ore": 1.5,
+					"incassatoAP": 0,
+					"oreAP": 0
+				},
+				"9": {
+					"incassato": 672.76,
+					"ore": 4,
+					"incassatoAP": 443.7,
+					"oreAP": 7
+				},
+				"10": {
+					"incassato": 0,
+					"ore": 0,
+					"incassatoAP": 50,
+					"oreAP": 0
+				}
+			}
+		},
+		"0131": {
+			"descrizioneSede": "0131 - CHIARI",
+			"categoriaSede": "C - SUPERSTORE",
+			"areaSede": "Area 3",
+			"clienti": 4221,
+			"clientiAP": 4390,
+			"reparti": {
+				"1": {
+					"incassato": 75921.53,
+					"ore": 392,
+					"incassatoAP": 56923.5,
+					"oreAP": 311.5
+				},
+				"2": {
+					"incassato": 26512.21,
+					"ore": 145.5,
+					"incassatoAP": 20220.98,
+					"oreAP": 109
+				},
+				"3": {
+					"incassato": 9627.9,
+					"ore": 39,
+					"incassatoAP": 7777.88,
+					"oreAP": 44
+				},
+				"4": {
+					"incassato": 14190.64,
+					"ore": 68.5,
+					"incassatoAP": 10700.37,
+					"oreAP": 48
+				},
+				"5": {
+					"incassato": 2735.78,
+					"ore": 46.5,
+					"incassatoAP": 2577.26,
+					"oreAP": 47
+				},
+				"6": {
+					"incassato": 4.44,
+					"ore": 0,
+					"incassatoAP": 350.58,
+					"oreAP": 14
+				},
+				"7": {
+					"incassato": 3667.22,
+					"ore": 51.5,
+					"incassatoAP": 2899.6,
+					"oreAP": 79
+				},
+				"8": {
+					"incassato": 0,
+					"ore": 6.5,
+					"incassatoAP": 0,
+					"oreAP": 0
+				},
+				"9": {
+					"incassato": 1240.46,
+					"ore": 2.5,
+					"incassatoAP": 757.33,
+					"oreAP": 0
+				}
+			}
+		},
+		"0132": {
+			"descrizioneSede": "0132 - PISOGNE",
+			"categoriaSede": "C - SUPERSTORE",
+			"areaSede": "Area 1",
+			"clienti": 8256,
+			"clientiAP": 9102,
+			"reparti": {
+				"1": {
+					"incassato": 124735.58,
+					"ore": 547,
+					"incassatoAP": 111233.26,
+					"oreAP": 553
+				},
+				"2": {
+					"incassato": 41111.59,
+					"ore": 236,
+					"incassatoAP": 36459.35,
+					"oreAP": 243.5
+				},
+				"3": {
+					"incassato": 16585.21,
+					"ore": 90.5,
+					"incassatoAP": 15294.58,
+					"oreAP": 83.5
+				},
+				"4": {
+					"incassato": 21719.28,
+					"ore": 101.5,
+					"incassatoAP": 19530.81,
+					"oreAP": 86
+				},
+				"5": {
+					"incassato": 1773.88,
+					"ore": 0,
+					"incassatoAP": 1383.29,
+					"oreAP": 0
+				},
+				"6": {
+					"incassato": 0,
+					"ore": 0,
+					"incassatoAP": 0,
+					"oreAP": 0
+				},
+				"7": {
+					"incassato": 9213.18,
+					"ore": 134,
+					"incassatoAP": 9484.71,
+					"oreAP": 141.5
+				},
+				"8": {
+					"incassato": 0,
+					"ore": 0,
+					"incassatoAP": 0,
+					"oreAP": 0
+				},
+				"9": {
+					"incassato": 1689.33,
+					"ore": 1,
+					"incassatoAP": 1071.68,
+					"oreAP": 1
+				},
+				"10": {
+					"incassato": 0,
+					"ore": 0,
+					"incassatoAP": 52,
+					"oreAP": 0
+				}
+			}
+		},
+		"0133": {
+			"descrizioneSede": "0133 - ALBERTANO",
+			"categoriaSede": "A - SUP. VICINATO",
+			"areaSede": "Area 2",
+			"clienti": 6674,
+			"clientiAP": 5409,
+			"reparti": {
+				"1": {
+					"incassato": 88465.51,
+					"ore": 419.5,
+					"incassatoAP": 53008.64,
+					"oreAP": 319
+				},
+				"2": {
+					"incassato": 41151.16,
+					"ore": 192.5,
+					"incassatoAP": 23404.2,
+					"oreAP": 141
+				},
+				"3": {
+					"incassato": 17650.95,
+					"ore": 119,
+					"incassatoAP": 10762.21,
+					"oreAP": 87
+				},
+				"4": {
+					"incassato": 28482.44,
+					"ore": 95,
+					"incassatoAP": 17048.59,
+					"oreAP": 85
+				},
+				"5": {
+					"incassato": 6265.61,
+					"ore": 52.5,
+					"incassatoAP": 4362.67,
+					"oreAP": 54.5
+				},
+				"6": {
+					"incassato": 0,
+					"ore": 0,
+					"incassatoAP": 313.71,
+					"oreAP": 49.5
+				},
+				"7": {
+					"incassato": 8103.95,
+					"ore": 141,
+					"incassatoAP": 5424.74,
+					"oreAP": 100
+				},
+				"8": {
+					"incassato": 1.14,
+					"ore": 4,
+					"incassatoAP": 0,
+					"oreAP": 0
+				},
+				"9": {
+					"incassato": 3766.07,
+					"ore": 22,
+					"incassatoAP": 1579.22,
+					"oreAP": 18
+				},
+				"10": {
+					"incassato": 100,
+					"ore": 0,
+					"incassatoAP": 0,
+					"oreAP": 0
+				}
+			}
+		},
+		"0134": {
+			"descrizioneSede": "0134 - S.EUFEMIA",
+			"categoriaSede": "C - SUPERSTORE",
+			"areaSede": "Area 5",
+			"clienti": 3040,
+			"clientiAP": 2838,
+			"reparti": {
+				"1": {
+					"incassato": 57733.45,
+					"ore": 305.5,
+					"incassatoAP": 43925.86,
+					"oreAP": 242.5
+				},
+				"2": {
+					"incassato": 19664.48,
+					"ore": 140.5,
+					"incassatoAP": 14106.23,
+					"oreAP": 126
+				},
+				"3": {
+					"incassato": 7796.25,
+					"ore": 71,
+					"incassatoAP": 5315.7,
+					"oreAP": 55.5
+				},
+				"4": {
+					"incassato": 11698.34,
+					"ore": 86.5,
+					"incassatoAP": 9263.53,
+					"oreAP": 62.5
+				},
+				"5": {
+					"incassato": 1159.73,
+					"ore": 0,
+					"incassatoAP": 790.55,
+					"oreAP": 0
+				},
+				"6": {
+					"incassato": 0,
+					"ore": 0,
+					"incassatoAP": 0,
+					"oreAP": 0
+				},
+				"7": {
+					"incassato": 3196.49,
+					"ore": 0,
+					"incassatoAP": 2592.42,
+					"oreAP": 0
+				},
+				"8": {
+					"incassato": 0,
+					"ore": 0,
+					"incassatoAP": 0,
+					"oreAP": 0
+				},
+				"9": {
+					"incassato": 887.04,
+					"ore": 0,
+					"incassatoAP": 647.16,
+					"oreAP": 0
+				},
+				"10": {
+					"incassato": 10.8,
+					"ore": 0,
+					"incassatoAP": 0,
+					"oreAP": 0
+				}
+			}
+		},
+		"0136": {
+			"descrizioneSede": "0136 - PAVIA",
+			"categoriaSede": "A - SUP. VICINATO",
+			"areaSede": "Area 5",
+			"clienti": 3496,
+			"clientiAP": 3056,
+			"reparti": {
+				"1": {
+					"incassato": 67254.2,
+					"ore": 317.5,
+					"incassatoAP": 46990.84,
+					"oreAP": 221
+				},
+				"2": {
+					"incassato": 25087.9,
+					"ore": 154,
+					"incassatoAP": 17161.17,
+					"oreAP": 105.5
+				},
+				"3": {
+					"incassato": 11317.73,
+					"ore": 71,
+					"incassatoAP": 8296.77,
+					"oreAP": 82
+				},
+				"4": {
+					"incassato": 13352.31,
+					"ore": 65,
+					"incassatoAP": 8714.25,
+					"oreAP": 61.5
+				},
+				"5": {
+					"incassato": 716.89,
+					"ore": 0,
+					"incassatoAP": 544.8,
+					"oreAP": 43.5
+				},
+				"7": {
+					"incassato": 2953.89,
+					"ore": 0,
+					"incassatoAP": 2774.04,
+					"oreAP": 0
+				},
+				"8": {
+					"incassato": 0,
+					"ore": 75.5,
+					"incassatoAP": 0,
+					"oreAP": 0
+				},
+				"9": {
+					"incassato": 3895.12,
+					"ore": 0,
+					"incassatoAP": 2081.77,
+					"oreAP": 65
+				}
+			}
+		},
+		"0138": {
+			"descrizioneSede": "0138 - CANNETO",
+			"categoriaSede": "B - SUPERMERCATI",
+			"areaSede": "Area 5",
+			"clienti": 3770,
+			"clientiAP": 4751,
+			"reparti": {
+				"1": {
+					"incassato": 42578.22,
+					"ore": 243,
+					"incassatoAP": 41146.92,
+					"oreAP": 236.5
+				},
+				"2": {
+					"incassato": 14839.75,
+					"ore": 94.5,
+					"incassatoAP": 14588.76,
+					"oreAP": 85.5
+				},
+				"3": {
+					"incassato": 6118.13,
+					"ore": 38.5,
+					"incassatoAP": 5965,
+					"oreAP": 38
+				},
+				"4": {
+					"incassato": 8369.38,
+					"ore": 45.5,
+					"incassatoAP": 7924.47,
+					"oreAP": 40
+				},
+				"5": {
+					"incassato": 1451.18,
+					"ore": 30.5,
+					"incassatoAP": 1641.22,
+					"oreAP": 30.5
+				},
+				"6": {
+					"incassato": 0,
+					"ore": 0,
+					"incassatoAP": 350.34,
+					"oreAP": 12
+				},
+				"7": {
+					"incassato": 3889.06,
+					"ore": 75.5,
+					"incassatoAP": 3859.92,
+					"oreAP": 56.5
+				},
+				"8": {
+					"incassato": 2.48,
+					"ore": 0,
+					"incassatoAP": 0,
+					"oreAP": 0
+				},
+				"9": {
+					"incassato": 994.64,
+					"ore": 0,
+					"incassatoAP": 643.1,
+					"oreAP": 0
+				}
+			}
+		},
+		"0139": {
+			"descrizioneSede": "0139 - GORLE SUPERM.",
+			"categoriaSede": "C - SUPERSTORE",
+			"areaSede": "Area 3",
+			"clienti": 4190,
+			"clientiAP": 4684,
+			"reparti": {
+				"1": {
+					"incassato": 57772.41,
+					"ore": 368,
+					"incassatoAP": 51888.07,
+					"oreAP": 410
+				},
+				"2": {
+					"incassato": 24478.58,
+					"ore": 128.5,
+					"incassatoAP": 20744.32,
+					"oreAP": 166.5
+				},
+				"3": {
+					"incassato": 8282.88,
+					"ore": 51,
+					"incassatoAP": 6669.69,
+					"oreAP": 111
+				},
+				"4": {
+					"incassato": 12556.36,
+					"ore": 44.5,
+					"incassatoAP": 10565.32,
+					"oreAP": 57.5
+				},
+				"5": {
+					"incassato": 3076.82,
+					"ore": 49.5,
+					"incassatoAP": 3333.41,
+					"oreAP": 78
+				},
+				"6": {
+					"incassato": 2.4,
+					"ore": 0,
+					"incassatoAP": 312.29,
+					"oreAP": 13
+				},
+				"7": {
+					"incassato": 5332.62,
+					"ore": 92.5,
+					"incassatoAP": 4854.69,
+					"oreAP": 103.5
+				},
+				"8": {
+					"incassato": 0,
+					"ore": 21.5,
+					"incassatoAP": 0,
+					"oreAP": 0
+				},
+				"9": {
+					"incassato": 2284.38,
+					"ore": 0,
+					"incassatoAP": 1452.03,
+					"oreAP": 18.5
+				}
+			}
+		},
+		"0140": {
+			"descrizioneSede": "0140 - ROCCAFRANCA",
+			"categoriaSede": "A - SUP. VICINATO",
+			"areaSede": "Area 1",
+			"clienti": 2900,
+			"clientiAP": 2958,
+			"reparti": {
+				"1": {
+					"incassato": 26206.06,
+					"ore": 150,
+					"incassatoAP": 22419.8,
+					"oreAP": 162.5
+				},
+				"2": {
+					"incassato": 11369.6,
+					"ore": 102.5,
+					"incassatoAP": 10001.47,
+					"oreAP": 85.5
+				},
+				"3": {
+					"incassato": 4896.12,
+					"ore": 33,
+					"incassatoAP": 4530.26,
+					"oreAP": 32.5
+				},
+				"4": {
+					"incassato": 6053.85,
+					"ore": 29.5,
+					"incassatoAP": 5435.94,
+					"oreAP": 28
+				},
+				"5": {
+					"incassato": 387.02,
+					"ore": 0,
+					"incassatoAP": 279.46,
+					"oreAP": 3
+				},
+				"6": {
+					"incassato": 13.43,
+					"ore": 0,
+					"incassatoAP": 17.6,
+					"oreAP": 0
+				},
+				"7": {
+					"incassato": 2719.2,
+					"ore": 13,
+					"incassatoAP": 2315.11,
+					"oreAP": 14
+				},
+				"8": {
+					"incassato": 1.04,
+					"ore": 0,
+					"incassatoAP": 0,
+					"oreAP": 0
+				},
+				"9": {
+					"incassato": 273.99,
+					"ore": 0,
+					"incassatoAP": 67.24,
+					"oreAP": 0
+				},
+				"10": {
+					"incassato": 0,
+					"ore": 0,
+					"incassatoAP": 100,
+					"oreAP": 0
+				}
+			}
+		},
+		"0141": {
+			"descrizioneSede": "0141 - ORZINUOVI",
+			"categoriaSede": "B - SUPERMERCATI",
+			"areaSede": "Area 2",
+			"clienti": 3691,
+			"clientiAP": 3618,
+			"reparti": {
+				"1": {
+					"incassato": 63790.38,
+					"ore": 294,
+					"incassatoAP": 45033.99,
+					"oreAP": 254
+				},
+				"2": {
+					"incassato": 26768.72,
+					"ore": 131.5,
+					"incassatoAP": 19592.33,
+					"oreAP": 108
+				},
+				"3": {
+					"incassato": 10157.15,
+					"ore": 51.5,
+					"incassatoAP": 8029.57,
+					"oreAP": 45.5
+				},
+				"4": {
+					"incassato": 14286.13,
+					"ore": 63,
+					"incassatoAP": 10739.5,
+					"oreAP": 47.5
+				},
+				"5": {
+					"incassato": 5132.69,
+					"ore": 57.5,
+					"incassatoAP": 5515.38,
+					"oreAP": 69.5
+				},
+				"6": {
+					"incassato": 0,
+					"ore": 0,
+					"incassatoAP": 583.91,
+					"oreAP": 14
+				},
+				"7": {
+					"incassato": 5557,
+					"ore": 107,
+					"incassatoAP": 4538.51,
+					"oreAP": 74
+				},
+				"8": {
+					"incassato": 0,
+					"ore": 6,
+					"incassatoAP": 0,
+					"oreAP": 0
+				},
+				"9": {
+					"incassato": 2089.2,
+					"ore": 5,
+					"incassatoAP": 1050.67,
+					"oreAP": 10
+				},
+				"10": {
+					"incassato": 100,
+					"ore": 0,
+					"incassatoAP": 0,
+					"oreAP": 0
+				}
+			}
+		},
+		"0142": {
+			"descrizioneSede": "0142 - SARNICO",
+			"categoriaSede": "A - SUP. VICINATO",
+			"areaSede": "Area 2",
+			"clienti": 2707,
+			"clientiAP": 3194,
+			"reparti": {
+				"1": {
+					"incassato": 46605.45,
+					"ore": 221.5,
+					"incassatoAP": 42894.19,
+					"oreAP": 204.5
+				},
+				"2": {
+					"incassato": 12837.14,
+					"ore": 75,
+					"incassatoAP": 12903.74,
+					"oreAP": 81
+				},
+				"3": {
+					"incassato": 6483.53,
+					"ore": 42,
+					"incassatoAP": 6567.88,
+					"oreAP": 42.5
+				},
+				"4": {
+					"incassato": 8363.99,
+					"ore": 38,
+					"incassatoAP": 8535.98,
+					"oreAP": 40.5
+				},
+				"5": {
+					"incassato": 620.68,
+					"ore": 0,
+					"incassatoAP": 597.63,
+					"oreAP": 0
+				},
+				"7": {
+					"incassato": 1691.52,
+					"ore": 14,
+					"incassatoAP": 1969.08,
+					"oreAP": 14
+				},
+				"9": {
+					"incassato": 496.31,
+					"ore": 0,
+					"incassatoAP": 370.49,
+					"oreAP": 0
+				}
+			}
+		},
+		"0143": {
+			"descrizioneSede": "0143 - VEROLANUOVA",
+			"categoriaSede": "B - SUPERMERCATI",
+			"areaSede": "Area 2",
+			"clienti": 3628,
+			"clientiAP": 4413,
+			"reparti": {
+				"1": {
+					"incassato": 62781.58,
+					"ore": 297.5,
+					"incassatoAP": 52359.53,
+					"oreAP": 319
+				},
+				"2": {
+					"incassato": 24925.78,
+					"ore": 143,
+					"incassatoAP": 22995.61,
+					"oreAP": 151
+				},
+				"3": {
+					"incassato": 13408.44,
+					"ore": 84.5,
+					"incassatoAP": 10753.92,
+					"oreAP": 78
+				},
+				"4": {
+					"incassato": 17799.63,
+					"ore": 86.5,
+					"incassatoAP": 13179.45,
+					"oreAP": 64.5
+				},
+				"5": {
+					"incassato": 3489.08,
+					"ore": 66,
+					"incassatoAP": 5085.59,
+					"oreAP": 81
+				},
+				"6": {
+					"incassato": 0,
+					"ore": 0,
+					"incassatoAP": 247.96,
+					"oreAP": 6.5
+				},
+				"7": {
+					"incassato": 4875.99,
+					"ore": 79.5,
+					"incassatoAP": 4620.23,
+					"oreAP": 86
+				},
+				"8": {
+					"incassato": 0,
+					"ore": 15.5,
+					"incassatoAP": 0,
+					"oreAP": 0
+				},
+				"9": {
+					"incassato": 2170.71,
+					"ore": 2,
+					"incassatoAP": 1784.23,
+					"oreAP": 19.5
+				},
+				"11": {
+					"incassato": 0,
+					"ore": 0,
+					"incassatoAP": 1.28,
+					"oreAP": 0
+				}
+			}
+		},
+		"0144": {
+			"descrizioneSede": "0144 - QUINZANO",
+			"categoriaSede": "A - SUP. VICINATO",
+			"areaSede": "Area 2",
+			"clienti": 2418,
+			"clientiAP": 2628,
+			"reparti": {
+				"1": {
+					"incassato": 38939.3,
+					"ore": 194.5,
+					"incassatoAP": 35394.82,
+					"oreAP": 170
+				},
+				"2": {
+					"incassato": 15185.7,
+					"ore": 102.5,
+					"incassatoAP": 14625.57,
+					"oreAP": 98
+				},
+				"3": {
+					"incassato": 4427.26,
+					"ore": 33,
+					"incassatoAP": 4139.26,
+					"oreAP": 31
+				},
+				"4": {
+					"incassato": 5979.92,
+					"ore": 40,
+					"incassatoAP": 5488.71,
+					"oreAP": 35.5
+				},
+				"5": {
+					"incassato": 494.75,
+					"ore": 0,
+					"incassatoAP": 610.78,
+					"oreAP": 0
+				},
+				"7": {
+					"incassato": 1073.55,
+					"ore": 8,
+					"incassatoAP": 1193,
+					"oreAP": 9.5
+				},
+				"9": {
+					"incassato": 176.29,
+					"ore": 0,
+					"incassatoAP": 84.75,
+					"oreAP": 1
+				}
+			}
+		},
+		"0145": {
+			"descrizioneSede": "0145 - GHEDI",
+			"categoriaSede": "A - SUP. VICINATO",
+			"areaSede": "Area 2",
+			"clienti": 3093,
+			"clientiAP": 3335,
+			"reparti": {
+				"1": {
+					"incassato": 32470.83,
+					"ore": 239.5,
+					"incassatoAP": 31294.26,
+					"oreAP": 210
+				},
+				"2": {
+					"incassato": 13879.35,
+					"ore": 108,
+					"incassatoAP": 14143.96,
+					"oreAP": 106
+				},
+				"3": {
+					"incassato": 5905.61,
+					"ore": 33.5,
+					"incassatoAP": 6456.09,
+					"oreAP": 45
+				},
+				"4": {
+					"incassato": 7349.07,
+					"ore": 37.5,
+					"incassatoAP": 6945.48,
+					"oreAP": 34
+				},
+				"5": {
+					"incassato": 563.66,
+					"ore": 0,
+					"incassatoAP": 458.8,
+					"oreAP": 0
+				},
+				"7": {
+					"incassato": 1258.35,
+					"ore": 0,
+					"incassatoAP": 1274.24,
+					"oreAP": 0
+				},
+				"8": {
+					"incassato": 0.5,
+					"ore": 0,
+					"incassatoAP": 0,
+					"oreAP": 0
+				},
+				"9": {
+					"incassato": 172.67,
+					"ore": 0,
+					"incassatoAP": 162.4,
+					"oreAP": 0
+				}
+			}
+		},
+		"0146": {
+			"descrizioneSede": "0146 - OSPITALETTO",
+			"categoriaSede": "C - SUPERSTORE",
+			"areaSede": "Area 3",
+			"clienti": 6229,
+			"clientiAP": 6165,
+			"reparti": {
+				"1": {
+					"incassato": 122754.4,
+					"ore": 527,
+					"incassatoAP": 98054.19,
+					"oreAP": 402.5
+				},
+				"2": {
+					"incassato": 41718.85,
+					"ore": 207,
+					"incassatoAP": 32504.83,
+					"oreAP": 177
+				},
+				"3": {
+					"incassato": 16314.61,
+					"ore": 82.5,
+					"incassatoAP": 12746.87,
+					"oreAP": 79.5
+				},
+				"4": {
+					"incassato": 22127.99,
+					"ore": 87.5,
+					"incassatoAP": 17824.48,
+					"oreAP": 78
+				},
+				"5": {
+					"incassato": 1119.04,
+					"ore": 0,
+					"incassatoAP": 1010.89,
+					"oreAP": 0
+				},
+				"7": {
+					"incassato": 5470.35,
+					"ore": 63,
+					"incassatoAP": 5025.55,
+					"oreAP": 63
+				},
+				"9": {
+					"incassato": 1889.09,
+					"ore": 0,
+					"incassatoAP": 935.12,
+					"oreAP": 0
+				}
+			}
+		},
+		"0147": {
+			"descrizioneSede": "0147 - CARPENEDOLO",
+			"categoriaSede": "C - SUPERSTORE",
+			"areaSede": "Area 5",
+			"clienti": 4498,
+			"clientiAP": 5032,
+			"reparti": {
+				"1": {
+					"incassato": 61926.19,
+					"ore": 289,
+					"incassatoAP": 56797.47,
+					"oreAP": 300.5
+				},
+				"2": {
+					"incassato": 20500.8,
+					"ore": 107.5,
+					"incassatoAP": 19727.52,
+					"oreAP": 127.5
+				},
+				"3": {
+					"incassato": 6028.02,
+					"ore": 54,
+					"incassatoAP": 5960.97,
+					"oreAP": 47
+				},
+				"4": {
+					"incassato": 10466.77,
+					"ore": 51,
+					"incassatoAP": 9730.2,
+					"oreAP": 50
+				},
+				"5": {
+					"incassato": 805.3,
+					"ore": 0,
+					"incassatoAP": 667.56,
+					"oreAP": 0
+				},
+				"7": {
+					"incassato": 3396.8,
+					"ore": 75.5,
+					"incassatoAP": 3518.56,
+					"oreAP": 52
+				},
+				"9": {
+					"incassato": 310.13,
+					"ore": 0,
+					"incassatoAP": 208.89,
+					"oreAP": 0
+				},
+				"10": {
+					"incassato": 200,
+					"ore": 0,
+					"incassatoAP": 100,
+					"oreAP": 0
+				}
+			}
+		},
+		"0148": {
+			"descrizioneSede": "0148 - ASOLA",
+			"categoriaSede": "C - SUPERSTORE",
+			"areaSede": "Area 3",
+			"clienti": 5132,
+			"clientiAP": 5458,
+			"reparti": {
+				"1": {
+					"incassato": 92299.35,
+					"ore": 346,
+					"incassatoAP": 76309.31,
+					"oreAP": 309
+				},
+				"2": {
+					"incassato": 27887.8,
+					"ore": 166.5,
+					"incassatoAP": 23220.22,
+					"oreAP": 150
+				},
+				"3": {
+					"incassato": 10027.75,
+					"ore": 49.5,
+					"incassatoAP": 8252.2,
+					"oreAP": 73
+				},
+				"4": {
+					"incassato": 11422.68,
+					"ore": 61,
+					"incassatoAP": 9665.27,
+					"oreAP": 57
+				},
+				"5": {
+					"incassato": 885.84,
+					"ore": 0,
+					"incassatoAP": 823.84,
+					"oreAP": 0
+				},
+				"7": {
+					"incassato": 4508.37,
+					"ore": 53,
+					"incassatoAP": 4278.18,
+					"oreAP": 47
+				},
+				"9": {
+					"incassato": 1330.07,
+					"ore": 0,
+					"incassatoAP": 674.11,
+					"oreAP": 0
+				},
+				"10": {
+					"incassato": 0,
+					"ore": 0,
+					"incassatoAP": 600,
+					"oreAP": 0
+				}
+			}
+		},
+		"0149": {
+			"descrizioneSede": "0149 - VALEGGIO",
+			"categoriaSede": "B - SUPERMERCATI",
+			"areaSede": "Area 3",
+			"clienti": 2016,
+			"clientiAP": 2139,
+			"reparti": {
+				"1": {
+					"incassato": 21617.65,
+					"ore": 156,
+					"incassatoAP": 18698,
+					"oreAP": 147.5
+				},
+				"2": {
+					"incassato": 7046.04,
+					"ore": 58.5,
+					"incassatoAP": 5824.62,
+					"oreAP": 61
+				},
+				"3": {
+					"incassato": 1654.01,
+					"ore": 9,
+					"incassatoAP": 1346.83,
+					"oreAP": 8
+				},
+				"4": {
+					"incassato": 4990.41,
+					"ore": 29.5,
+					"incassatoAP": 3734.86,
+					"oreAP": 32.5
+				},
+				"5": {
+					"incassato": 443.94,
+					"ore": 1,
+					"incassatoAP": 450.12,
+					"oreAP": 1
+				},
+				"7": {
+					"incassato": 1712.93,
+					"ore": 7,
+					"incassatoAP": 1268.15,
+					"oreAP": 7
+				},
+				"9": {
+					"incassato": 182.02,
+					"ore": 0,
+					"incassatoAP": 92.03,
+					"oreAP": 0
+				}
+			}
+		},
+		"0153": {
+			"descrizioneSede": "0153 - SAN COLOMBANO",
+			"categoriaSede": "A - SUP. VICINATO",
+			"areaSede": "Area 4",
+			"clienti": 3162,
+			"clientiAP": 3607,
+			"reparti": {
+				"1": {
+					"incassato": 44623.25,
+					"ore": 183,
+					"incassatoAP": 38317.31,
+					"oreAP": 241.5
+				},
+				"2": {
+					"incassato": 17796.96,
+					"ore": 124,
+					"incassatoAP": 15634.47,
+					"oreAP": 131.5
+				},
+				"3": {
+					"incassato": 6434.15,
+					"ore": 38,
+					"incassatoAP": 6332.45,
+					"oreAP": 78
+				},
+				"4": {
+					"incassato": 10052.56,
+					"ore": 36,
+					"incassatoAP": 8584.95,
+					"oreAP": 66.5
+				},
+				"5": {
+					"incassato": 259.96,
+					"ore": 0,
+					"incassatoAP": 340.24,
+					"oreAP": 0
+				},
+				"7": {
+					"incassato": 1733.88,
+					"ore": 0,
+					"incassatoAP": 1865.47,
+					"oreAP": 0
+				},
+				"9": {
+					"incassato": 1656.35,
+					"ore": 0,
+					"incassatoAP": 721.49,
+					"oreAP": 0
+				}
+			}
+		},
+		"0155": {
+			"descrizioneSede": "0155 - TREVIGLIO",
+			"categoriaSede": "A - SUP. VICINATO",
+			"areaSede": "Area 5",
+			"clienti": 3951,
+			"clientiAP": 4448,
+			"reparti": {
+				"1": {
+					"incassato": 62882.55,
+					"ore": 353,
+					"incassatoAP": 60136.5,
+					"oreAP": 420.5
+				},
+				"2": {
+					"incassato": 24106.76,
+					"ore": 136,
+					"incassatoAP": 22336.63,
+					"oreAP": 152
+				},
+				"3": {
+					"incassato": 7668.71,
+					"ore": 50.5,
+					"incassatoAP": 7136.55,
+					"oreAP": 49.5
+				},
+				"4": {
+					"incassato": 11222.2,
+					"ore": 61,
+					"incassatoAP": 10099.27,
+					"oreAP": 55.5
+				},
+				"5": {
+					"incassato": 618.67,
+					"ore": 0,
+					"incassatoAP": 790.82,
+					"oreAP": 0
+				},
+				"7": {
+					"incassato": 2017.38,
+					"ore": 28,
+					"incassatoAP": 2249.36,
+					"oreAP": 26
+				},
+				"8": {
+					"incassato": 0,
+					"ore": 0,
+					"incassatoAP": 0.7,
+					"oreAP": 0
+				},
+				"9": {
+					"incassato": 1028.9,
+					"ore": 0,
+					"incassatoAP": 524.02,
+					"oreAP": 0
+				}
+			}
+		},
+		"0156": {
+			"descrizioneSede": "0156 - STEZZANO",
+			"categoriaSede": "A - SUP. VICINATO",
+			"areaSede": "Area 1",
+			"clienti": 1622,
+			"clientiAP": 1862,
+			"reparti": {
+				"1": {
+					"incassato": 21267.01,
+					"ore": 166.5,
+					"incassatoAP": 17226.37,
+					"oreAP": 175.5
+				},
+				"2": {
+					"incassato": 8577.58,
+					"ore": 78,
+					"incassatoAP": 7388.77,
+					"oreAP": 87
+				},
+				"3": {
+					"incassato": 3442.99,
+					"ore": 34,
+					"incassatoAP": 2577.38,
+					"oreAP": 36.5
+				},
+				"4": {
+					"incassato": 5678.8,
+					"ore": 41.5,
+					"incassatoAP": 3581.39,
+					"oreAP": 32.5
+				},
+				"5": {
+					"incassato": 482.31,
+					"ore": 1.5,
+					"incassatoAP": 319.72,
+					"oreAP": 1.5
+				},
+				"6": {
+					"incassato": 0,
+					"ore": 0,
+					"incassatoAP": 0,
+					"oreAP": 0
+				},
+				"7": {
+					"incassato": 811.84,
+					"ore": 1.5,
+					"incassatoAP": 897.91,
+					"oreAP": 9.5
+				},
+				"8": {
+					"incassato": 0,
+					"ore": 0,
+					"incassatoAP": 0,
+					"oreAP": 0
+				},
+				"9": {
+					"incassato": 207.48,
+					"ore": 0,
+					"incassatoAP": 181.17,
+					"oreAP": 5
+				}
+			}
+		},
+		"0170": {
+			"descrizioneSede": "0170 - GUSSAGO",
+			"categoriaSede": "B - SUPERMERCATI",
+			"areaSede": "Area 1",
+			"clienti": 6014,
+			"clientiAP": 7021,
+			"reparti": {
+				"1": {
+					"incassato": 99071.37,
+					"ore": 436.5,
+					"incassatoAP": 81450.16,
+					"oreAP": 386
+				},
+				"2": {
+					"incassato": 41062.89,
+					"ore": 192.5,
+					"incassatoAP": 37859.25,
+					"oreAP": 214
+				},
+				"3": {
+					"incassato": 18684.99,
+					"ore": 86.5,
+					"incassatoAP": 12938.99,
+					"oreAP": 78.5
+				},
+				"4": {
+					"incassato": 27735.48,
+					"ore": 130.5,
+					"incassatoAP": 22284.37,
+					"oreAP": 104.5
+				},
+				"5": {
+					"incassato": 2058.21,
+					"ore": 0,
+					"incassatoAP": 1891.1,
+					"oreAP": 0
+				},
+				"6": {
+					"incassato": 0,
+					"ore": 0,
+					"incassatoAP": 0,
+					"oreAP": 0
+				},
+				"7": {
+					"incassato": 5770.14,
+					"ore": 72,
+					"incassatoAP": 6113.15,
+					"oreAP": 81
+				},
+				"8": {
+					"incassato": 0,
+					"ore": 0,
+					"incassatoAP": 0,
+					"oreAP": 0
+				},
+				"9": {
+					"incassato": 1952.63,
+					"ore": 0,
+					"incassatoAP": 1200.69,
+					"oreAP": 0
+				}
+			}
+		},
+		"0171": {
+			"descrizioneSede": "0171 - FRECCIAROSSA",
+			"categoriaSede": "B - SUPERMERCATI",
+			"areaSede": "Area 2",
+			"clienti": 7334,
+			"clientiAP": 10410,
+			"reparti": {
+				"1": {
+					"incassato": 54419.91,
+					"ore": 296.5,
+					"incassatoAP": 63658.79,
+					"oreAP": 322
+				},
+				"2": {
+					"incassato": 19347.6,
+					"ore": 127,
+					"incassatoAP": 20183.2,
+					"oreAP": 166
+				},
+				"3": {
+					"incassato": 7689.71,
+					"ore": 61.5,
+					"incassatoAP": 8135.38,
+					"oreAP": 66
+				},
+				"4": {
+					"incassato": 13945.33,
+					"ore": 44,
+					"incassatoAP": 14673.83,
+					"oreAP": 84.5
+				},
+				"5": {
+					"incassato": 2789.7,
+					"ore": 44,
+					"incassatoAP": 4305.24,
+					"oreAP": 84
+				},
+				"6": {
+					"incassato": 77.43,
+					"ore": 0,
+					"incassatoAP": 1371.53,
+					"oreAP": 154
+				},
+				"7": {
+					"incassato": 4611.58,
+					"ore": 123,
+					"incassatoAP": 4986.82,
+					"oreAP": 77
+				},
+				"8": {
+					"incassato": 8.17,
+					"ore": 12,
+					"incassatoAP": 0,
+					"oreAP": 0
+				},
+				"9": {
+					"incassato": 1920.3,
+					"ore": 18,
+					"incassatoAP": 1803.74,
+					"oreAP": 30
+				},
+				"10": {
+					"incassato": 100,
+					"ore": 0,
+					"incassatoAP": 301.11,
+					"oreAP": 0
+				}
+			}
+		},
+		"0172": {
+			"descrizioneSede": "0172 - ISORELLA",
+			"categoriaSede": "B - SUPERMERCATI",
+			"areaSede": "Area 5",
+			"clienti": 3052,
+			"clientiAP": 3723,
+			"reparti": {
+				"1": {
+					"incassato": 44355.66,
+					"ore": 225,
+					"incassatoAP": 42908.19,
+					"oreAP": 258
+				},
+				"2": {
+					"incassato": 18007.58,
+					"ore": 101,
+					"incassatoAP": 16492.68,
+					"oreAP": 118.5
+				},
+				"3": {
+					"incassato": 5457.28,
+					"ore": 47,
+					"incassatoAP": 5056.89,
+					"oreAP": 31.5
+				},
+				"4": {
+					"incassato": 9373.3,
+					"ore": 37,
+					"incassatoAP": 8843.42,
+					"oreAP": 49.5
+				},
+				"5": {
+					"incassato": 1310.34,
+					"ore": 38,
+					"incassatoAP": 2731.53,
+					"oreAP": 44.5
+				},
+				"6": {
+					"incassato": 0,
+					"ore": 0,
+					"incassatoAP": 417.83,
+					"oreAP": 7
+				},
+				"7": {
+					"incassato": 4155.24,
+					"ore": 74.5,
+					"incassatoAP": 4819.35,
+					"oreAP": 89.5
+				},
+				"9": {
+					"incassato": 622.03,
+					"ore": 6,
+					"incassatoAP": 508.83,
+					"oreAP": 6
+				}
+			}
+		},
+		"0173": {
+			"descrizioneSede": "0173 - MONTIRONE",
+			"categoriaSede": "B - SUPERMERCATI",
+			"areaSede": "Area 3",
+			"clienti": 4568,
+			"clientiAP": 5758,
+			"reparti": {
+				"1": {
+					"incassato": 52876.32,
+					"ore": 292,
+					"incassatoAP": 50484.46,
+					"oreAP": 282.5
+				},
+				"2": {
+					"incassato": 22546.94,
+					"ore": 129,
+					"incassatoAP": 22354.77,
+					"oreAP": 109
+				},
+				"3": {
+					"incassato": 8767.68,
+					"ore": 57,
+					"incassatoAP": 8636.73,
+					"oreAP": 56.5
+				},
+				"4": {
+					"incassato": 13682.86,
+					"ore": 62,
+					"incassatoAP": 13063.61,
+					"oreAP": 57
+				},
+				"5": {
+					"incassato": 1971.75,
+					"ore": 42.5,
+					"incassatoAP": 2964.29,
+					"oreAP": 52
+				},
+				"6": {
+					"incassato": 33,
+					"ore": 0,
+					"incassatoAP": 395.84,
+					"oreAP": 8
+				},
+				"7": {
+					"incassato": 5578.12,
+					"ore": 108.5,
+					"incassatoAP": 5490.08,
+					"oreAP": 92
+				},
+				"8": {
+					"incassato": 0,
+					"ore": 6,
+					"incassatoAP": 0,
+					"oreAP": 0
+				},
+				"9": {
+					"incassato": 773.59,
+					"ore": 6,
+					"incassatoAP": 593,
+					"oreAP": 12
+				},
+				"10": {
+					"incassato": 0,
+					"ore": 0,
+					"incassatoAP": 170,
+					"oreAP": 0
+				}
+			}
+		},
+		"0176": {
+			"descrizioneSede": "0176 - CASALMAGGIORE",
+			"categoriaSede": "B - SUPERMERCATI",
+			"areaSede": "Area 5",
+			"clienti": 3321,
+			"clientiAP": 3658,
+			"reparti": {
+				"1": {
+					"incassato": 47852.92,
+					"ore": 190,
+					"incassatoAP": 41352.63,
+					"oreAP": 153.5
+				},
+				"2": {
+					"incassato": 16290.56,
+					"ore": 103.5,
+					"incassatoAP": 13954.04,
+					"oreAP": 97
+				},
+				"3": {
+					"incassato": 5524.61,
+					"ore": 31,
+					"incassatoAP": 4460.18,
+					"oreAP": 38
+				},
+				"4": {
+					"incassato": 10263.63,
+					"ore": 56.5,
+					"incassatoAP": 8622.98,
+					"oreAP": 51.5
+				},
+				"5": {
+					"incassato": 1478.39,
+					"ore": 28.5,
+					"incassatoAP": 1933.61,
+					"oreAP": 34
+				},
+				"6": {
+					"incassato": 0,
+					"ore": 0,
+					"incassatoAP": 200.96,
+					"oreAP": 12
+				},
+				"7": {
+					"incassato": 4292.48,
+					"ore": 71,
+					"incassatoAP": 3835.73,
+					"oreAP": 71
+				},
+				"8": {
+					"incassato": 0,
+					"ore": 1,
+					"incassatoAP": 0,
+					"oreAP": 0
+				},
+				"9": {
+					"incassato": 1179.6,
+					"ore": 5,
+					"incassatoAP": 837.96,
+					"oreAP": 6
+				}
+			}
+		},
+		"0177": {
+			"descrizioneSede": "0177 - SONICO",
+			"categoriaSede": "B - SUPERMERCATI",
+			"areaSede": "Area 3",
+			"clienti": 5170,
+			"clientiAP": 5703,
+			"reparti": {
+				"1": {
+					"incassato": 96001.71,
+					"ore": 416,
+					"incassatoAP": 79776.24,
+					"oreAP": 405
+				},
+				"2": {
+					"incassato": 34827,
+					"ore": 174,
+					"incassatoAP": 30609.45,
+					"oreAP": 174
+				},
+				"3": {
+					"incassato": 10428.16,
+					"ore": 67.5,
+					"incassatoAP": 9564.65,
+					"oreAP": 64.5
+				},
+				"4": {
+					"incassato": 16693.49,
+					"ore": 74,
+					"incassatoAP": 13432.35,
+					"oreAP": 80.5
+				},
+				"5": {
+					"incassato": 6354,
+					"ore": 76,
+					"incassatoAP": 6470.73,
+					"oreAP": 94.5
+				},
+				"6": {
+					"incassato": 0,
+					"ore": 0,
+					"incassatoAP": 346.75,
+					"oreAP": 38
+				},
+				"7": {
+					"incassato": 8354.77,
+					"ore": 93,
+					"incassatoAP": 7335.62,
+					"oreAP": 90
+				},
+				"8": {
+					"incassato": 0,
+					"ore": 5,
+					"incassatoAP": 0,
+					"oreAP": 0
+				},
+				"9": {
+					"incassato": 2745.53,
+					"ore": 12,
+					"incassatoAP": 2185.85,
+					"oreAP": 17
+				},
+				"10": {
+					"incassato": 50,
+					"ore": 0,
+					"incassatoAP": 0,
+					"oreAP": 0
+				}
+			}
+		},
+		"0178": {
+			"descrizioneSede": "0178 - BAGNOLO MELLA",
+			"categoriaSede": "B - SUPERMERCATI",
+			"areaSede": "Area 2",
+			"clienti": 4969,
+			"clientiAP": 5139,
+			"reparti": {
+				"1": {
+					"incassato": 62549.33,
+					"ore": 300.5,
+					"incassatoAP": 49615.33,
+					"oreAP": 313.5
+				},
+				"2": {
+					"incassato": 23242.26,
+					"ore": 112.5,
+					"incassatoAP": 18394.92,
+					"oreAP": 108
+				},
+				"3": {
+					"incassato": 9664.42,
+					"ore": 60,
+					"incassatoAP": 8417.63,
+					"oreAP": 45.5
+				},
+				"4": {
+					"incassato": 13087.67,
+					"ore": 48,
+					"incassatoAP": 10614.3,
+					"oreAP": 50.5
+				},
+				"5": {
+					"incassato": 2996.23,
+					"ore": 41,
+					"incassatoAP": 2648.54,
+					"oreAP": 41
+				},
+				"6": {
+					"incassato": 29.3,
+					"ore": 6,
+					"incassatoAP": 214.32,
+					"oreAP": 7
+				},
+				"7": {
+					"incassato": 4009.35,
+					"ore": 106.5,
+					"incassatoAP": 3739.54,
+					"oreAP": 100.5
+				},
+				"8": {
+					"incassato": 0,
+					"ore": 1,
+					"incassatoAP": 0,
+					"oreAP": 0
+				},
+				"9": {
+					"incassato": 964.05,
+					"ore": 5,
+					"incassatoAP": 550.27,
+					"oreAP": 6
+				},
+				"10": {
+					"incassato": 100,
+					"ore": 0,
+					"incassatoAP": 0,
+					"oreAP": 0
+				}
+			}
+		},
+		"0179": {
+			"descrizioneSede": "0179 - VILLANUOVA SUL CLISI",
+			"categoriaSede": "C - SUPERSTORE",
+			"areaSede": "Area 5",
+			"clienti": 6189,
+			"clientiAP": 6813,
+			"reparti": {
+				"1": {
+					"incassato": 97818.7,
+					"ore": 359,
+					"incassatoAP": 85048.6,
+					"oreAP": 379.5
+				},
+				"2": {
+					"incassato": 33194.93,
+					"ore": 150,
+					"incassatoAP": 28868.44,
+					"oreAP": 157
+				},
+				"3": {
+					"incassato": 10678.36,
+					"ore": 83,
+					"incassatoAP": 9313.85,
+					"oreAP": 76
+				},
+				"4": {
+					"incassato": 16342.76,
+					"ore": 83,
+					"incassatoAP": 14443.36,
+					"oreAP": 70
+				},
+				"5": {
+					"incassato": 1583.84,
+					"ore": 2,
+					"incassatoAP": 1037.84,
+					"oreAP": 1
+				},
+				"7": {
+					"incassato": 5372.92,
+					"ore": 56,
+					"incassatoAP": 4956.6,
+					"oreAP": 58
+				},
+				"9": {
+					"incassato": 875.37,
+					"ore": 0,
+					"incassatoAP": 607.38,
+					"oreAP": 0
+				}
+			}
+		},
+		"0180": {
+			"descrizioneSede": "0180 - MONIGA",
+			"categoriaSede": "A - SUP. VICINATO",
+			"areaSede": "Area 4",
+			"clienti": 7830,
+			"clientiAP": 8825,
+			"reparti": {
+				"1": {
+					"incassato": 148656.12,
+					"ore": 605.5,
+					"incassatoAP": 147238.9,
+					"oreAP": 584
+				},
+				"2": {
+					"incassato": 49872.83,
+					"ore": 226.5,
+					"incassatoAP": 46655.82,
+					"oreAP": 216
+				},
+				"3": {
+					"incassato": 17913.65,
+					"ore": 74,
+					"incassatoAP": 17652.44,
+					"oreAP": 70
+				},
+				"4": {
+					"incassato": 28843.56,
+					"ore": 95,
+					"incassatoAP": 30201.08,
+					"oreAP": 104
+				},
+				"5": {
+					"incassato": 3439.32,
+					"ore": 0,
+					"incassatoAP": 3085.55,
+					"oreAP": 0
+				},
+				"6": {
+					"incassato": 0,
+					"ore": 0,
+					"incassatoAP": 9.28,
+					"oreAP": 0
+				},
+				"7": {
+					"incassato": 10457.92,
+					"ore": 41,
+					"incassatoAP": 10283.78,
+					"oreAP": 55
+				},
+				"8": {
+					"incassato": 0,
+					"ore": 0,
+					"incassatoAP": 0,
+					"oreAP": 0
+				},
+				"9": {
+					"incassato": 2609.11,
+					"ore": 0,
+					"incassatoAP": 1972.53,
+					"oreAP": 0
+				},
+				"10": {
+					"incassato": 0,
+					"ore": 0,
+					"incassatoAP": 600,
+					"oreAP": 0
+				}
+			}
+		},
+		"0181": {
+			"descrizioneSede": "0181 - CREMONA",
+			"categoriaSede": "B - SUPERMERCATI",
+			"areaSede": "Area 4",
+			"clienti": 4133,
+			"clientiAP": 4782,
+			"reparti": {
+				"1": {
+					"incassato": 56442.37,
+					"ore": 300.5,
+					"incassatoAP": 51958.36,
+					"oreAP": 325
+				},
+				"2": {
+					"incassato": 19827.38,
+					"ore": 136.5,
+					"incassatoAP": 18532.07,
+					"oreAP": 128.5
+				},
+				"3": {
+					"incassato": 8862.2,
+					"ore": 64.5,
+					"incassatoAP": 7863.8,
+					"oreAP": 62
+				},
+				"4": {
+					"incassato": 12421.36,
+					"ore": 66,
+					"incassatoAP": 11107.8,
+					"oreAP": 66
+				},
+				"5": {
+					"incassato": 1278.23,
+					"ore": 0,
+					"incassatoAP": 1099.56,
+					"oreAP": 0
+				},
+				"7": {
+					"incassato": 2983.3,
+					"ore": 0,
+					"incassatoAP": 2825.66,
+					"oreAP": 0
+				},
+				"9": {
+					"incassato": 766.33,
+					"ore": 0,
+					"incassatoAP": 540.83,
+					"oreAP": 0
+				},
+				"10": {
+					"incassato": 0,
+					"ore": 0,
+					"incassatoAP": 50,
+					"oreAP": 0
+				}
+			}
+		},
+		"0184": {
+			"descrizioneSede": "0184 - SIRMIONE",
+			"categoriaSede": "A - SUP. VICINATO",
+			"areaSede": "Area 3",
+			"clienti": 2256,
+			"clientiAP": 2236,
+			"reparti": {
+				"1": {
+					"incassato": 32759.77,
+					"ore": 153.5,
+					"incassatoAP": 27011.33,
+					"oreAP": 158
+				},
+				"2": {
+					"incassato": 10922.07,
+					"ore": 82.5,
+					"incassatoAP": 9571.47,
+					"oreAP": 85
+				},
+				"3": {
+					"incassato": 3479.43,
+					"ore": 34,
+					"incassatoAP": 2626.91,
+					"oreAP": 24
+				},
+				"4": {
+					"incassato": 7416.55,
+					"ore": 33.5,
+					"incassatoAP": 5891.91,
+					"oreAP": 33
+				},
+				"5": {
+					"incassato": 558.88,
+					"ore": 0,
+					"incassatoAP": 593.62,
+					"oreAP": 0
+				},
+				"7": {
+					"incassato": 2203.09,
+					"ore": 0,
+					"incassatoAP": 1750.95,
+					"oreAP": 0
+				},
+				"9": {
+					"incassato": 306.25,
+					"ore": 0,
+					"incassatoAP": 69.83,
+					"oreAP": 0
+				}
+			}
+		},
+		"0185": {
+			"descrizioneSede": "0185 - MUGGIO'",
+			"categoriaSede": "A - SUP. VICINATO",
+			"areaSede": "Area 4",
+			"clienti": 1644,
+			"clientiAP": 1458,
+			"reparti": {
+				"1": {
+					"incassato": 18692.02,
+					"ore": 146,
+					"incassatoAP": 12481.71,
+					"oreAP": 160.5
+				},
+				"2": {
+					"incassato": 7763.11,
+					"ore": 78.5,
+					"incassatoAP": 5015.31,
+					"oreAP": 111
+				},
+				"3": {
+					"incassato": 2924.76,
+					"ore": 34,
+					"incassatoAP": 1991.66,
+					"oreAP": 37
+				},
+				"4": {
+					"incassato": 4455.54,
+					"ore": 33.5,
+					"incassatoAP": 2525.21,
+					"oreAP": 25
+				},
+				"5": {
+					"incassato": 333.06,
+					"ore": 0,
+					"incassatoAP": 170.62,
+					"oreAP": 0
+				},
+				"6": {
+					"incassato": 0,
+					"ore": 0,
+					"incassatoAP": 0,
+					"oreAP": 0
+				},
+				"7": {
+					"incassato": 1124.17,
+					"ore": 0,
+					"incassatoAP": 740.93,
+					"oreAP": 0
+				},
+				"8": {
+					"incassato": 0,
+					"ore": 0,
+					"incassatoAP": 0,
+					"oreAP": 0
+				},
+				"9": {
+					"incassato": 176.98,
+					"ore": 0,
+					"incassatoAP": 53.51,
+					"oreAP": 0
+				},
+				"91": {
+					"incassato": 0,
+					"ore": 0,
+					"incassatoAP": 0,
+					"oreAP": 0
+				}
+			}
+		},
+		"0186": {
+			"descrizioneSede": "0186 - CAIRATE",
+			"categoriaSede": "A - SUP. VICINATO",
+			"areaSede": "Area 1",
+			"clienti": 1420,
+			"clientiAP": 1515,
+			"reparti": {
+				"1": {
+					"incassato": 20299.82,
+					"ore": 125.5,
+					"incassatoAP": 19453.14,
+					"oreAP": 167.5
+				},
+				"2": {
+					"incassato": 8479.87,
+					"ore": 71.5,
+					"incassatoAP": 8010.89,
+					"oreAP": 74.5
+				},
+				"3": {
+					"incassato": 2526.92,
+					"ore": 38,
+					"incassatoAP": 2568.9,
+					"oreAP": 57.5
+				},
+				"4": {
+					"incassato": 4828.42,
+					"ore": 41,
+					"incassatoAP": 3530.1,
+					"oreAP": 38.5
+				},
+				"5": {
+					"incassato": 166.69,
+					"ore": 0,
+					"incassatoAP": 263.6,
+					"oreAP": 0
+				},
+				"7": {
+					"incassato": 831.75,
+					"ore": 7,
+					"incassatoAP": 764.41,
+					"oreAP": 23.5
+				},
+				"9": {
+					"incassato": 229.16,
+					"ore": 0,
+					"incassatoAP": 106.34,
+					"oreAP": 0
+				}
+			}
+		},
+		"0188": {
+			"descrizioneSede": "0188 - CALCINATO",
+			"categoriaSede": "A - SUP. VICINATO",
+			"areaSede": "Area 1",
+			"clienti": 5436,
+			"clientiAP": 6192,
+			"reparti": {
+				"1": {
+					"incassato": 68101.1,
+					"ore": 310,
+					"incassatoAP": 57655.83,
+					"oreAP": 321
+				},
+				"2": {
+					"incassato": 27260.81,
+					"ore": 151.5,
+					"incassatoAP": 23826.26,
+					"oreAP": 151.5
+				},
+				"3": {
+					"incassato": 10165.47,
+					"ore": 102.5,
+					"incassatoAP": 8082.27,
+					"oreAP": 82.5
+				},
+				"4": {
+					"incassato": 17749.81,
+					"ore": 86.5,
+					"incassatoAP": 14277.86,
+					"oreAP": 104.5
+				},
+				"5": {
+					"incassato": 3916.31,
+					"ore": 45.5,
+					"incassatoAP": 5118.95,
+					"oreAP": 80
+				},
+				"6": {
+					"incassato": 0,
+					"ore": 0,
+					"incassatoAP": 298.26,
+					"oreAP": 14
+				},
+				"7": {
+					"incassato": 6176.8,
+					"ore": 114,
+					"incassatoAP": 6810.48,
+					"oreAP": 113.5
+				},
+				"8": {
+					"incassato": 0,
+					"ore": 0,
+					"incassatoAP": 0,
+					"oreAP": 0
+				},
+				"9": {
+					"incassato": 3097.62,
+					"ore": 41,
+					"incassatoAP": 2895.22,
+					"oreAP": 38
+				},
+				"10": {
+					"incassato": 0,
+					"ore": 0,
+					"incassatoAP": 50,
+					"oreAP": 0
+				}
+			}
+		},
+		"0190": {
+			"descrizioneSede": "0190 - GHEDI 2",
+			"categoriaSede": "A - SUP. VICINATO",
+			"areaSede": "Area 4",
+			"clienti": 3675,
+			"clientiAP": 3053,
+			"reparti": {
+				"1": {
+					"incassato": 50655.89,
+					"ore": 286,
+					"incassatoAP": 30410.96,
+					"oreAP": 345.5
+				},
+				"2": {
+					"incassato": 20827.2,
+					"ore": 119.5,
+					"incassatoAP": 11608.1,
+					"oreAP": 131.5
+				},
+				"3": {
+					"incassato": 7854.24,
+					"ore": 50,
+					"incassatoAP": 5034.1,
+					"oreAP": 66
+				},
+				"4": {
+					"incassato": 12278.39,
+					"ore": 46.5,
+					"incassatoAP": 7217.28,
+					"oreAP": 41.5
+				},
+				"5": {
+					"incassato": 2348.13,
+					"ore": 42,
+					"incassatoAP": 1800.33,
+					"oreAP": 41
+				},
+				"6": {
+					"incassato": 0,
+					"ore": 0,
+					"incassatoAP": 319.4,
+					"oreAP": 14
+				},
+				"7": {
+					"incassato": 4588.65,
+					"ore": 97,
+					"incassatoAP": 2892,
+					"oreAP": 98
+				},
+				"8": {
+					"incassato": 0.84,
+					"ore": 0,
+					"incassatoAP": 0,
+					"oreAP": 0
+				},
+				"9": {
+					"incassato": 1363.44,
+					"ore": 17.5,
+					"incassatoAP": 886.14,
+					"oreAP": 22
+				}
+			}
+		},
+		"0202": {
+			"descrizioneSede": "0202 - SONCINO",
+			"categoriaSede": "B - SUPERMERCATI",
+			"areaSede": "Area 3",
+			"clienti": 2592,
+			"clientiAP": 0,
+			"reparti": {
+				"1": {
+					"incassato": 40975.31,
+					"ore": 240.5,
+					"incassatoAP": 0,
+					"oreAP": 0
+				},
+				"2": {
+					"incassato": 16516.26,
+					"ore": 137.5,
+					"incassatoAP": 0,
+					"oreAP": 0
+				},
+				"3": {
+					"incassato": 5184.63,
+					"ore": 50.5,
+					"incassatoAP": 0,
+					"oreAP": 0
+				},
+				"4": {
+					"incassato": 8482.7,
+					"ore": 38,
+					"incassatoAP": 0,
+					"oreAP": 0
+				},
+				"5": {
+					"incassato": 2666.45,
+					"ore": 45.5,
+					"incassatoAP": 0,
+					"oreAP": 0
+				},
+				"6": {
+					"incassato": 23.65,
+					"ore": 0,
+					"incassatoAP": 0,
+					"oreAP": 0
+				},
+				"7": {
+					"incassato": 4641.07,
+					"ore": 92,
+					"incassatoAP": 0,
+					"oreAP": 0
+				},
+				"8": {
+					"incassato": 0,
+					"ore": 0,
+					"incassatoAP": 0,
+					"oreAP": 0
+				},
+				"9": {
+					"incassato": 1768.66,
+					"ore": 20,
+					"incassatoAP": 0,
+					"oreAP": 0
+				}
+			}
+		},
+		"0461": {
+			"descrizioneSede": "0461 - ISEO",
+			"categoriaSede": "B - SUPERMERCATI",
+			"areaSede": "Area 2",
+			"clienti": 5664,
+			"clientiAP": 8236,
+			"reparti": {
+				"1": {
+					"incassato": 83608.47,
+					"ore": 364,
+					"incassatoAP": 84933.57,
+					"oreAP": 429.5
+				},
+				"2": {
+					"incassato": 32134.39,
+					"ore": 162,
+					"incassatoAP": 38323.62,
+					"oreAP": 217.5
+				},
+				"3": {
+					"incassato": 15137.83,
+					"ore": 63.5,
+					"incassatoAP": 13615.76,
+					"oreAP": 67
+				},
+				"4": {
+					"incassato": 23296.42,
+					"ore": 90,
+					"incassatoAP": 21818.74,
+					"oreAP": 112
+				},
+				"5": {
+					"incassato": 1893.44,
+					"ore": 0,
+					"incassatoAP": 2546.83,
+					"oreAP": 0
+				},
+				"6": {
+					"incassato": 0,
+					"ore": 0,
+					"incassatoAP": 0,
+					"oreAP": 0
+				},
+				"7": {
+					"incassato": 5655.88,
+					"ore": 44,
+					"incassatoAP": 6524.01,
+					"oreAP": 52
+				},
+				"8": {
+					"incassato": 0,
+					"ore": 52,
+					"incassatoAP": 0,
+					"oreAP": 0
+				},
+				"9": {
+					"incassato": 3864.64,
+					"ore": 13,
+					"incassatoAP": 3752.78,
+					"oreAP": 65
+				}
+			}
+		},
+		"0462": {
+			"descrizioneSede": "0462 - CASTELLEONE",
+			"categoriaSede": "B - SUPERMERCATI",
+			"areaSede": "Area 2",
+			"clienti": 5496,
+			"clientiAP": 5844,
+			"reparti": {
+				"1": {
+					"incassato": 102013.78,
+					"ore": 545,
+					"incassatoAP": 91812.84,
+					"oreAP": 480
+				},
+				"2": {
+					"incassato": 40430.6,
+					"ore": 176,
+					"incassatoAP": 36430.81,
+					"oreAP": 144
+				},
+				"3": {
+					"incassato": 15046.43,
+					"ore": 78,
+					"incassatoAP": 13431.13,
+					"oreAP": 73
+				},
+				"4": {
+					"incassato": 25353.37,
+					"ore": 82,
+					"incassatoAP": 22245.21,
+					"oreAP": 85
+				},
+				"5": {
+					"incassato": 1484.65,
+					"ore": 1,
+					"incassatoAP": 1449.3,
+					"oreAP": 1
+				},
+				"7": {
+					"incassato": 4905.52,
+					"ore": 32,
+					"incassatoAP": 4583.56,
+					"oreAP": 31
+				},
+				"9": {
+					"incassato": 5374.5,
+					"ore": 59,
+					"incassatoAP": 4105.7,
+					"oreAP": 49
+				},
+				"10": {
+					"incassato": 0,
+					"ore": 0,
+					"incassatoAP": 3.97,
+					"oreAP": 0
+				}
+			}
+		},
+		"0463": {
+			"descrizioneSede": "0463 - BEDIZZOLE",
+			"categoriaSede": "B - SUPERMERCATI",
+			"areaSede": "Area 3",
+			"clienti": 5393,
+			"clientiAP": 5540,
+			"reparti": {
+				"1": {
+					"incassato": 95736,
+					"ore": 460.5,
+					"incassatoAP": 73073,
+					"oreAP": 397
+				},
+				"2": {
+					"incassato": 37866.54,
+					"ore": 190.5,
+					"incassatoAP": 28609.16,
+					"oreAP": 146.5
+				},
+				"3": {
+					"incassato": 12272.77,
+					"ore": 47,
+					"incassatoAP": 9142.98,
+					"oreAP": 42.5
+				},
+				"4": {
+					"incassato": 21622.1,
+					"ore": 107.5,
+					"incassatoAP": 17433.37,
+					"oreAP": 83.5
+				},
+				"5": {
+					"incassato": 5179.15,
+					"ore": 51.5,
+					"incassatoAP": 5837.25,
+					"oreAP": 67.5
+				},
+				"6": {
+					"incassato": 13.05,
+					"ore": 0,
+					"incassatoAP": 399.69,
+					"oreAP": 17
+				},
+				"7": {
+					"incassato": 6757.18,
+					"ore": 121.5,
+					"incassatoAP": 6199.54,
+					"oreAP": 104
+				},
+				"8": {
+					"incassato": 0,
+					"ore": 0,
+					"incassatoAP": 1.2,
+					"oreAP": 0
+				},
+				"9": {
+					"incassato": 3400.82,
+					"ore": 25,
+					"incassatoAP": 2602.39,
+					"oreAP": 19.5
+				},
+				"10": {
+					"incassato": 0,
+					"ore": 0,
+					"incassatoAP": 1300,
+					"oreAP": 0
+				}
+			}
+		},
+		"0464": {
+			"descrizioneSede": "0464 - GRUMELLO DEL MONTE",
+			"categoriaSede": "B - SUPERMERCATI",
+			"areaSede": "Area 4",
+			"clienti": 5688,
+			"clientiAP": 6972,
+			"reparti": {
+				"1": {
+					"incassato": 87067.05,
+					"ore": 369.5,
+					"incassatoAP": 82540.01,
+					"oreAP": 374.5
+				},
+				"2": {
+					"incassato": 42099.47,
+					"ore": 205.5,
+					"incassatoAP": 40650.42,
+					"oreAP": 226
+				},
+				"3": {
+					"incassato": 13166.65,
+					"ore": 72.5,
+					"incassatoAP": 11617.17,
+					"oreAP": 70.5
+				},
+				"4": {
+					"incassato": 20221.5,
+					"ore": 86.5,
+					"incassatoAP": 19940.54,
+					"oreAP": 99
+				},
+				"5": {
+					"incassato": 1794.88,
+					"ore": 2,
+					"incassatoAP": 1751.52,
+					"oreAP": 2
+				},
+				"7": {
+					"incassato": 3944.15,
+					"ore": 32,
+					"incassatoAP": 4198.83,
+					"oreAP": 35
+				},
+				"8": {
+					"incassato": 0.61,
+					"ore": 39.5,
+					"incassatoAP": 0,
+					"oreAP": 0
+				},
+				"9": {
+					"incassato": 3646.42,
+					"ore": 25,
+					"incassatoAP": 3529.73,
+					"oreAP": 67.5
+				},
+				"10": {
+					"incassato": 0,
+					"ore": 0,
+					"incassatoAP": 50,
+					"oreAP": 0
+				}
+			}
+		},
+		"0465": {
+			"descrizioneSede": "0465 - SAN PANCRAZIO",
+			"categoriaSede": "B - SUPERMERCATI",
+			"areaSede": "Area 1",
+			"clienti": 3012,
+			"clientiAP": 3957,
+			"reparti": {
+				"1": {
+					"incassato": 40812.06,
+					"ore": 278.5,
+					"incassatoAP": 38892.8,
+					"oreAP": 217.5
+				},
+				"2": {
+					"incassato": 18238.61,
+					"ore": 119,
+					"incassatoAP": 19187.15,
+					"oreAP": 145.5
+				},
+				"3": {
+					"incassato": 7129.23,
+					"ore": 41,
+					"incassatoAP": 6130.17,
+					"oreAP": 38
+				},
+				"4": {
+					"incassato": 11655.59,
+					"ore": 57,
+					"incassatoAP": 10254.73,
+					"oreAP": 37
+				},
+				"5": {
+					"incassato": 783.5,
+					"ore": 0,
+					"incassatoAP": 719.47,
+					"oreAP": 0
+				},
+				"6": {
+					"incassato": 0,
+					"ore": 0,
+					"incassatoAP": 0,
+					"oreAP": 0
+				},
+				"7": {
+					"incassato": 2176.38,
+					"ore": 18,
+					"incassatoAP": 2503.77,
+					"oreAP": 22
+				},
+				"8": {
+					"incassato": 0,
+					"ore": 0,
+					"incassatoAP": 0,
+					"oreAP": 0
+				},
+				"9": {
+					"incassato": 445.71,
+					"ore": 0,
+					"incassatoAP": 263.46,
+					"oreAP": 0
+				}
+			}
+		},
+		"0466": {
+			"descrizioneSede": "0466 - TRESCORE BALNEARIO",
+			"categoriaSede": "B - SUPERMERCATI",
+			"areaSede": "Area 1",
+			"clienti": 2600,
+			"clientiAP": 3124,
+			"reparti": {
+				"1": {
+					"incassato": 31220.48,
+					"ore": 182,
+					"incassatoAP": 29927.44,
+					"oreAP": 194.5
+				},
+				"2": {
+					"incassato": 14504.19,
+					"ore": 109.5,
+					"incassatoAP": 14640.96,
+					"oreAP": 99.5
+				},
+				"3": {
+					"incassato": 5483.15,
+					"ore": 32,
+					"incassatoAP": 5065.31,
+					"oreAP": 32
+				},
+				"4": {
+					"incassato": 5965.13,
+					"ore": 30,
+					"incassatoAP": 6364.42,
+					"oreAP": 33
+				},
+				"5": {
+					"incassato": 739.47,
+					"ore": 0,
+					"incassatoAP": 550.24,
+					"oreAP": 0
+				},
+				"7": {
+					"incassato": 1344.45,
+					"ore": 6,
+					"incassatoAP": 1422.52,
+					"oreAP": 6
+				},
+				"9": {
+					"incassato": 204.72,
+					"ore": 0,
+					"incassatoAP": 172.26,
+					"oreAP": 0
+				}
+			}
+		},
+		"0467": {
+			"descrizioneSede": "0467 - CAPRIOLO",
+			"categoriaSede": "B - SUPERMERCATI",
+			"areaSede": "Area 1",
+			"clienti": 4587,
+			"clientiAP": 3925,
+			"reparti": {
+				"1": {
+					"incassato": 71532.8,
+					"ore": 360,
+					"incassatoAP": 52640.5,
+					"oreAP": 279
+				},
+				"2": {
+					"incassato": 29498.35,
+					"ore": 141.5,
+					"incassatoAP": 21824.32,
+					"oreAP": 126.5
+				},
+				"3": {
+					"incassato": 10776.82,
+					"ore": 62,
+					"incassatoAP": 7542.64,
+					"oreAP": 64
+				},
+				"4": {
+					"incassato": 15112.55,
+					"ore": 77.5,
+					"incassatoAP": 11825.14,
+					"oreAP": 67
+				},
+				"5": {
+					"incassato": 1329.31,
+					"ore": 0,
+					"incassatoAP": 1022.34,
+					"oreAP": 0
+				},
+				"7": {
+					"incassato": 3416.38,
+					"ore": 20,
+					"incassatoAP": 2901.61,
+					"oreAP": 14
+				},
+				"8": {
+					"incassato": 1.46,
+					"ore": 0,
+					"incassatoAP": 0,
+					"oreAP": 0
+				},
+				"9": {
+					"incassato": 938.77,
+					"ore": 1,
+					"incassatoAP": 525.16,
+					"oreAP": 1
+				}
+			}
+		},
+		"0468": {
+			"descrizioneSede": "0468 - SAN MARTINO SICCOMARIO",
+			"categoriaSede": "B - SUPERMERCATI",
+			"areaSede": "Area 2",
+			"clienti": 3598,
+			"clientiAP": 3406,
+			"reparti": {
+				"1": {
+					"incassato": 67580.62,
+					"ore": 347,
+					"incassatoAP": 56908.37,
+					"oreAP": 308.5
+				},
+				"2": {
+					"incassato": 28441.47,
+					"ore": 124,
+					"incassatoAP": 22171.52,
+					"oreAP": 132.5
+				},
+				"3": {
+					"incassato": 11089.38,
+					"ore": 78,
+					"incassatoAP": 8453.95,
+					"oreAP": 68.5
+				},
+				"4": {
+					"incassato": 18538.01,
+					"ore": 64,
+					"incassatoAP": 13484.06,
+					"oreAP": 74.5
+				},
+				"5": {
+					"incassato": 771.06,
+					"ore": 29,
+					"incassatoAP": 803.57,
+					"oreAP": 0
+				},
+				"6": {
+					"incassato": 0.49,
+					"ore": 0,
+					"incassatoAP": 0,
+					"oreAP": 0
+				},
+				"7": {
+					"incassato": 2661.54,
+					"ore": 0,
+					"incassatoAP": 2153.93,
+					"oreAP": 0
+				},
+				"8": {
+					"incassato": 5.5,
+					"ore": 26,
+					"incassatoAP": 0,
+					"oreAP": 0
+				},
+				"9": {
+					"incassato": 3727.6,
+					"ore": 20.5,
+					"incassatoAP": 2678.81,
+					"oreAP": 41
+				}
+			}
+		},
+		"0501": {
+			"descrizioneSede": "0501 - ELNOS",
+			"categoriaSede": "A - SUP. VICINATO",
+			"areaSede": "Area 5",
+			"clienti": 7274,
+			"clientiAP": 0,
+			"reparti": {
+				"1": {
+					"incassato": 65609.18,
+					"ore": 615.5,
+					"incassatoAP": 0,
+					"oreAP": 0
+				},
+				"2": {
+					"incassato": 26728.6,
+					"ore": 243.5,
+					"incassatoAP": 0,
+					"oreAP": 0
+				},
+				"3": {
+					"incassato": 12525.57,
+					"ore": 154,
+					"incassatoAP": 0,
+					"oreAP": 0
+				},
+				"4": {
+					"incassato": 16483.73,
+					"ore": 166,
+					"incassatoAP": 0,
+					"oreAP": 0
+				},
+				"5": {
+					"incassato": 12691.4,
+					"ore": 536,
+					"incassatoAP": 0,
+					"oreAP": 0
+				},
+				"6": {
+					"incassato": 1717.13,
+					"ore": 0,
+					"incassatoAP": 0,
+					"oreAP": 0
+				},
+				"7": {
+					"incassato": 6904,
+					"ore": 221,
+					"incassatoAP": 0,
+					"oreAP": 0
+				},
+				"8": {
+					"incassato": 4125.51,
+					"ore": 0,
+					"incassatoAP": 0,
+					"oreAP": 0
+				},
+				"9": {
+					"incassato": 5737.59,
+					"ore": 144.5,
+					"incassatoAP": 0,
+					"oreAP": 0
+				},
+				"10": {
+					"incassato": 0,
+					"ore": 0,
+					"incassatoAP": 0,
+					"oreAP": 0
+				}
+			}
+		},
+		"3151": {
+			"descrizioneSede": "3151 - FLERO",
+			"categoriaSede": "C - SUPERSTORE",
+			"areaSede": "Area 0",
+			"clienti": 4833,
+			"clientiAP": 5010,
+			"reparti": {
+				"1": {
+					"incassato": 77398.01,
+					"ore": 411,
+					"incassatoAP": 70300.22,
+					"oreAP": 352.5
+				},
+				"2": {
+					"incassato": 32537.05,
+					"ore": 161,
+					"incassatoAP": 31362.72,
+					"oreAP": 171
+				},
+				"3": {
+					"incassato": 11819.56,
+					"ore": 73,
+					"incassatoAP": 10974.47,
+					"oreAP": 71.5
+				},
+				"4": {
+					"incassato": 20073.47,
+					"ore": 76,
+					"incassatoAP": 17190.15,
+					"oreAP": 74
+				},
+				"5": {
+					"incassato": 2363.81,
+					"ore": 30.5,
+					"incassatoAP": 2824.35,
+					"oreAP": 41.5
+				},
+				"6": {
+					"incassato": 0.6,
+					"ore": 0,
+					"incassatoAP": 318.61,
+					"oreAP": 10
+				},
+				"7": {
+					"incassato": 5077.68,
+					"ore": 101.5,
+					"incassatoAP": 5803.17,
+					"oreAP": 103
+				},
+				"8": {
+					"incassato": 0.85,
+					"ore": 22.5,
+					"incassatoAP": 0,
+					"oreAP": 0
+				},
+				"9": {
+					"incassato": 2447.16,
+					"ore": 0,
+					"incassatoAP": 1763.88,
+					"oreAP": 24.5
+				},
+				"10": {
+					"incassato": 0,
+					"ore": 0,
+					"incassatoAP": 185,
+					"oreAP": 0
+				},
+				"91": {
+					"incassato": 0,
+					"ore": 0,
+					"incassatoAP": 55,
+					"oreAP": 0
+				}
+			}
+		},
+		"3152": {
+			"descrizioneSede": "3152 - NAVE",
+			"categoriaSede": "C - SUPERSTORE",
+			"areaSede": "Area 5",
+			"clienti": 6002,
+			"clientiAP": 6483,
+			"reparti": {
+				"1": {
+					"incassato": 84641.95,
+					"ore": 400.5,
+					"incassatoAP": 76554.54,
+					"oreAP": 428.5
+				},
+				"2": {
+					"incassato": 38446.86,
+					"ore": 187,
+					"incassatoAP": 35154.67,
+					"oreAP": 186
+				},
+				"3": {
+					"incassato": 13306.63,
+					"ore": 80.5,
+					"incassatoAP": 11666.03,
+					"oreAP": 71.5
+				},
+				"4": {
+					"incassato": 21210.49,
+					"ore": 89,
+					"incassatoAP": 20358.76,
+					"oreAP": 85.5
+				},
+				"5": {
+					"incassato": 3361.95,
+					"ore": 45,
+					"incassatoAP": 3871.48,
+					"oreAP": 51.5
+				},
+				"6": {
+					"incassato": 157.57,
+					"ore": 0,
+					"incassatoAP": 365,
+					"oreAP": 21
+				},
+				"7": {
+					"incassato": 7919.88,
+					"ore": 128,
+					"incassatoAP": 7152.62,
+					"oreAP": 107.5
+				},
+				"8": {
+					"incassato": 0,
+					"ore": 5,
+					"incassatoAP": 2.3,
+					"oreAP": 0
+				},
+				"9": {
+					"incassato": 2383.62,
+					"ore": 18,
+					"incassatoAP": 1874.28,
+					"oreAP": 18
+				},
+				"10": {
+					"incassato": 200,
+					"ore": 0,
+					"incassatoAP": 5,
+					"oreAP": 0
+				}
+			}
+		},
+		"3650": {
+			"descrizioneSede": "3650 - VIA CHIESA",
+			"categoriaSede": "A - SUP. VICINATO",
+			"areaSede": "Area 5",
+			"clienti": 2827,
+			"clientiAP": 3351,
+			"reparti": {
+				"1": {
+					"incassato": 18539.58,
+					"ore": 156.5,
+					"incassatoAP": 20255.78,
+					"oreAP": 157
+				},
+				"2": {
+					"incassato": 10177.81,
+					"ore": 98,
+					"incassatoAP": 11194.59,
+					"oreAP": 98
+				},
+				"3": {
+					"incassato": 4690.08,
+					"ore": 35.5,
+					"incassatoAP": 4581.88,
+					"oreAP": 39
+				},
+				"4": {
+					"incassato": 4995.62,
+					"ore": 30,
+					"incassatoAP": 5371.27,
+					"oreAP": 28
+				},
+				"5": {
+					"incassato": 395.96,
+					"ore": 0,
+					"incassatoAP": 375.74,
+					"oreAP": 0
+				},
+				"6": {
+					"incassato": 2.4,
+					"ore": 0,
+					"incassatoAP": 0,
+					"oreAP": 0
+				},
+				"7": {
+					"incassato": 1405.75,
+					"ore": 0,
+					"incassatoAP": 1716.07,
+					"oreAP": 0
+				},
+				"8": {
+					"incassato": 7.49,
+					"ore": 0,
+					"incassatoAP": 0,
+					"oreAP": 0
+				},
+				"9": {
+					"incassato": 282.42,
+					"ore": 0,
+					"incassatoAP": 51.73,
+					"oreAP": 0
+				},
+				"10": {
+					"incassato": 0,
+					"ore": 0,
+					"incassatoAP": 105,
+					"oreAP": 0
+				},
+				"91": {
+					"incassato": 0,
+					"ore": 0,
+					"incassatoAP": 46.5,
+					"oreAP": 0
+				}
+			}
+		},
+		"3652": {
+			"descrizioneSede": "3652 - VOBARNO",
+			"categoriaSede": "A - SUP. VICINATO",
+			"areaSede": "Area 5",
+			"clienti": 2909,
+			"clientiAP": 3164,
+			"reparti": {
+				"1": {
+					"incassato": 19642.68,
+					"ore": 144.5,
+					"incassatoAP": 17214.67,
+					"oreAP": 144
+				},
+				"2": {
+					"incassato": 8143.97,
+					"ore": 80,
+					"incassatoAP": 8078.6,
+					"oreAP": 76
+				},
+				"3": {
+					"incassato": 3395.35,
+					"ore": 28.5,
+					"incassatoAP": 3158.21,
+					"oreAP": 27
+				},
+				"4": {
+					"incassato": 4707.82,
+					"ore": 25.5,
+					"incassatoAP": 4730.84,
+					"oreAP": 23.5
+				},
+				"5": {
+					"incassato": 273.89,
+					"ore": 0,
+					"incassatoAP": 261.06,
+					"oreAP": 0
+				},
+				"7": {
+					"incassato": 1570.91,
+					"ore": 9,
+					"incassatoAP": 1519.99,
+					"oreAP": 12
+				},
+				"9": {
+					"incassato": 331.7,
+					"ore": 0,
+					"incassatoAP": 210.61,
+					"oreAP": 0
+				},
+				"10": {
+					"incassato": 20,
+					"ore": 0,
+					"incassatoAP": 10,
+					"oreAP": 0
+				}
+			}
+		},
+		"3654": {
+			"descrizioneSede": "3654 - LUMEZZANE",
+			"categoriaSede": "A - SUP. VICINATO",
+			"areaSede": "Area 4",
+			"clienti": 3508,
+			"clientiAP": 2753,
+			"reparti": {
+				"1": {
+					"incassato": 48762.64,
+					"ore": 244.5,
+					"incassatoAP": 25335.96,
+					"oreAP": 147.5
+				},
+				"2": {
+					"incassato": 18984.1,
+					"ore": 102.5,
+					"incassatoAP": 9487.8,
+					"oreAP": 90.5
+				},
+				"3": {
+					"incassato": 8388.3,
+					"ore": 39.5,
+					"incassatoAP": 3868.82,
+					"oreAP": 31.5
+				},
+				"4": {
+					"incassato": 10918.86,
+					"ore": 52.5,
+					"incassatoAP": 6614.1,
+					"oreAP": 42
+				},
+				"5": {
+					"incassato": 785.64,
+					"ore": 0,
+					"incassatoAP": 433.62,
+					"oreAP": 0
+				},
+				"6": {
+					"incassato": 2.4,
+					"ore": 0,
+					"incassatoAP": 0,
+					"oreAP": 0
+				},
+				"7": {
+					"incassato": 2238.95,
+					"ore": 0,
+					"incassatoAP": 1480.57,
+					"oreAP": 0
+				},
+				"8": {
+					"incassato": 0.8,
+					"ore": 0,
+					"incassatoAP": 0,
+					"oreAP": 0
+				},
+				"9": {
+					"incassato": 290.1,
+					"ore": 0,
+					"incassatoAP": 0,
+					"oreAP": 0
+				}
+			}
+		},
+		"3657": {
+			"descrizioneSede": "3657 - TRAVAGLIATO 1",
+			"categoriaSede": "A - SUP. VICINATO",
+			"areaSede": "Area 5",
+			"clienti": 3264,
+			"clientiAP": 3807,
+			"reparti": {
+				"1": {
+					"incassato": 33407.31,
+					"ore": 180,
+					"incassatoAP": 29724.72,
+					"oreAP": 149.5
+				},
+				"2": {
+					"incassato": 16040.77,
+					"ore": 109,
+					"incassatoAP": 14776.51,
+					"oreAP": 114.5
+				},
+				"3": {
+					"incassato": 5039.36,
+					"ore": 34.5,
+					"incassatoAP": 5053.9,
+					"oreAP": 38
+				},
+				"4": {
+					"incassato": 8268,
+					"ore": 37,
+					"incassatoAP": 7887.63,
+					"oreAP": 38
+				},
+				"5": {
+					"incassato": 471.07,
+					"ore": 0,
+					"incassatoAP": 486.26,
+					"oreAP": 0
+				},
+				"7": {
+					"incassato": 1877.76,
+					"ore": 0,
+					"incassatoAP": 2054.66,
+					"oreAP": 0
+				},
+				"9": {
+					"incassato": 446.6,
+					"ore": 0,
+					"incassatoAP": 142,
+					"oreAP": 0
+				},
+				"10": {
+					"incassato": 50,
+					"ore": 0,
+					"incassatoAP": 140,
+					"oreAP": 0
+				}
+			}
+		},
+		"3658": {
+			"descrizioneSede": "3658 - GAVARDO",
+			"categoriaSede": "C - SUPERSTORE",
+			"areaSede": "Area 5",
+			"clienti": 3161,
+			"clientiAP": 3151,
+			"reparti": {
+				"1": {
+					"incassato": 40710.71,
+					"ore": 233,
+					"incassatoAP": 34464.79,
+					"oreAP": 197
+				},
+				"2": {
+					"incassato": 18559.12,
+					"ore": 99,
+					"incassatoAP": 14905.89,
+					"oreAP": 99.5
+				},
+				"3": {
+					"incassato": 5218.67,
+					"ore": 34,
+					"incassatoAP": 4294.02,
+					"oreAP": 34
+				},
+				"4": {
+					"incassato": 10930.76,
+					"ore": 53,
+					"incassatoAP": 8844.75,
+					"oreAP": 51
+				},
+				"5": {
+					"incassato": 739.06,
+					"ore": 0,
+					"incassatoAP": 585.38,
+					"oreAP": 0
+				},
+				"7": {
+					"incassato": 2126.9,
+					"ore": 13,
+					"incassatoAP": 1859.93,
+					"oreAP": 14
+				},
+				"8": {
+					"incassato": 0,
+					"ore": 1,
+					"incassatoAP": 0,
+					"oreAP": 0
+				},
+				"9": {
+					"incassato": 489.94,
+					"ore": 0,
+					"incassatoAP": 295.11,
+					"oreAP": 0
+				},
+				"10": {
+					"incassato": 30,
+					"ore": 0,
+					"incassatoAP": 325,
+					"oreAP": 0
+				}
+			}
+		},
+		"3659": {
+			"descrizioneSede": "3659 - GARDONE V.T.",
+			"categoriaSede": "A - SUP. VICINATO",
+			"areaSede": "Area 4",
+			"clienti": 2749,
+			"clientiAP": 2486,
+			"reparti": {
+				"1": {
+					"incassato": 29305.96,
+					"ore": 180,
+					"incassatoAP": 22695.05,
+					"oreAP": 167
+				},
+				"2": {
+					"incassato": 10672.19,
+					"ore": 83,
+					"incassatoAP": 8057.63,
+					"oreAP": 67
+				},
+				"3": {
+					"incassato": 4055.06,
+					"ore": 29,
+					"incassatoAP": 3155.93,
+					"oreAP": 21
+				},
+				"4": {
+					"incassato": 7308.88,
+					"ore": 30.5,
+					"incassatoAP": 5256.59,
+					"oreAP": 27.5
+				},
+				"5": {
+					"incassato": 506.99,
+					"ore": 0,
+					"incassatoAP": 289.76,
+					"oreAP": 0
+				},
+				"7": {
+					"incassato": 1862.23,
+					"ore": 0,
+					"incassatoAP": 1493.4,
+					"oreAP": 0
+				},
+				"8": {
+					"incassato": 0.69,
+					"ore": 0,
+					"incassatoAP": 0,
+					"oreAP": 0
+				},
+				"9": {
+					"incassato": 489.16,
+					"ore": 0,
+					"incassatoAP": 151.7,
+					"oreAP": 0
+				},
+				"10": {
+					"incassato": 70,
+					"ore": 0,
+					"incassatoAP": 140,
+					"oreAP": 0
+				}
+			}
+		},
+		"3661": {
+			"descrizioneSede": "3661 - PADERNO F/C",
+			"categoriaSede": "A - SUP. VICINATO",
+			"areaSede": "Area 5",
+			"clienti": 3757,
+			"clientiAP": 3571,
+			"reparti": {
+				"1": {
+					"incassato": 44848.1,
+					"ore": 242,
+					"incassatoAP": 33284.18,
+					"oreAP": 177.5
+				},
+				"2": {
+					"incassato": 21802.67,
+					"ore": 129,
+					"incassatoAP": 15324.32,
+					"oreAP": 87.5
+				},
+				"3": {
+					"incassato": 8711.01,
+					"ore": 52,
+					"incassatoAP": 5365.32,
+					"oreAP": 31
+				},
+				"4": {
+					"incassato": 11798.28,
+					"ore": 68.5,
+					"incassatoAP": 9332.32,
+					"oreAP": 40.5
+				},
+				"5": {
+					"incassato": 2560.33,
+					"ore": 41,
+					"incassatoAP": 508.8,
+					"oreAP": 0
+				},
+				"7": {
+					"incassato": 4206.89,
+					"ore": 71.5,
+					"incassatoAP": 2168,
+					"oreAP": 15
+				},
+				"8": {
+					"incassato": 3.84,
+					"ore": 5.5,
+					"incassatoAP": 0,
+					"oreAP": 0
+				},
+				"9": {
+					"incassato": 1014.88,
+					"ore": 0,
+					"incassatoAP": 129.68,
+					"oreAP": 0
+				},
+				"10": {
+					"incassato": 170,
+					"ore": 0,
+					"incassatoAP": 245,
+					"oreAP": 0
+				}
+			}
+		},
+		"3665": {
+			"descrizioneSede": "3665 - CALVISANO",
+			"categoriaSede": "A - SUP. VICINATO",
+			"areaSede": "Area 2",
+			"clienti": 2882,
+			"clientiAP": 2871,
+			"reparti": {
+				"1": {
+					"incassato": 25075.4,
+					"ore": 172.5,
+					"incassatoAP": 20561.21,
+					"oreAP": 130.5
+				},
+				"2": {
+					"incassato": 13000.26,
+					"ore": 70,
+					"incassatoAP": 11477.52,
+					"oreAP": 72.5
+				},
+				"3": {
+					"incassato": 5900.66,
+					"ore": 44,
+					"incassatoAP": 5578.82,
+					"oreAP": 54.5
+				},
+				"4": {
+					"incassato": 6058.37,
+					"ore": 31,
+					"incassatoAP": 6079.29,
+					"oreAP": 38
+				},
+				"5": {
+					"incassato": 315.01,
+					"ore": 0,
+					"incassatoAP": 313.5,
+					"oreAP": 0
+				},
+				"6": {
+					"incassato": 0,
+					"ore": 0,
+					"incassatoAP": 0,
+					"oreAP": 0
+				},
+				"7": {
+					"incassato": 1966.05,
+					"ore": 0,
+					"incassatoAP": 1741,
+					"oreAP": 0
+				},
+				"8": {
+					"incassato": 0,
+					"ore": 0,
+					"incassatoAP": 0,
+					"oreAP": 0
+				},
+				"9": {
+					"incassato": 501.5,
+					"ore": 0,
+					"incassatoAP": 117.9,
+					"oreAP": 0
+				},
+				"10": {
+					"incassato": 80,
+					"ore": 0,
+					"incassatoAP": 90,
+					"oreAP": 0
+				},
+				"91": {
+					"incassato": 0,
+					"ore": 0,
+					"incassatoAP": 125,
+					"oreAP": 0
+				}
+			}
+		},
+		"3666": {
+			"descrizioneSede": "3666 - CASTELMELLA 1",
+			"categoriaSede": "A - SUP. VICINATO",
+			"areaSede": "Area 3",
+			"clienti": 2003,
+			"clientiAP": 2415,
+			"reparti": {
+				"1": {
+					"incassato": 17046.54,
+					"ore": 129,
+					"incassatoAP": 16411.71,
+					"oreAP": 118
+				},
+				"2": {
+					"incassato": 8180.4,
+					"ore": 69,
+					"incassatoAP": 8214.05,
+					"oreAP": 72
+				},
+				"3": {
+					"incassato": 2990.17,
+					"ore": 25,
+					"incassatoAP": 3197.05,
+					"oreAP": 23.5
+				},
+				"4": {
+					"incassato": 4703.75,
+					"ore": 24,
+					"incassatoAP": 4403.5,
+					"oreAP": 26.5
+				},
+				"5": {
+					"incassato": 234.96,
+					"ore": 2.5,
+					"incassatoAP": 304.74,
+					"oreAP": 1
+				},
+				"7": {
+					"incassato": 1031.99,
+					"ore": 7.5,
+					"incassatoAP": 1275.01,
+					"oreAP": 9
+				},
+				"8": {
+					"incassato": 0,
+					"ore": 1,
+					"incassatoAP": 0,
+					"oreAP": 0
+				},
+				"9": {
+					"incassato": 158.36,
+					"ore": 0,
+					"incassatoAP": 113.27,
+					"oreAP": 1
+				},
+				"10": {
+					"incassato": 30,
+					"ore": 0,
+					"incassatoAP": 100,
+					"oreAP": 0
+				}
+			}
+		},
+		"3668": {
+			"descrizioneSede": "3668 - TRAVAGLIATO 2",
+			"categoriaSede": "A - SUP. VICINATO",
+			"areaSede": "Area 5",
+			"clienti": 1823,
+			"clientiAP": 2006,
+			"reparti": {
+				"1": {
+					"incassato": 11886.15,
+					"ore": 99,
+					"incassatoAP": 10603.92,
+					"oreAP": 94.5
+				},
+				"2": {
+					"incassato": 5524.79,
+					"ore": 75.5,
+					"incassatoAP": 5165.65,
+					"oreAP": 74.5
+				},
+				"3": {
+					"incassato": 1787.65,
+					"ore": 14.5,
+					"incassatoAP": 1395.93,
+					"oreAP": 14
+				},
+				"4": {
+					"incassato": 3109.63,
+					"ore": 21.5,
+					"incassatoAP": 2948.9,
+					"oreAP": 26.5
+				},
+				"5": {
+					"incassato": 129.7,
+					"ore": 0,
+					"incassatoAP": 127.46,
+					"oreAP": 0
+				},
+				"7": {
+					"incassato": 1090.73,
+					"ore": 0,
+					"incassatoAP": 1021.24,
+					"oreAP": 0
+				},
+				"9": {
+					"incassato": 80.12,
+					"ore": 0,
+					"incassatoAP": 0,
+					"oreAP": 0
+				}
+			}
+		},
+		"3670": {
+			"descrizioneSede": "3670 - BORGO S.GIACOMO",
+			"categoriaSede": "A - SUP. VICINATO",
+			"areaSede": "Area 5",
+			"clienti": 2420,
+			"clientiAP": 2753,
+			"reparti": {
+				"1": {
+					"incassato": 24684.53,
+					"ore": 170.5,
+					"incassatoAP": 23219.47,
+					"oreAP": 160.5
+				},
+				"2": {
+					"incassato": 11241.53,
+					"ore": 76.5,
+					"incassatoAP": 11193.92,
+					"oreAP": 76.5
+				},
+				"3": {
+					"incassato": 5326.54,
+					"ore": 36,
+					"incassatoAP": 5404.2,
+					"oreAP": 45
+				},
+				"4": {
+					"incassato": 6394.27,
+					"ore": 33,
+					"incassatoAP": 5914.3,
+					"oreAP": 36.5
+				},
+				"5": {
+					"incassato": 326.37,
+					"ore": 0,
+					"incassatoAP": 269.86,
+					"oreAP": 0
+				},
+				"7": {
+					"incassato": 737.09,
+					"ore": 6,
+					"incassatoAP": 773.41,
+					"oreAP": 0
+				},
+				"9": {
+					"incassato": 152.82,
+					"ore": 0,
+					"incassatoAP": 38.58,
+					"oreAP": 0
+				},
+				"10": {
+					"incassato": 40,
+					"ore": 0,
+					"incassatoAP": 55,
+					"oreAP": 0
+				}
+			}
+		},
+		"3671": {
+			"descrizioneSede": "3671 - CASTENEDOLO",
+			"categoriaSede": "A - SUP. VICINATO",
+			"areaSede": "Area 2",
+			"clienti": 2978,
+			"clientiAP": 2996,
+			"reparti": {
+				"1": {
+					"incassato": 19494.54,
+					"ore": 146,
+					"incassatoAP": 16503.76,
+					"oreAP": 147
+				},
+				"2": {
+					"incassato": 11006.13,
+					"ore": 79,
+					"incassatoAP": 9579.93,
+					"oreAP": 82
+				},
+				"3": {
+					"incassato": 5770.08,
+					"ore": 33,
+					"incassatoAP": 4406.4,
+					"oreAP": 34
+				},
+				"4": {
+					"incassato": 6411.41,
+					"ore": 31,
+					"incassatoAP": 5322.38,
+					"oreAP": 28
+				},
+				"5": {
+					"incassato": 621.62,
+					"ore": 0,
+					"incassatoAP": 483.43,
+					"oreAP": 0
+				},
+				"7": {
+					"incassato": 1621.37,
+					"ore": 0,
+					"incassatoAP": 1459.77,
+					"oreAP": 0
+				},
+				"9": {
+					"incassato": 221.68,
+					"ore": 0,
+					"incassatoAP": 4.8,
+					"oreAP": 0
+				},
+				"10": {
+					"incassato": 20,
+					"ore": 0,
+					"incassatoAP": 45,
+					"oreAP": 0
+				}
+			}
+		},
+		"3673": {
+			"descrizioneSede": "3673 - VILLA CARCINA",
+			"categoriaSede": "C - SUPERSTORE",
+			"areaSede": "Area 5",
+			"clienti": 5804,
+			"clientiAP": 7098,
+			"reparti": {
+				"1": {
+					"incassato": 59769.63,
+					"ore": 340.5,
+					"incassatoAP": 55409.29,
+					"oreAP": 323.5
+				},
+				"2": {
+					"incassato": 26546.2,
+					"ore": 115.5,
+					"incassatoAP": 26559.13,
+					"oreAP": 120
+				},
+				"3": {
+					"incassato": 10857.21,
+					"ore": 51.5,
+					"incassatoAP": 10479.38,
+					"oreAP": 55.5
+				},
+				"4": {
+					"incassato": 15184.27,
+					"ore": 69.5,
+					"incassatoAP": 15105.6,
+					"oreAP": 77
+				},
+				"5": {
+					"incassato": 2984.21,
+					"ore": 39,
+					"incassatoAP": 3586.11,
+					"oreAP": 42
+				},
+				"6": {
+					"incassato": 0,
+					"ore": 0,
+					"incassatoAP": 760.77,
+					"oreAP": 22
+				},
+				"7": {
+					"incassato": 8910.59,
+					"ore": 139,
+					"incassatoAP": 8708.88,
+					"oreAP": 139
+				},
+				"9": {
+					"incassato": 2563.73,
+					"ore": 25,
+					"incassatoAP": 2164.95,
+					"oreAP": 19
+				},
+				"10": {
+					"incassato": 120,
+					"ore": 0,
+					"incassatoAP": 275,
+					"oreAP": 0
+				}
+			}
+		},
+		"3674": {
+			"descrizioneSede": "3674 - SORESINA",
+			"categoriaSede": "A - SUP. VICINATO",
+			"areaSede": "Area 5",
+			"clienti": 2111,
+			"clientiAP": 1626,
+			"reparti": {
+				"1": {
+					"incassato": 39705.63,
+					"ore": 237,
+					"incassatoAP": 26975.82,
+					"oreAP": 154
+				},
+				"2": {
+					"incassato": 13863.54,
+					"ore": 102.5,
+					"incassatoAP": 10006.06,
+					"oreAP": 90
+				},
+				"3": {
+					"incassato": 3838.75,
+					"ore": 32.5,
+					"incassatoAP": 3160.72,
+					"oreAP": 27
+				},
+				"4": {
+					"incassato": 7450.51,
+					"ore": 35,
+					"incassatoAP": 4427.68,
+					"oreAP": 25
+				},
+				"5": {
+					"incassato": 407.64,
+					"ore": 0,
+					"incassatoAP": 349.63,
+					"oreAP": 0
+				},
+				"7": {
+					"incassato": 1712.55,
+					"ore": 0,
+					"incassatoAP": 1006.17,
+					"oreAP": 0
+				},
+				"9": {
+					"incassato": 789.46,
+					"ore": 0,
+					"incassatoAP": 198.85,
+					"oreAP": 0
+				},
+				"10": {
+					"incassato": 100,
+					"ore": 0,
+					"incassatoAP": 20,
+					"oreAP": 0
+				}
+			}
+		},
+		"3675": {
+			"descrizioneSede": "3675 - GUIDIZZOLO",
+			"categoriaSede": "A - SUP. VICINATO",
+			"areaSede": "Area 3",
+			"clienti": 1904,
+			"clientiAP": 2083,
+			"reparti": {
+				"1": {
+					"incassato": 28277.67,
+					"ore": 150.5,
+					"incassatoAP": 25997.13,
+					"oreAP": 152.5
+				},
+				"2": {
+					"incassato": 9315.48,
+					"ore": 62,
+					"incassatoAP": 8316.47,
+					"oreAP": 57
+				},
+				"3": {
+					"incassato": 2550.47,
+					"ore": 19,
+					"incassatoAP": 2070.24,
+					"oreAP": 19
+				},
+				"4": {
+					"incassato": 5541.73,
+					"ore": 27,
+					"incassatoAP": 5063,
+					"oreAP": 28
+				},
+				"5": {
+					"incassato": 229.46,
+					"ore": 0,
+					"incassatoAP": 271.46,
+					"oreAP": 0
+				},
+				"6": {
+					"incassato": 0,
+					"ore": 0,
+					"incassatoAP": 0,
+					"oreAP": 0
+				},
+				"7": {
+					"incassato": 1248.26,
+					"ore": 6,
+					"incassatoAP": 1097.26,
+					"oreAP": 7
+				},
+				"8": {
+					"incassato": 0,
+					"ore": 0,
+					"incassatoAP": 0,
+					"oreAP": 0
+				},
+				"9": {
+					"incassato": 212.79,
+					"ore": 0,
+					"incassatoAP": 66.67,
+					"oreAP": 0
+				},
+				"10": {
+					"incassato": 70,
+					"ore": 0,
+					"incassatoAP": 30,
+					"oreAP": 0
+				}
+			}
+		},
+		"3682": {
+			"descrizioneSede": "3682 - BOARIO",
+			"categoriaSede": "A - SUP. VICINATO",
+			"areaSede": "Area 4",
+			"clienti": 3033,
+			"clientiAP": 3390,
+			"reparti": {
+				"1": {
+					"incassato": 42754.42,
+					"ore": 226,
+					"incassatoAP": 36886.49,
+					"oreAP": 212.5
+				},
+				"2": {
+					"incassato": 18282.23,
+					"ore": 133,
+					"incassatoAP": 15496.44,
+					"oreAP": 138
+				},
+				"3": {
+					"incassato": 4106.04,
+					"ore": 36.5,
+					"incassatoAP": 3551.96,
+					"oreAP": 33.5
+				},
+				"4": {
+					"incassato": 9055.59,
+					"ore": 47.5,
+					"incassatoAP": 8337.66,
+					"oreAP": 52.5
+				},
+				"5": {
+					"incassato": 2325.04,
+					"ore": 42,
+					"incassatoAP": 2381.63,
+					"oreAP": 44
+				},
+				"6": {
+					"incassato": 0,
+					"ore": 0,
+					"incassatoAP": 134.45,
+					"oreAP": 0
+				},
+				"7": {
+					"incassato": 3194.63,
+					"ore": 45,
+					"incassatoAP": 3322.71,
+					"oreAP": 48
+				},
+				"9": {
+					"incassato": 652.16,
+					"ore": 2,
+					"incassatoAP": 421.91,
+					"oreAP": 4.5
+				},
+				"10": {
+					"incassato": 160,
+					"ore": 0,
+					"incassatoAP": 135,
+					"oreAP": 0
+				}
+			}
+		},
+		"3683": {
+			"descrizioneSede": "3683 - COSTA VOLPINO",
+			"categoriaSede": "A - SUP. VICINATO",
+			"areaSede": "Area 2",
+			"clienti": 3773,
+			"clientiAP": 4690,
+			"reparti": {
+				"1": {
+					"incassato": 58538.31,
+					"ore": 325.5,
+					"incassatoAP": 55937.92,
+					"oreAP": 334.5
+				},
+				"2": {
+					"incassato": 27873.06,
+					"ore": 174.5,
+					"incassatoAP": 27973.02,
+					"oreAP": 194
+				},
+				"3": {
+					"incassato": 7782.43,
+					"ore": 46,
+					"incassatoAP": 8189.95,
+					"oreAP": 61
+				},
+				"4": {
+					"incassato": 13815.85,
+					"ore": 71.5,
+					"incassatoAP": 14719.37,
+					"oreAP": 67
+				},
+				"5": {
+					"incassato": 851.12,
+					"ore": 0,
+					"incassatoAP": 1081.89,
+					"oreAP": 0
+				},
+				"7": {
+					"incassato": 2179.6,
+					"ore": 23,
+					"incassatoAP": 2637,
+					"oreAP": 23
+				},
+				"9": {
+					"incassato": 3022.7,
+					"ore": 38,
+					"incassatoAP": 2372.28,
+					"oreAP": 38
+				},
+				"10": {
+					"incassato": 60,
+					"ore": 0,
+					"incassatoAP": 140,
+					"oreAP": 0
+				}
+			}
+		},
+		"3687": {
+			"descrizioneSede": "3687 - RAFFA DI PUEGNAGO",
+			"categoriaSede": "A - SUP. VICINATO",
+			"areaSede": "Area 2",
+			"clienti": 2954,
+			"clientiAP": 2712,
+			"reparti": {
+				"1": {
+					"incassato": 42553.9,
+					"ore": 231,
+					"incassatoAP": 33673.3,
+					"oreAP": 203.5
+				},
+				"2": {
+					"incassato": 15502.6,
+					"ore": 100,
+					"incassatoAP": 11706.39,
+					"oreAP": 91.5
+				},
+				"3": {
+					"incassato": 3807.6,
+					"ore": 30,
+					"incassatoAP": 2712.84,
+					"oreAP": 25.5
+				},
+				"4": {
+					"incassato": 8043.13,
+					"ore": 33,
+					"incassatoAP": 6317.15,
+					"oreAP": 40
+				},
+				"5": {
+					"incassato": 701.89,
+					"ore": 0,
+					"incassatoAP": 432.49,
+					"oreAP": 0
+				},
+				"7": {
+					"incassato": 2215.63,
+					"ore": 0,
+					"incassatoAP": 1909.21,
+					"oreAP": 0
+				},
+				"9": {
+					"incassato": 341.83,
+					"ore": 0,
+					"incassatoAP": 32.98,
+					"oreAP": 0
+				},
+				"10": {
+					"incassato": 60,
+					"ore": 0,
+					"incassatoAP": 116.5,
+					"oreAP": 0
+				}
+			}
+		},
+		"3689": {
+			"descrizioneSede": "3689 - CASTELMELLA  2",
+			"categoriaSede": "C - SUPERSTORE",
+			"areaSede": "Area 4",
+			"clienti": 3803,
+			"clientiAP": 3616,
+			"reparti": {
+				"1": {
+					"incassato": 60158.8,
+					"ore": 289.5,
+					"incassatoAP": 44180.09,
+					"oreAP": 253.5
+				},
+				"2": {
+					"incassato": 23659.97,
+					"ore": 119,
+					"incassatoAP": 17679.15,
+					"oreAP": 95.5
+				},
+				"3": {
+					"incassato": 7314.69,
+					"ore": 39.5,
+					"incassatoAP": 6037.06,
+					"oreAP": 36
+				},
+				"4": {
+					"incassato": 12553.23,
+					"ore": 63,
+					"incassatoAP": 9733.06,
+					"oreAP": 47.5
+				},
+				"5": {
+					"incassato": 1054.11,
+					"ore": 0,
+					"incassatoAP": 869.5,
+					"oreAP": 0
+				},
+				"7": {
+					"incassato": 2077,
+					"ore": 18,
+					"incassatoAP": 2009.97,
+					"oreAP": 21
+				},
+				"9": {
+					"incassato": 667.32,
+					"ore": 0,
+					"incassatoAP": 263.02,
+					"oreAP": 0
+				},
+				"10": {
+					"incassato": 150,
+					"ore": 0,
+					"incassatoAP": 80,
+					"oreAP": 0
+				}
+			}
+		},
+		"3692": {
+			"descrizioneSede": "3692 - NAVE BARCELLA",
+			"categoriaSede": "A - SUP. VICINATO",
+			"areaSede": "Area 5",
+			"clienti": 3405,
+			"clientiAP": 4098,
+			"reparti": {
+				"1": {
+					"incassato": 28214.77,
+					"ore": 183,
+					"incassatoAP": 28375.68,
+					"oreAP": 169
+				},
+				"2": {
+					"incassato": 14392.76,
+					"ore": 102.5,
+					"incassatoAP": 15193.51,
+					"oreAP": 108
+				},
+				"3": {
+					"incassato": 6054.23,
+					"ore": 32.5,
+					"incassatoAP": 5797.51,
+					"oreAP": 36
+				},
+				"4": {
+					"incassato": 7751.32,
+					"ore": 43,
+					"incassatoAP": 8895.01,
+					"oreAP": 49
+				},
+				"5": {
+					"incassato": 564.54,
+					"ore": 0,
+					"incassatoAP": 486.61,
+					"oreAP": 0
+				},
+				"7": {
+					"incassato": 1864.3,
+					"ore": 0,
+					"incassatoAP": 2169.02,
+					"oreAP": 0
+				},
+				"9": {
+					"incassato": 254.36,
+					"ore": 0,
+					"incassatoAP": 146.95,
+					"oreAP": 0
+				},
+				"10": {
+					"incassato": 130,
+					"ore": 0,
+					"incassatoAP": 135,
+					"oreAP": 0
+				}
+			}
+		},
+		"3693": {
+			"descrizioneSede": "3693 - PIZZIGHETTONE",
+			"categoriaSede": "C - SUPERSTORE",
+			"areaSede": "Area 5",
+			"clienti": 3568,
+			"clientiAP": 4116,
+			"reparti": {
+				"1": {
+					"incassato": 64496.83,
+					"ore": 327.5,
+					"incassatoAP": 55324.17,
+					"oreAP": 263.5
+				},
+				"2": {
+					"incassato": 25702.59,
+					"ore": 150.5,
+					"incassatoAP": 22435.28,
+					"oreAP": 149
+				},
+				"3": {
+					"incassato": 7790.45,
+					"ore": 60,
+					"incassatoAP": 6651.03,
+					"oreAP": 35.5
+				},
+				"4": {
+					"incassato": 16123.36,
+					"ore": 67.5,
+					"incassatoAP": 14445.69,
+					"oreAP": 79.5
+				},
+				"5": {
+					"incassato": 4105.53,
+					"ore": 47.5,
+					"incassatoAP": 4075.6,
+					"oreAP": 49.5
+				},
+				"6": {
+					"incassato": 1.2,
+					"ore": 0,
+					"incassatoAP": 406.8,
+					"oreAP": 12
+				},
+				"7": {
+					"incassato": 4644.71,
+					"ore": 79,
+					"incassatoAP": 4051.59,
+					"oreAP": 77
+				},
+				"8": {
+					"incassato": 0,
+					"ore": 19,
+					"incassatoAP": 0,
+					"oreAP": 0
+				},
+				"9": {
+					"incassato": 2679.21,
+					"ore": 0,
+					"incassatoAP": 2277.94,
+					"oreAP": 18
+				},
+				"10": {
+					"incassato": 100,
+					"ore": 0,
+					"incassatoAP": 100,
+					"oreAP": 0
+				}
+			}
+		},
+		"3694": {
+			"descrizioneSede": "3694 - AZZANO MELLA",
+			"categoriaSede": "C - SUPERSTORE",
+			"areaSede": "Area 3",
+			"clienti": 4847,
+			"clientiAP": 5323,
+			"reparti": {
+				"1": {
+					"incassato": 76217.7,
+					"ore": 326,
+					"incassatoAP": 64689.68,
+					"oreAP": 374
+				},
+				"2": {
+					"incassato": 33902.66,
+					"ore": 165,
+					"incassatoAP": 28807.58,
+					"oreAP": 151
+				},
+				"3": {
+					"incassato": 12619.07,
+					"ore": 67.5,
+					"incassatoAP": 10649.88,
+					"oreAP": 72
+				},
+				"4": {
+					"incassato": 18763.1,
+					"ore": 65.5,
+					"incassatoAP": 16670.69,
+					"oreAP": 84
+				},
+				"5": {
+					"incassato": 4056.41,
+					"ore": 46.5,
+					"incassatoAP": 4017.19,
+					"oreAP": 48
+				},
+				"6": {
+					"incassato": 1.72,
+					"ore": 0,
+					"incassatoAP": 272,
+					"oreAP": 14
+				},
+				"7": {
+					"incassato": 6195.3,
+					"ore": 124,
+					"incassatoAP": 5723.25,
+					"oreAP": 114
+				},
+				"8": {
+					"incassato": 7.65,
+					"ore": 6,
+					"incassatoAP": 0,
+					"oreAP": 0
+				},
+				"9": {
+					"incassato": 3233.18,
+					"ore": 13.5,
+					"incassatoAP": 2651.77,
+					"oreAP": 18
+				},
+				"10": {
+					"incassato": 150,
+					"ore": 0,
+					"incassatoAP": 130,
+					"oreAP": 0
+				}
+			}
+		}
+	}
+}
