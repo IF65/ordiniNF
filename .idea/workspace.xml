@@ -2,12 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5ba9a39a-6692-4f3c-b7df-938c53d18a9a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/examples/incassi.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/stampaIncassiFood.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/stampaIncassiFood2.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/testReportIncassi" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/incassi.json" beforeDir="false" afterPath="$PROJECT_DIR$/examples/incassi.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/stampaIncassiFood2.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/stampaIncassiFood2.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,6 +47,7 @@
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="reference.settings.deploy.options" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
@@ -82,8 +80,8 @@
     <list>
       <item itemvalue="PHP Script.buffaloControlloAE.php" />
       <item itemvalue="PHP Script.excel2TemplateIF65.php" />
-      <item itemvalue="PHP Script.stampaIncassiFood.php" />
       <item itemvalue="PHP Script.stampaIncassiFood2.php" />
+      <item itemvalue="PHP Script.stampaIncassiFood.php" />
       <item itemvalue="PHP Script.templateIF652Excel.php" />
     </list>
     <recent_temporary>
@@ -145,6 +143,20 @@
       <workItem from="1599078602198" duration="3002000" />
       <workItem from="1599207483166" duration="6151000" />
       <workItem from="1599374174574" duration="675000" />
+      <workItem from="1599464291045" duration="864000" />
+      <workItem from="1599468275574" duration="4000" />
+      <workItem from="1599497019291" duration="249000" />
+      <workItem from="1599564254260" duration="142000" />
+      <workItem from="1599566168235" duration="280000" />
+      <workItem from="1599567617682" duration="102000" />
+      <workItem from="1599567733455" duration="153000" />
+      <workItem from="1599568114687" duration="112000" />
+      <workItem from="1599568342158" duration="4000" />
+      <workItem from="1599725642510" duration="655000" />
+      <workItem from="1599740457240" duration="4000" />
+      <workItem from="1599743862890" duration="3814000" />
+      <workItem from="1599766660040" duration="1334000" />
+      <workItem from="1599790803999" duration="11782000" />
     </task>
     <task id="LOCAL-00001" summary="Sistemato Excel molto basico per giacenze linee">
       <created>1555408363753</created>
@@ -177,64 +189,57 @@
     <option name="LAST_COMMIT_MESSAGE" value="Sistemato Excel molto basico per giacenze linee" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="330" y="179" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1599211449800">
+    <state x="330" y="179" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1599747462040">
       <screen x="0" y="23" width="1920" height="1057" />
     </state>
-    <state x="330" y="179" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.1920.1057@0.23.1920.1057" timestamp="1599211449800" />
+    <state x="330" y="179" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.1920.1057@0.23.1920.1057" timestamp="1599747462040" />
     <state width="423" height="466" key="DebuggerActiveHint" timestamp="1599111771586">
       <screen x="0" y="23" width="1920" height="1057" />
     </state>
     <state width="423" height="466" key="DebuggerActiveHint/0.23.1920.1057@0.23.1920.1057" timestamp="1599111771586" />
-    <state width="1563" height="275" key="GridCell.Tab.0.bottom" timestamp="1599229142332">
+    <state width="1789" height="275" key="GridCell.Tab.0.bottom" timestamp="1599814811039">
       <screen x="0" y="23" width="1920" height="1057" />
     </state>
-    <state width="1563" height="275" key="GridCell.Tab.0.bottom/0.23.1920.1057@0.23.1920.1057" timestamp="1599229142332" />
-    <state width="1563" height="275" key="GridCell.Tab.0.center" timestamp="1599229142332">
+    <state width="1789" height="275" key="GridCell.Tab.0.bottom/0.23.1920.1057@0.23.1920.1057" timestamp="1599814811039" />
+    <state width="1789" height="275" key="GridCell.Tab.0.center" timestamp="1599814811038">
       <screen x="0" y="23" width="1920" height="1057" />
     </state>
-    <state width="1563" height="275" key="GridCell.Tab.0.center/0.23.1920.1057@0.23.1920.1057" timestamp="1599229142332" />
-    <state width="1563" height="275" key="GridCell.Tab.0.left" timestamp="1599229142331">
+    <state width="1789" height="275" key="GridCell.Tab.0.center/0.23.1920.1057@0.23.1920.1057" timestamp="1599814811038" />
+    <state width="1789" height="275" key="GridCell.Tab.0.left" timestamp="1599814811038">
       <screen x="0" y="23" width="1920" height="1057" />
     </state>
-    <state width="1563" height="275" key="GridCell.Tab.0.left/0.23.1920.1057@0.23.1920.1057" timestamp="1599229142331" />
-    <state width="1563" height="275" key="GridCell.Tab.0.right" timestamp="1599229142332">
+    <state width="1789" height="275" key="GridCell.Tab.0.left/0.23.1920.1057@0.23.1920.1057" timestamp="1599814811038" />
+    <state width="1789" height="275" key="GridCell.Tab.0.right" timestamp="1599814811039">
       <screen x="0" y="23" width="1920" height="1057" />
     </state>
-    <state width="1563" height="275" key="GridCell.Tab.0.right/0.23.1920.1057@0.23.1920.1057" timestamp="1599229142332" />
-    <state width="1563" height="275" key="GridCell.Tab.1.bottom" timestamp="1599229142333">
+    <state width="1789" height="275" key="GridCell.Tab.0.right/0.23.1920.1057@0.23.1920.1057" timestamp="1599814811039" />
+    <state width="1789" height="275" key="GridCell.Tab.1.bottom" timestamp="1599814811040">
       <screen x="0" y="23" width="1920" height="1057" />
     </state>
-    <state width="1563" height="275" key="GridCell.Tab.1.bottom/0.23.1920.1057@0.23.1920.1057" timestamp="1599229142333" />
-    <state width="1563" height="275" key="GridCell.Tab.1.center" timestamp="1599229142333">
+    <state width="1789" height="275" key="GridCell.Tab.1.bottom/0.23.1920.1057@0.23.1920.1057" timestamp="1599814811040" />
+    <state width="1789" height="275" key="GridCell.Tab.1.center" timestamp="1599814811040">
       <screen x="0" y="23" width="1920" height="1057" />
     </state>
-    <state width="1563" height="275" key="GridCell.Tab.1.center/0.23.1920.1057@0.23.1920.1057" timestamp="1599229142333" />
-    <state width="1563" height="275" key="GridCell.Tab.1.left" timestamp="1599229142332">
+    <state width="1789" height="275" key="GridCell.Tab.1.center/0.23.1920.1057@0.23.1920.1057" timestamp="1599814811040" />
+    <state width="1789" height="275" key="GridCell.Tab.1.left" timestamp="1599814811039">
       <screen x="0" y="23" width="1920" height="1057" />
     </state>
-    <state width="1563" height="275" key="GridCell.Tab.1.left/0.23.1920.1057@0.23.1920.1057" timestamp="1599229142332" />
-    <state width="1563" height="275" key="GridCell.Tab.1.right" timestamp="1599229142333">
+    <state width="1789" height="275" key="GridCell.Tab.1.left/0.23.1920.1057@0.23.1920.1057" timestamp="1599814811039" />
+    <state width="1789" height="275" key="GridCell.Tab.1.right" timestamp="1599814811040">
       <screen x="0" y="23" width="1920" height="1057" />
     </state>
-    <state width="1563" height="275" key="GridCell.Tab.1.right/0.23.1920.1057@0.23.1920.1057" timestamp="1599229142333" />
+    <state width="1789" height="275" key="GridCell.Tab.1.right/0.23.1920.1057@0.23.1920.1057" timestamp="1599814811040" />
     <state x="751" y="475" key="NewPhpFileDialog" timestamp="1599207508743">
       <screen x="0" y="23" width="1920" height="1057" />
     </state>
     <state x="751" y="475" key="NewPhpFileDialog/0.23.1920.1057@0.23.1920.1057" timestamp="1599207508743" />
+    <state x="433" y="274" width="598" height="490" key="find.popup" timestamp="1599766686740">
+      <screen x="0" y="23" width="1920" height="1057" />
+    </state>
+    <state x="433" y="274" width="598" height="490" key="find.popup/0.23.1920.1057@0.23.1920.1057" timestamp="1599766686740" />
     <state x="580" y="243" width="670" height="676" key="search.everywhere.popup" timestamp="1599109849614">
       <screen x="0" y="23" width="1920" height="1057" />
     </state>
     <state x="580" y="243" width="670" height="676" key="search.everywhere.popup/0.23.1920.1057@0.23.1920.1057" timestamp="1599109849614" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="php">
-          <url>file://$PROJECT_DIR$/src/stampaIncassiFood2.php</url>
-          <line>136</line>
-          <option name="timeStamp" value="5" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>
