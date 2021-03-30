@@ -2,9 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5ba9a39a-6692-4f3c-b7df-938c53d18a9a" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/reportVenditori.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/examples/incassi.json" beforeDir="false" afterPath="$PROJECT_DIR$/examples/incassi.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/stampaIncassiFood2.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/stampaIncassiFood2.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -18,7 +19,7 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="PhpWorkspaceProjectConfiguration" interpreter_name="PHP 7.2">
+  <component name="PhpWorkspaceProjectConfiguration" interpreter_name="PHP 7.3">
     <include_path>
       <path value="$PROJECT_DIR$/vendor/composer" />
       <path value="$PROJECT_DIR$/vendor/phpoffice/phpspreadsheet" />
@@ -38,7 +39,7 @@
     <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -56,11 +57,11 @@
       <recent name="$PROJECT_DIR$/src" />
     </key>
   </component>
-  <component name="RunManager" selected="PHP Script.stampaIncassiFood2.php">
-    <configuration name="buffaloControlloAE.php" type="PhpLocalRunConfigurationType" factoryName="PHP Console" temporary="true" path="$PROJECT_DIR$/src/buffaloControlloAE.php">
+  <component name="RunManager" selected="PHP Script.reportVenditori.php">
+    <configuration name="excel2TemplateIF65.php" type="PhpLocalRunConfigurationType" factoryName="PHP Console" temporary="true" path="$PROJECT_DIR$/src/excel2TemplateIF65.php">
       <method v="2" />
     </configuration>
-    <configuration name="excel2TemplateIF65.php" type="PhpLocalRunConfigurationType" factoryName="PHP Console" temporary="true" path="$PROJECT_DIR$/src/excel2TemplateIF65.php">
+    <configuration name="reportVenditori.php" type="PhpLocalRunConfigurationType" factoryName="PHP Console" temporary="true" path="$PROJECT_DIR$/src/reportVenditori.php">
       <method v="2" />
     </configuration>
     <configuration name="stampaIncassiFood2.php" type="PhpLocalRunConfigurationType" factoryName="PHP Console" temporary="true" path="$PROJECT_DIR$/src/stampaIncassiFood2.php">
@@ -78,19 +79,19 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="PHP Script.buffaloControlloAE.php" />
       <item itemvalue="PHP Script.excel2TemplateIF65.php" />
       <item itemvalue="PHP Script.stampaIncassiFood2.php" />
       <item itemvalue="PHP Script.stampaIncassiFood.php" />
       <item itemvalue="PHP Script.templateIF652Excel.php" />
+      <item itemvalue="PHP Script.reportVenditori.php" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="PHP Script.reportVenditori.php" />
         <item itemvalue="PHP Script.stampaIncassiFood2.php" />
         <item itemvalue="PHP Script.stampaIncassiFood.php" />
         <item itemvalue="PHP Script.templateIF652Excel.php" />
         <item itemvalue="PHP Script.excel2TemplateIF65.php" />
-        <item itemvalue="PHP Script.buffaloControlloAE.php" />
       </list>
     </recent_temporary>
   </component>
@@ -157,6 +158,9 @@
       <workItem from="1599743862890" duration="3814000" />
       <workItem from="1599766660040" duration="1334000" />
       <workItem from="1599790803999" duration="11782000" />
+      <workItem from="1617082017074" duration="20000" />
+      <workItem from="1617082136587" duration="254000" />
+      <workItem from="1617091230773" duration="8134000" />
     </task>
     <task id="LOCAL-00001" summary="Sistemato Excel molto basico per giacenze linee">
       <created>1555408363753</created>
@@ -187,59 +191,5 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="Sistemato Excel molto basico per giacenze linee" />
     <option name="LAST_COMMIT_MESSAGE" value="Sistemato Excel molto basico per giacenze linee" />
-  </component>
-  <component name="WindowStateProjectService">
-    <state x="330" y="179" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1599747462040">
-      <screen x="0" y="23" width="1920" height="1057" />
-    </state>
-    <state x="330" y="179" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.1920.1057@0.23.1920.1057" timestamp="1599747462040" />
-    <state width="423" height="466" key="DebuggerActiveHint" timestamp="1599111771586">
-      <screen x="0" y="23" width="1920" height="1057" />
-    </state>
-    <state width="423" height="466" key="DebuggerActiveHint/0.23.1920.1057@0.23.1920.1057" timestamp="1599111771586" />
-    <state width="1789" height="275" key="GridCell.Tab.0.bottom" timestamp="1599814811039">
-      <screen x="0" y="23" width="1920" height="1057" />
-    </state>
-    <state width="1789" height="275" key="GridCell.Tab.0.bottom/0.23.1920.1057@0.23.1920.1057" timestamp="1599814811039" />
-    <state width="1789" height="275" key="GridCell.Tab.0.center" timestamp="1599814811038">
-      <screen x="0" y="23" width="1920" height="1057" />
-    </state>
-    <state width="1789" height="275" key="GridCell.Tab.0.center/0.23.1920.1057@0.23.1920.1057" timestamp="1599814811038" />
-    <state width="1789" height="275" key="GridCell.Tab.0.left" timestamp="1599814811038">
-      <screen x="0" y="23" width="1920" height="1057" />
-    </state>
-    <state width="1789" height="275" key="GridCell.Tab.0.left/0.23.1920.1057@0.23.1920.1057" timestamp="1599814811038" />
-    <state width="1789" height="275" key="GridCell.Tab.0.right" timestamp="1599814811039">
-      <screen x="0" y="23" width="1920" height="1057" />
-    </state>
-    <state width="1789" height="275" key="GridCell.Tab.0.right/0.23.1920.1057@0.23.1920.1057" timestamp="1599814811039" />
-    <state width="1789" height="275" key="GridCell.Tab.1.bottom" timestamp="1599814811040">
-      <screen x="0" y="23" width="1920" height="1057" />
-    </state>
-    <state width="1789" height="275" key="GridCell.Tab.1.bottom/0.23.1920.1057@0.23.1920.1057" timestamp="1599814811040" />
-    <state width="1789" height="275" key="GridCell.Tab.1.center" timestamp="1599814811040">
-      <screen x="0" y="23" width="1920" height="1057" />
-    </state>
-    <state width="1789" height="275" key="GridCell.Tab.1.center/0.23.1920.1057@0.23.1920.1057" timestamp="1599814811040" />
-    <state width="1789" height="275" key="GridCell.Tab.1.left" timestamp="1599814811039">
-      <screen x="0" y="23" width="1920" height="1057" />
-    </state>
-    <state width="1789" height="275" key="GridCell.Tab.1.left/0.23.1920.1057@0.23.1920.1057" timestamp="1599814811039" />
-    <state width="1789" height="275" key="GridCell.Tab.1.right" timestamp="1599814811040">
-      <screen x="0" y="23" width="1920" height="1057" />
-    </state>
-    <state width="1789" height="275" key="GridCell.Tab.1.right/0.23.1920.1057@0.23.1920.1057" timestamp="1599814811040" />
-    <state x="751" y="475" key="NewPhpFileDialog" timestamp="1599207508743">
-      <screen x="0" y="23" width="1920" height="1057" />
-    </state>
-    <state x="751" y="475" key="NewPhpFileDialog/0.23.1920.1057@0.23.1920.1057" timestamp="1599207508743" />
-    <state x="433" y="274" width="598" height="490" key="find.popup" timestamp="1599766686740">
-      <screen x="0" y="23" width="1920" height="1057" />
-    </state>
-    <state x="433" y="274" width="598" height="490" key="find.popup/0.23.1920.1057@0.23.1920.1057" timestamp="1599766686740" />
-    <state x="580" y="243" width="670" height="676" key="search.everywhere.popup" timestamp="1599109849614">
-      <screen x="0" y="23" width="1920" height="1057" />
-    </state>
-    <state x="580" y="243" width="670" height="676" key="search.everywhere.popup/0.23.1920.1057@0.23.1920.1057" timestamp="1599109849614" />
   </component>
 </project>
