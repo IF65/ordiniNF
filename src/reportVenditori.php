@@ -85,41 +85,45 @@ $sheet->setCellValue('I4', strtoupper('EST. GARANZIA'));
 $sheet->mergeCells('I4:I5');
 $sheet->setCellValue('J4', strtoupper('PESO ESTENDO'));
 $sheet->mergeCells('J4:J5');
-$sheet->setCellValue('K4', strtoupper('NR. SERVIZI'));
+$sheet->setCellValue('K4', strtoupper('GARANTEASY'));
 $sheet->mergeCells('K4:K5');
-$sheet->setCellValue('L4', strtoupper('SCONTRINI'));
+$sheet->setCellValue('L4', strtoupper('CARTA FAN'));
 $sheet->mergeCells('L4:L5');
-$sheet->setCellValue('M4', strtoupper('SCONTR. MEDIO'));
+$sheet->setCellValue('M4', strtoupper('NR. SERVIZI'));
 $sheet->mergeCells('M4:M5');
-$sheet->setCellValue('N4', strtoupper('PEZZI'));
+$sheet->setCellValue('N4', strtoupper('SCONTRINI'));
 $sheet->mergeCells('N4:N5');
-$sheet->setCellValue('O4', strtoupper('PEZZI PER SCONTR.'));
+$sheet->setCellValue('O4', strtoupper('SCONTR. MEDIO'));
 $sheet->mergeCells('O4:O5');
-$sheet->setCellValue('P4', strtoupper('ELIMINATI'));
+$sheet->setCellValue('P4', strtoupper('PEZZI'));
 $sheet->mergeCells('P4:P5');
-$sheet->setCellValue('Q4', strtoupper('ELIMINATI'));
+$sheet->setCellValue('Q4', strtoupper('PEZZI PER SCONTR.'));
 $sheet->mergeCells('Q4:Q5');
-$sheet->setCellValue('R4', strtoupper('MOVIMENTO'));
+$sheet->setCellValue('R4', strtoupper('ELIMINATI'));
 $sheet->mergeCells('R4:R5');
-$sheet->setCellValue('S4', strtoupper('MOVIMENTO'));
+$sheet->setCellValue('S4', strtoupper('ELIMINATI'));
 $sheet->mergeCells('S4:S5');
-$sheet->setCellValue('T4', strtoupper('SPETTACOLO'));
+$sheet->setCellValue('T4', strtoupper('MOVIMENTO'));
 $sheet->mergeCells('T4:T5');
-$sheet->setCellValue('U4', strtoupper('SPETTACOLO'));
+$sheet->setCellValue('U4', strtoupper('MOVIMENTO'));
 $sheet->mergeCells('U4:U5');
-$sheet->setCellValue('V4', strtoupper('G.P.B.'));
-$sheet->mergeCells('V4:Y4');
-$sheet->setCellValue('Z4', strtoupper('CREATIVITA\''));
-$sheet->mergeCells('Z4:Z5');
-$sheet->setCellValue('AA4', strtoupper('CREATIVITA\''));
-$sheet->mergeCells('AA4:AA5');
-$sheet->setCellValue('AB4', strtoupper('DIVERTIMENTO'));
+$sheet->setCellValue('V4', strtoupper('SPETTACOLO'));
+$sheet->mergeCells('V4:V5');
+$sheet->setCellValue('W4', strtoupper('SPETTACOLO'));
+$sheet->mergeCells('W4:W5');
+$sheet->setCellValue('X4', strtoupper('G.P.B.'));
+$sheet->mergeCells('X4:X4');
+$sheet->setCellValue('AB4', strtoupper('CREATIVITA\''));
 $sheet->mergeCells('AB4:AB5');
-$sheet->setCellValue('AC4', strtoupper('DIVERTIMENTO'));
+$sheet->setCellValue('AC4', strtoupper('CREATIVITA\''));
 $sheet->mergeCells('AC4:AC5');
+$sheet->setCellValue('AD4', strtoupper('DIVERTIMENTO'));
+$sheet->mergeCells('AD4:AD5');
+$sheet->setCellValue('AE4', strtoupper('DIVERTIMENTO'));
+$sheet->mergeCells('AE4:AE5');
 
-$sheet->setCellValue('W5', strtoupper('G.E.D.'));
-$sheet->setCellValue('Y5', strtoupper('P.E.D.'));
+$sheet->setCellValue('Y5', strtoupper('G.E.D.'));
+$sheet->setCellValue('AA5', strtoupper('P.E.D.'));
 
 $r = 6;
 foreach($data['dati'] as $datiVenditore) {
@@ -153,61 +157,66 @@ foreach($data['dati'] as $datiVenditore) {
 	$sheet->getColumnDimension('J')->setWidth(14);
 	$sheet->getCell("J$r")->setValueExplicit($formula,DataType::TYPE_FORMULA);
 
-	$sheet->getCell("K$r")->setValueExplicit($datiVenditore['servizi'],DataType::TYPE_NUMERIC);
-
-	$formula="=IF(L$r=0,0,B$r/L$r)";
-	$sheet->getColumnDimension('L')->setWidth(0);
-	$sheet->getCell("L$r")->setValueExplicit($datiVenditore['scontrini'],DataType::TYPE_NUMERIC);
+	$sheet->getColumnDimension('K')->setWidth(14);
+	$sheet->getCell("K$r")->setValueExplicit($datiVenditore['garanteasy'],DataType::TYPE_NUMERIC);
+	$sheet->getColumnDimension('L')->setWidth(14);
+	$sheet->getCell("L$r")->setValueExplicit($datiVenditore['cartafan'],DataType::TYPE_NUMERIC);
 	$sheet->getColumnDimension('M')->setWidth(14);
-	$sheet->getCell("M$r")->setValueExplicit($formula,DataType::TYPE_FORMULA);
+	$sheet->getCell("M$r")->setValueExplicit($datiVenditore['servizi'],DataType::TYPE_NUMERIC);
 
-	$formula="=IF(L$r=0,0,N$r/L$r)";
+	$formula="=IF(N$r=0,0,B$r/N$r)";
 	$sheet->getColumnDimension('N')->setWidth(0);
-	$sheet->getCell("N$r")->setValueExplicit($datiVenditore['pezzi'],DataType::TYPE_NUMERIC);
+	$sheet->getCell("N$r")->setValueExplicit($datiVenditore['scontrini'],DataType::TYPE_NUMERIC);
 	$sheet->getColumnDimension('O')->setWidth(14);
 	$sheet->getCell("O$r")->setValueExplicit($formula,DataType::TYPE_FORMULA);
 
-	$formula="=IF(B$r=0,0,P$r/B$r)";
+	$formula="=IF(N$r=0,0,P$r/N$r)";
 	$sheet->getColumnDimension('P')->setWidth(0);
-	$sheet->getCell("P$r")->setValueExplicit($datiVenditore['eliminati'],DataType::TYPE_NUMERIC);
+	$sheet->getCell("P$r")->setValueExplicit($datiVenditore['pezzi'],DataType::TYPE_NUMERIC);
 	$sheet->getColumnDimension('Q')->setWidth(14);
 	$sheet->getCell("Q$r")->setValueExplicit($formula,DataType::TYPE_FORMULA);
 
 	$formula="=IF(B$r=0,0,R$r/B$r)";
 	$sheet->getColumnDimension('R')->setWidth(0);
-	$sheet->getCell("R$r")->setValueExplicit($datiVenditore['movimento'],DataType::TYPE_NUMERIC);
+	$sheet->getCell("R$r")->setValueExplicit($datiVenditore['eliminati'],DataType::TYPE_NUMERIC);
 	$sheet->getColumnDimension('S')->setWidth(14);
 	$sheet->getCell("S$r")->setValueExplicit($formula,DataType::TYPE_FORMULA);
 
 	$formula="=IF(B$r=0,0,T$r/B$r)";
 	$sheet->getColumnDimension('T')->setWidth(0);
-	$sheet->getCell("T$r")->setValueExplicit($datiVenditore['spettacolo'],DataType::TYPE_NUMERIC);
+	$sheet->getCell("T$r")->setValueExplicit($datiVenditore['movimento'],DataType::TYPE_NUMERIC);
 	$sheet->getColumnDimension('U')->setWidth(14);
 	$sheet->getCell("U$r")->setValueExplicit($formula,DataType::TYPE_FORMULA);
 
 	$formula="=IF(B$r=0,0,V$r/B$r)";
 	$sheet->getColumnDimension('V')->setWidth(0);
-	$sheet->getCell("V$r")->setValueExplicit($datiVenditore['ged'],DataType::TYPE_NUMERIC);
+	$sheet->getCell("V$r")->setValueExplicit($datiVenditore['spettacolo'],DataType::TYPE_NUMERIC);
 	$sheet->getColumnDimension('W')->setWidth(14);
 	$sheet->getCell("W$r")->setValueExplicit($formula,DataType::TYPE_FORMULA);
 
 	$formula="=IF(B$r=0,0,X$r/B$r)";
 	$sheet->getColumnDimension('X')->setWidth(0);
-	$sheet->getCell("X$r")->setValueExplicit($datiVenditore['ped'],DataType::TYPE_NUMERIC);
+	$sheet->getCell("X$r")->setValueExplicit($datiVenditore['ged'],DataType::TYPE_NUMERIC);
 	$sheet->getColumnDimension('Y')->setWidth(14);
 	$sheet->getCell("Y$r")->setValueExplicit($formula,DataType::TYPE_FORMULA);
 
 	$formula="=IF(B$r=0,0,Z$r/B$r)";
 	$sheet->getColumnDimension('Z')->setWidth(0);
-	$sheet->getCell("Z$r")->setValueExplicit($datiVenditore['creativita'],DataType::TYPE_NUMERIC);
+	$sheet->getCell("Z$r")->setValueExplicit($datiVenditore['ped'],DataType::TYPE_NUMERIC);
 	$sheet->getColumnDimension('AA')->setWidth(14);
 	$sheet->getCell("AA$r")->setValueExplicit($formula,DataType::TYPE_FORMULA);
 
 	$formula="=IF(B$r=0,0,AB$r/B$r)";
 	$sheet->getColumnDimension('AB')->setWidth(0);
-	$sheet->getCell("AB$r")->setValueExplicit($datiVenditore['divertimento'],DataType::TYPE_NUMERIC);
+	$sheet->getCell("AB$r")->setValueExplicit($datiVenditore['creativita'],DataType::TYPE_NUMERIC);
 	$sheet->getColumnDimension('AC')->setWidth(14);
 	$sheet->getCell("AC$r")->setValueExplicit($formula,DataType::TYPE_FORMULA);
+
+	$formula="=IF(B$r=0,0,AD$r/B$r)";
+	$sheet->getColumnDimension('AD')->setWidth(0);
+	$sheet->getCell("AD$r")->setValueExplicit($datiVenditore['divertimento'],DataType::TYPE_NUMERIC);
+	$sheet->getColumnDimension('AE')->setWidth(14);
+	$sheet->getCell("AE$r")->setValueExplicit($formula,DataType::TYPE_FORMULA);
 	$r++;
 }
 // totali
@@ -242,17 +251,18 @@ $sheet->getCell("K$r")->setValueExplicit($formula,DataType::TYPE_FORMULA);
 
 $formula="=SUM(L6:L$r)";
 $sheet->getCell("L$r")->setValueExplicit($formula,DataType::TYPE_FORMULA);
-$formula="=IF(L$r=0,0,B$r/L$r)";
+
+$formula="=SUM(M6:M$r)";
 $sheet->getCell("M$r")->setValueExplicit($formula,DataType::TYPE_FORMULA);
 
 $formula="=SUM(N6:N$r)";
 $sheet->getCell("N$r")->setValueExplicit($formula,DataType::TYPE_FORMULA);
-$formula="=IF(L$r=0,0,N$r/L$r)";
+$formula="=IF(N$r=0,0,B$r/N$r)";
 $sheet->getCell("O$r")->setValueExplicit($formula,DataType::TYPE_FORMULA);
 
 $formula="=SUM(P6:P$r)";
 $sheet->getCell("P$r")->setValueExplicit($formula,DataType::TYPE_FORMULA);
-$formula="=IF(B$r=0,0,P$r/B$r)";
+$formula="=IF(N$r=0,0,P$r/N$r)";
 $sheet->getCell("Q$r")->setValueExplicit($formula,DataType::TYPE_FORMULA);
 
 $formula="=SUM(R6:R$r)";
@@ -285,6 +295,11 @@ $sheet->getCell("AB$r")->setValueExplicit($formula,DataType::TYPE_FORMULA);
 $formula="=IF(B$r=0,0,AB$r/B$r)";
 $sheet->getCell("AC$r")->setValueExplicit($formula,DataType::TYPE_FORMULA);
 
+$formula="=SUM(AD6:AD$r)";
+$sheet->getCell("AD$r")->setValueExplicit($formula,DataType::TYPE_FORMULA);
+$formula="=IF(B$r=0,0,AD$r/B$r)";
+$sheet->getCell("AE$r")->setValueExplicit($formula,DataType::TYPE_FORMULA);
+
 /*$formula="=IF(B$r=0,0,C$r/B$r)";
 $sheet->getColumnDimension('C')->setWidth(0);
 $sheet->getCell("C$r")->setValueExplicit($datiVenditore['margine'],DataType::TYPE_NUMERIC);
@@ -304,7 +319,7 @@ $sheet->getStyle("A1:$lastColumn$lastRow")->getAlignment()->setVertical('center'
 $sheet->getStyle('A1:A4')->getFont()->setBold(true);
 $sheet->getStyle('A4:AE5')->getFont()->setBold(true);
 $sheet->getStyle('A4:AE5')->getAlignment()->setVertical('center')->setHorizontal('center')->setWrapText(true);
-$sheet->getStyle("A$r:AC$r")->getFont()->setBold(true);
+$sheet->getStyle("A$r:AE$r")->getFont()->setBold(true);
 
 // colonne
 $sheet->getStyle("B6:B$r")->getNumberFormat()->setFormatCode('###,###,##0.00;[Red][<0]-###,###,##0.00;');
@@ -312,22 +327,23 @@ $sheet->getStyle("D6:D$r")->getNumberFormat()->setFormatCode('#0.00%;[Red][<0]-#
 $sheet->getStyle("F6:F$r")->getNumberFormat()->setFormatCode('#0.00%;[Red][<0]-#0.00%;');
 $sheet->getStyle("H6:H$r")->getNumberFormat()->setFormatCode('#0.00%;[Red][<0]-#0.00%;');
 $sheet->getStyle("J6:J$r")->getNumberFormat()->setFormatCode('#0.00%;[Red][<0]-#0.00%;');
-$sheet->getStyle("M6:M$r")->getNumberFormat()->setFormatCode('###,###,##0.00;[Red][<0]-###,###,##0.00;');
+$sheet->getStyle("K6:M$r")->getNumberFormat()->setFormatCode('###,###,##0;[Red][<0]-###,###,##0;');
 $sheet->getStyle("O6:O$r")->getNumberFormat()->setFormatCode('###,###,##0.00;[Red][<0]-###,###,##0.00;');
-$sheet->getStyle("Q6:Q$r")->getNumberFormat()->setFormatCode('#0.00%;[Red][<0]-#0.00%;');
+$sheet->getStyle("Q6:Q$r")->getNumberFormat()->setFormatCode('###,###,##0.00;[Red][<0]-###,###,##0.00;');
 $sheet->getStyle("S6:S$r")->getNumberFormat()->setFormatCode('#0.00%;[Red][<0]-#0.00%;');
 $sheet->getStyle("U6:U$r")->getNumberFormat()->setFormatCode('#0.00%;[Red][<0]-#0.00%;');
 $sheet->getStyle("W6:W$r")->getNumberFormat()->setFormatCode('#0.00%;[Red][<0]-#0.00%;');
 $sheet->getStyle("Y6:Y$r")->getNumberFormat()->setFormatCode('#0.00%;[Red][<0]-#0.00%;');
 $sheet->getStyle("AA6:AA$r")->getNumberFormat()->setFormatCode('#0.00%;[Red][<0]-#0.00%;');
 $sheet->getStyle("AC6:AC$r")->getNumberFormat()->setFormatCode('#0.00%;[Red][<0]-#0.00%;');
+$sheet->getStyle("AE6:EC$r")->getNumberFormat()->setFormatCode('#0.00%;[Red][<0]-#0.00%;');
 
-$sheet->getStyle("A4:AC4")->getBorders()->getAllBorders()->setBorderStyle(Border::BORDER_THIN);
-$sheet->getStyle("A5:AC5")->getBorders()->getAllBorders()->setBorderStyle(Border::BORDER_THIN);
+$sheet->getStyle("A4:AE4")->getBorders()->getAllBorders()->setBorderStyle(Border::BORDER_THIN);
+$sheet->getStyle("A5:AE5")->getBorders()->getAllBorders()->setBorderStyle(Border::BORDER_THIN);
 /*$sheet->getStyle('A9:X10')->getBorders()->getTop()->setBorderStyle(Border::BORDER_THIN);
 $sheet->getStyle('A9:X10')->getBorders()->getRight()->setBorderStyle(Border::BORDER_THIN);
 $sheet->getStyle('A9:X10')->getBorders()->getBottom()->setBorderStyle(Border::BORDER_THIN);*/
-$sheet->getStyle("A$r:AC$r")->getBorders()->getAllBorders()->setBorderStyle(Border::BORDER_THIN);
+$sheet->getStyle("A$r:AE$r")->getBorders()->getAllBorders()->setBorderStyle(Border::BORDER_THIN);
 //$sheet->getStyle('A9:X10')->getFill()->setFillType(Fill::FILL_SOLID)->getStartColor()->setARGB('FFF0FFF0')
 
 $sheet->getPageSetup()->setOrientation(PageSetup::PAPERSIZE_A4);

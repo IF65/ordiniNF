@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5ba9a39a-6692-4f3c-b7df-938c53d18a9a" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/test.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/reportVenditori.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/reportVenditori.php" afterDir="false" />
     </list>
@@ -160,7 +161,8 @@
       <workItem from="1617082136587" duration="254000" />
       <workItem from="1617091230773" duration="12631000" />
       <workItem from="1617110175847" duration="38000" />
-      <workItem from="1617110678970" duration="300000" />
+      <workItem from="1617110678970" duration="678000" />
+      <workItem from="1617113801475" duration="2385000" />
     </task>
     <task id="LOCAL-00001" summary="Sistemato Excel molto basico per giacenze linee">
       <created>1555408363753</created>
