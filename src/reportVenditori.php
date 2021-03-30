@@ -34,6 +34,8 @@ $style = new Style();
 $nomeFile = $data['nomeFile'];
 $file = '../temp/'.$nomeFile.'.xlsx';
 
+file_put_contents('../test.txt', $request);
+
 // creazione del workbook
 $workBook = new Spreadsheet();
 $workBook->getDefaultStyle()->getFont()->setName('Arial');
