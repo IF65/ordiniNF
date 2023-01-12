@@ -7,15 +7,15 @@
     use PhpOffice\PhpSpreadsheet\Reader\Xlsx;
     use PhpOffice\PhpSpreadsheet\Shared\Date;
 
-    $debug = false;
+    $debug = true;
     
     $timeZone = new DateTimeZone('Europe/Rome');
     
     $inputFileName = '';
 
     if ($debug) {
-        $inputFileName = "/Users/if65/Desktop/test_fatture_excel.xlsx";
-        $sheetName = ' ITMK 2019';
+        $inputFileName = "/Users/if65/Desktop/FTELETTRONICHE CL.xlsx";
+        $sheetName = 'FT BENI';
     } else {
         if (!isset($_FILES['userfile']) || !is_uploaded_file($_FILES['userfile']['tmp_name'])) {
             echo 'Non hai inviato nessun file...';
