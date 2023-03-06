@@ -21,8 +21,8 @@ if (!isset($_FILES['userfile']) || !is_uploaded_file($_FILES['userfile']['tmp_na
 
 if (move_uploaded_file($_FILES['userfile']['tmp_name'], "/phpUpload/" . $_FILES['userfile']['name'])) {
     $inputFileName = "/phpUpload/" . $_FILES['userfile']['name'];
-/*if (true) {
-    $inputFileName = "/Users/if65/Desktop/Sportland/Ordini per Test caricamento _Modello 2023_/Mod.2023 x Prova_Garmin.xlsx";*/
+    /*if (true) {
+        $inputFileName = "/Users/if65/Desktop/Sportland/Ordini per Test caricamento _Modello 2023_/Mod.2023 x Prova_Garmin.xlsx";*/
 
     /** Create a new Xls Reader  **/
     $reader = new Xlsx();
@@ -64,8 +64,17 @@ if (move_uploaded_file($_FILES['userfile']['tmp_name'], "/phpUpload/" . $_FILES[
         /** @var  Article[] $articles */
         $articles = [];
 
-        $minDeliveryDate = Date::excelToDateTimeObject($worksheet->getCellByColumnAndRow(25, 11)->getValue());
-        $maxDeliveryDate = Date::excelToDateTimeObject($worksheet->getCellByColumnAndRow(26, 11)->getValue());
+        //Delivery date
+        $deliveryDates = [];
+        for ($index = 11; $index <= $highestRow; $index += 5) {
+            $brand = $worksheet->getCellByColumnAndRow(2, $index)->getValue() ?? '';
+            $minDeliveryDate = Date::excelToDateTimeObject($worksheet->getCellByColumnAndRow(25, 11)->getValue());
+            $maxDeliveryDate = Date::excelToDateTimeObject($worksheet->getCellByColumnAndRow(26, 11)->getValue());
+
+            if (!key_exists($brand, $deliveryDates)) {
+                $deliveryDates[$brand] = ['min' => $minDeliveryDate, 'max' => $maxDeliveryDate];
+            }
+        }
 
         for ($index = 11; $index <= $highestRow; $index += 5) {
             $value = $worksheet->getCellByColumnAndRow(1, $index)->getValue();
@@ -84,22 +93,22 @@ if (move_uploaded_file($_FILES['userfile']['tmp_name'], "/phpUpload/" . $_FILES[
             for ($columnIndex = 29; $columnIndex <= 49; $columnIndex++) {
                 $value = (int)$worksheet->getCellByColumnAndRow($columnIndex, $index)->getValue() ?? 0;
                 if ($value != 0) {
-                    $packageClass1Items[$sizes[$sizeId][$columnIndex]] = ['quantity'=>$value, 'articleCode'=>''];
+                    $packageClass1Items[$sizes[$sizeId][$columnIndex]] = ['quantity' => $value, 'articleCode' => ''];
                     $usedSizes[$sizes[$sizeId][$columnIndex]] = 0;
                 }
                 $value = (int)$worksheet->getCellByColumnAndRow($columnIndex, $index + 1)->getValue() ?? 0;
                 if ($value != 0) {
-                    $packageClass2Items[$sizes[$sizeId][$columnIndex]] = ['quantity'=>$value, 'articleCode'=>''];
+                    $packageClass2Items[$sizes[$sizeId][$columnIndex]] = ['quantity' => $value, 'articleCode' => ''];
                     $usedSizes[$sizes[$sizeId][$columnIndex]] = 0;
                 }
                 $value = (int)$worksheet->getCellByColumnAndRow($columnIndex, $index + 2)->getValue() ?? 0;
                 if ($value != 0) {
-                    $packageClass3Items[$sizes[$sizeId][$columnIndex]] = ['quantity'=>$value, 'articleCode'=>''];
+                    $packageClass3Items[$sizes[$sizeId][$columnIndex]] = ['quantity' => $value, 'articleCode' => ''];
                     $usedSizes[$sizes[$sizeId][$columnIndex]] = 0;
                 }
                 $value = (int)$worksheet->getCellByColumnAndRow($columnIndex, $index + 3)->getValue() ?? 0;
                 if ($value != 0) {
-                    $packageClass4Items[$sizes[$sizeId][$columnIndex]] = ['quantity'=>$value, 'articleCode'=>''];
+                    $packageClass4Items[$sizes[$sizeId][$columnIndex]] = ['quantity' => $value, 'articleCode' => ''];
                     $usedSizes[$sizes[$sizeId][$columnIndex]] = 0;
                 }
             }
@@ -154,8 +163,8 @@ if (move_uploaded_file($_FILES['userfile']['tmp_name'], "/phpUpload/" . $_FILES[
                 (float)$worksheet->getCellByColumnAndRow(22, $index)->getValue() ?? 0.0,
                 (float)$worksheet->getCellByColumnAndRow(23, $index)->getValue() ?? 0.0,
                 (float)$worksheet->getCellByColumnAndRow(24, $index)->getValue() ?? 0.0,
-                $minDeliveryDate,
-                $maxDeliveryDate,
+                $deliveryDates[$worksheet->getCellByColumnAndRow(2, $index)->getValue() ?? '']['min'],
+                $deliveryDates[$worksheet->getCellByColumnAndRow(2, $index)->getValue() ?? '']['max'],
                 $packageClass1Items,
                 $packageClass2Items,
                 $packageClass3Items,
