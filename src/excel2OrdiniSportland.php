@@ -84,22 +84,22 @@ if (move_uploaded_file($_FILES['userfile']['tmp_name'], "/phpUpload/" . $_FILES[
             for ($columnIndex = 29; $columnIndex <= 49; $columnIndex++) {
                 $value = (int)$worksheet->getCellByColumnAndRow($columnIndex, $index)->getValue() ?? 0;
                 if ($value != 0) {
-                    $packageClass1Items[$sizes[$sizeId][$columnIndex]] = $value;
+                    $packageClass1Items[$sizes[$sizeId][$columnIndex]] = ['quantity'=>$value, 'articleCode'=>''];
                     $usedSizes[$sizes[$sizeId][$columnIndex]] = 0;
                 }
                 $value = (int)$worksheet->getCellByColumnAndRow($columnIndex, $index + 1)->getValue() ?? 0;
                 if ($value != 0) {
-                    $packageClass2Items[$sizes[$sizeId][$columnIndex]] = $value;
+                    $packageClass2Items[$sizes[$sizeId][$columnIndex]] = ['quantity'=>$value, 'articleCode'=>''];
                     $usedSizes[$sizes[$sizeId][$columnIndex]] = 0;
                 }
                 $value = (int)$worksheet->getCellByColumnAndRow($columnIndex, $index + 2)->getValue() ?? 0;
                 if ($value != 0) {
-                    $packageClass3Items[$sizes[$sizeId][$columnIndex]] = $value;
+                    $packageClass3Items[$sizes[$sizeId][$columnIndex]] = ['quantity'=>$value, 'articleCode'=>''];
                     $usedSizes[$sizes[$sizeId][$columnIndex]] = 0;
                 }
                 $value = (int)$worksheet->getCellByColumnAndRow($columnIndex, $index + 3)->getValue() ?? 0;
                 if ($value != 0) {
-                    $packageClass4Items[$sizes[$sizeId][$columnIndex]] = $value;
+                    $packageClass4Items[$sizes[$sizeId][$columnIndex]] = ['quantity'=>$value, 'articleCode'=>''];
                     $usedSizes[$sizes[$sizeId][$columnIndex]] = 0;
                 }
             }
