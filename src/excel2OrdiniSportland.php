@@ -75,57 +75,59 @@ if (move_uploaded_file($_FILES['userfile']['tmp_name'], "/phpUpload/" . $_FILES[
 
             $sizeId = $worksheet->getCellByColumnAndRow(28, $index)->getValue();
 
-            /** @var PackageItem[] $packageClass1Items */
+            $usedSizes = [];
+
             $packageClass1Items = [];
-            /** @var PackageItem[] $packageClass2Items */
             $packageClass2Items = [];
-            /** @var PackageItem[] $packageClass3Items */
             $packageClass3Items = [];
-            /** @var PackageItem[] $packageClass4Items */
             $packageClass4Items = [];
             for ($columnIndex = 29; $columnIndex <= 49; $columnIndex++) {
                 $value = (int)$worksheet->getCellByColumnAndRow($columnIndex, $index)->getValue() ?? 0;
                 if ($value != 0) {
-                    $packageClass1Items[] = new PackageItem($sizeId, $sizes[$sizeId][$columnIndex], $value);
+                    $packageClass1Items[$sizes[$sizeId][$columnIndex]] = $value;
+                    $usedSizes[$sizes[$sizeId][$columnIndex]] = 0;
                 }
                 $value = (int)$worksheet->getCellByColumnAndRow($columnIndex, $index + 1)->getValue() ?? 0;
                 if ($value != 0) {
-                    $packageClass2Items[] = new PackageItem($sizeId, $sizes[$sizeId][$columnIndex], $value);
+                    $packageClass2Items[$sizes[$sizeId][$columnIndex]] = $value;
+                    $usedSizes[$sizes[$sizeId][$columnIndex]] = 0;
                 }
                 $value = (int)$worksheet->getCellByColumnAndRow($columnIndex, $index + 2)->getValue() ?? 0;
                 if ($value != 0) {
-                    $packageClass3Items[] = new PackageItem($sizeId, $sizes[$sizeId][$columnIndex], $value);
+                    $packageClass3Items[$sizes[$sizeId][$columnIndex]] = $value;
+                    $usedSizes[$sizes[$sizeId][$columnIndex]] = 0;
                 }
                 $value = (int)$worksheet->getCellByColumnAndRow($columnIndex, $index + 3)->getValue() ?? 0;
                 if ($value != 0) {
-                    $packageClass4Items[] = new PackageItem($sizeId, $sizes[$sizeId][$columnIndex], $value);
+                    $packageClass4Items[$sizes[$sizeId][$columnIndex]] = $value;
+                    $usedSizes[$sizes[$sizeId][$columnIndex]] = 0;
                 }
             }
 
-            /** @var string[] $PackageClass1Stores */
-            $PackageClass1Stores = [];
-            /** @var string[] $PackageClass2Stores */
-            $PackageClass2Stores = [];
-            /** @var string[] $PackageClass3Stores */
-            $PackageClass3Stores = [];
-            /** @var string[] $PackageClass4Stores */
-            $PackageClass4Stores = [];
+            /** @var string[] $packageClass1Stores */
+            $packageClass1Stores = [];
+            /** @var string[] $packageClass2Stores */
+            $packageClass2Stores = [];
+            /** @var string[] $packageClass3Stores */
+            $packageClass3Stores = [];
+            /** @var string[] $packageClass4Stores */
+            $packageClass4Stores = [];
             for ($columnIndex = 53; $columnIndex <= 73; $columnIndex++) {
                 $value = $worksheet->getCellByColumnAndRow($columnIndex, $index)->getValue() ?? '';
                 if ($value != '') {
-                    $PackageClass1Stores[] = $stores[$columnIndex];
+                    $packageClass1Stores[] = $stores[$columnIndex];
                 }
                 $value = $worksheet->getCellByColumnAndRow($columnIndex, $index + 1)->getValue() ?? '';
                 if ($value != '') {
-                    $PackageClass2Stores[] = $stores[$columnIndex];
+                    $packageClass2Stores[] = $stores[$columnIndex];
                 }
                 $value = $worksheet->getCellByColumnAndRow($columnIndex, $index + 2)->getValue() ?? '';
                 if ($value != '') {
-                    $PackageClass3Stores[] = $stores[$columnIndex];
+                    $packageClass3Stores[] = $stores[$columnIndex];
                 }
                 $value = $worksheet->getCellByColumnAndRow($columnIndex, $index + 3)->getValue() ?? '';
                 if ($value != '') {
-                    $PackageClass4Stores[] = $stores[$columnIndex];
+                    $packageClass4Stores[] = $stores[$columnIndex];
                 }
             }
 
@@ -158,10 +160,11 @@ if (move_uploaded_file($_FILES['userfile']['tmp_name'], "/phpUpload/" . $_FILES[
                 $packageClass2Items,
                 $packageClass3Items,
                 $packageClass4Items,
-                $PackageClass1Stores,
-                $PackageClass2Stores,
-                $PackageClass3Stores,
-                $PackageClass4Stores
+                $packageClass1Stores,
+                $packageClass2Stores,
+                $packageClass3Stores,
+                $packageClass4Stores,
+                array_keys($usedSizes)
             );
         }
 
@@ -172,27 +175,6 @@ if (move_uploaded_file($_FILES['userfile']['tmp_name'], "/phpUpload/" . $_FILES[
     }
 
     exit;
-}
-
-class PackageItem
-{
-    public string $code;
-    public string $size;
-    public int $quantity;
-
-    /**
-     * @param string $code
-     * @param string $size
-     * @param int $quantity
-     */
-    public function __construct(string $code, string $size, int $quantity)
-    {
-        $this->code = $code;
-        $this->size = $size;
-        $this->quantity = $quantity;
-    }
-
-
 }
 
 class Article
@@ -221,23 +203,17 @@ class Article
     public float $markUp;//Margine
     public DateTime $minDeliveryDate;//CONS MIN
     public DateTime $maxDeliveryDate;//CONS MAX
-
-    /** @var PackageItem[] $packageClass1Items */
     public array $packageClass1Items;
-    /** @var PackageItem[] $packageClass2Items */
     public array $packageClass2Items;
-    /** @var PackageItem[] $packageClass3Items */
     public array $packageClass3Items;
-    /** @var PackageItem[] $packageClass4Items */
     public array $packageClass4Items;
-    /** @var string[] $PackageClass1Stores */
-    public array $PackageClass1Stores;
-    /** @var string[] $PackageClass2Stores */
-    public array $PackageClass2Stores;
-    /** @var string[] $PackageClass3Stores */
-    public array $PackageClass3Stores;
-    /** @var string[] $PackageClass4Stores */
-    public array $PackageClass4Stores;
+
+    public array $packageClass1Stores;
+    public array $packageClass2Stores;
+    public array $packageClass3Stores;
+    public array $packageClass4Stores;
+
+    public array $usedSizes;
 
     /**
      * @param string $code
@@ -264,14 +240,15 @@ class Article
      * @param float $markUp
      * @param DateTime $minDeliveryDate
      * @param DateTime $maxDeliveryDate
-     * @param PackageItem[] $packageClass1Items
-     * @param PackageItem[] $packageClass2Items
-     * @param PackageItem[] $packageClass3Items
-     * @param PackageItem[] $packageClass4Items
-     * @param string[] $PackageClass1Stores
-     * @param string[] $PackageClass2Stores
-     * @param string[] $PackageClass3Stores
-     * @param string[] $PackageClass4Stores
+     * @param array $packageClass1Items
+     * @param array $packageClass2Items
+     * @param array $packageClass3Items
+     * @param array $packageClass4Items
+     * @param array $packageClass1Stores
+     * @param array $packageClass2Stores
+     * @param array $packageClass3Stores
+     * @param array $packageClass4Stores
+     * @param array $usedSizes
      */
     public function __construct(
         string $code,
@@ -302,10 +279,11 @@ class Article
         array $packageClass2Items,
         array $packageClass3Items,
         array $packageClass4Items,
-        array $PackageClass1Stores,
-        array $PackageClass2Stores,
-        array $PackageClass3Stores,
-        array $PackageClass4Stores
+        array $packageClass1Stores,
+        array $packageClass2Stores,
+        array $packageClass3Stores,
+        array $packageClass4Stores,
+        array $usedSizes
     ) {
         $this->code = $code;
         $this->description = $description;
@@ -335,10 +313,12 @@ class Article
         $this->packageClass2Items = $packageClass2Items;
         $this->packageClass3Items = $packageClass3Items;
         $this->packageClass4Items = $packageClass4Items;
-        $this->PackageClass1Stores = $PackageClass1Stores;
-        $this->PackageClass2Stores = $PackageClass2Stores;
-        $this->PackageClass3Stores = $PackageClass3Stores;
-        $this->PackageClass4Stores = $PackageClass4Stores;
+        $this->packageClass1Stores = $packageClass1Stores;
+        $this->packageClass2Stores = $packageClass2Stores;
+        $this->packageClass3Stores = $packageClass3Stores;
+        $this->packageClass4Stores = $packageClass4Stores;
+        $this->usedSizes = $usedSizes;
     }
+
 
 }
