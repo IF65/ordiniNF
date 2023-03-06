@@ -1,10 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="5ba9a39a-6692-4f3c-b7df-938c53d18a9a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/test.txt" afterDir="false" />
+    <list default="true" id="5ba9a39a-6692-4f3c-b7df-938c53d18a9a" name="Default Changelist" comment="Sistemato Excel molto basico per giacenze linee">
+      <change afterPath="$PROJECT_DIR$/src/excel2OrdiniSportland.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/ordiniNF.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/ordiniNF.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/reportVenditori.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/reportVenditori.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/excel2InvoiceEuroconnect.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/excel2InvoiceEuroconnect.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ordini2ExcelNew.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/ordini2ExcelNew.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -13,16 +21,30 @@
   </component>
   <component name="ComposerSettings" doNotAsk="true" synchronizationState="SYNCHRONIZE">
     <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
-    <execution />
+    <execution>
+      <executable path="composer" />
+    </execution>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="PhpWorkspaceProjectConfiguration" interpreter_name="PHP 7.3">
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="PhpWorkspaceProjectConfiguration" interpreter_name="PHP 8.1.1">
     <include_path>
       <path value="$PROJECT_DIR$/vendor/composer" />
       <path value="$PROJECT_DIR$/vendor/phpoffice/phpspreadsheet" />
       <path value="$PROJECT_DIR$/vendor/psr/simple-cache" />
+      <path value="$PROJECT_DIR$/vendor/psr/http-message" />
+      <path value="$PROJECT_DIR$/vendor/psr/http-client" />
+      <path value="$PROJECT_DIR$/vendor/psr/http-factory" />
+      <path value="$PROJECT_DIR$/vendor/ezyang/htmlpurifier" />
+      <path value="$PROJECT_DIR$/vendor/myclabs/php-enum" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-mbstring" />
+      <path value="$PROJECT_DIR$/vendor/maennchen/zipstream-php" />
+      <path value="$PROJECT_DIR$/vendor/markbaker/complex" />
+      <path value="$PROJECT_DIR$/vendor/markbaker/matrix" />
     </include_path>
   </component>
   <component name="ProjectId" id="1OV4kkgJu3KJNLtw6T5SW5kG8L7" />
@@ -33,34 +55,40 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">
-    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
-    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src" />
-    <property name="node.js.detected.package.eslint" value="true" />
-    <property name="node.js.detected.package.tslint" value="true" />
-    <property name="node.js.path.for.package.eslint" value="project" />
-    <property name="node.js.path.for.package.tslint" value="project" />
-    <property name="node.js.selected.package.eslint" value="(autodetect)" />
-    <property name="node.js.selected.package.tslint" value="(autodetect)" />
-    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
-    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="reference.settings.deploy.options" />
-    <property name="vue.rearranger.settings.migration" value="true" />
-  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/if65/Desktop/progetti/ordiniNF/src&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;advanced.settings&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src" />
     </key>
   </component>
-  <component name="RunManager" selected="PHP Script.reportVenditori.php">
-    <configuration name="excel2TemplateIF65.php" type="PhpLocalRunConfigurationType" factoryName="PHP Console" temporary="true" path="$PROJECT_DIR$/src/excel2TemplateIF65.php">
+  <component name="RunManager" selected="PHP Script.excel2OrdiniSportland.php">
+    <configuration name="excel2InvoiceEuroconnect.php" type="PhpLocalRunConfigurationType" factoryName="PHP Console" temporary="true" path="$PROJECT_DIR$/src/excel2InvoiceEuroconnect.php">
+      <method v="2" />
+    </configuration>
+    <configuration name="excel2OrdiniSportland.php" type="PhpLocalRunConfigurationType" factoryName="PHP Console" temporary="true" path="$PROJECT_DIR$/src/excel2OrdiniSportland.php">
+      <method v="2" />
+    </configuration>
+    <configuration name="excel2griglia.php" type="PhpLocalRunConfigurationType" factoryName="PHP Console" temporary="true" path="$PROJECT_DIR$/src/excel2griglia.php">
       <method v="2" />
     </configuration>
     <configuration name="reportVenditori.php" type="PhpLocalRunConfigurationType" factoryName="PHP Console" temporary="true" path="$PROJECT_DIR$/src/reportVenditori.php">
+      <CommandLine>
+        <PhpTestInterpreterSettings>
+          <option name="interpreterName" value="PHP 7.3" />
+        </PhpTestInterpreterSettings>
+      </CommandLine>
       <method v="2" />
     </configuration>
     <configuration name="stampaIncassiFood2.php" type="PhpLocalRunConfigurationType" factoryName="PHP Console" temporary="true" path="$PROJECT_DIR$/src/stampaIncassiFood2.php">
@@ -71,26 +99,20 @@
       </CommandLine>
       <method v="2" />
     </configuration>
-    <configuration name="stampaIncassiFood.php" type="PhpLocalRunConfigurationType" factoryName="PHP Console" temporary="true" path="$PROJECT_DIR$/src/stampaIncassiFood.php">
-      <method v="2" />
-    </configuration>
-    <configuration name="templateIF652Excel.php" type="PhpLocalRunConfigurationType" factoryName="PHP Console" temporary="true" path="$PROJECT_DIR$/src/templateIF652Excel.php">
-      <method v="2" />
-    </configuration>
     <list>
-      <item itemvalue="PHP Script.excel2TemplateIF65.php" />
-      <item itemvalue="PHP Script.stampaIncassiFood2.php" />
-      <item itemvalue="PHP Script.stampaIncassiFood.php" />
-      <item itemvalue="PHP Script.templateIF652Excel.php" />
+      <item itemvalue="PHP Script.excel2OrdiniSportland.php" />
+      <item itemvalue="PHP Script.excel2griglia.php" />
+      <item itemvalue="PHP Script.excel2InvoiceEuroconnect.php" />
       <item itemvalue="PHP Script.reportVenditori.php" />
+      <item itemvalue="PHP Script.stampaIncassiFood2.php" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="PHP Script.reportVenditori.php" />
+        <item itemvalue="PHP Script.excel2OrdiniSportland.php" />
         <item itemvalue="PHP Script.stampaIncassiFood2.php" />
-        <item itemvalue="PHP Script.stampaIncassiFood.php" />
-        <item itemvalue="PHP Script.templateIF652Excel.php" />
-        <item itemvalue="PHP Script.excel2TemplateIF65.php" />
+        <item itemvalue="PHP Script.reportVenditori.php" />
+        <item itemvalue="PHP Script.excel2griglia.php" />
+        <item itemvalue="PHP Script.excel2InvoiceEuroconnect.php" />
       </list>
     </recent_temporary>
   </component>
@@ -163,6 +185,43 @@
       <workItem from="1617110175847" duration="38000" />
       <workItem from="1617110678970" duration="678000" />
       <workItem from="1617113801475" duration="2385000" />
+      <workItem from="1639118959273" duration="933000" />
+      <workItem from="1639384051597" duration="4000" />
+      <workItem from="1652881059613" duration="703000" />
+      <workItem from="1652882329951" duration="43000" />
+      <workItem from="1652882388070" duration="12000" />
+      <workItem from="1652949563223" duration="924000" />
+      <workItem from="1652952010566" duration="7000" />
+      <workItem from="1652952238038" duration="92000" />
+      <workItem from="1653052741622" duration="447000" />
+      <workItem from="1653309068951" duration="34000" />
+      <workItem from="1653384234854" duration="599000" />
+      <workItem from="1653467466903" duration="599000" />
+      <workItem from="1663056361945" duration="1814000" />
+      <workItem from="1663059965454" duration="546000" />
+      <workItem from="1663060677522" duration="2000" />
+      <workItem from="1665327973889" duration="925000" />
+      <workItem from="1665331242989" duration="586000" />
+      <workItem from="1665332726829" duration="1192000" />
+      <workItem from="1665340919182" duration="57000" />
+      <workItem from="1665345199254" duration="42000" />
+      <workItem from="1665380267549" duration="7220000" />
+      <workItem from="1665392243278" duration="3000" />
+      <workItem from="1673511370795" duration="6184000" />
+      <workItem from="1673526088400" duration="168000" />
+      <workItem from="1673526868540" duration="1345000" />
+      <workItem from="1674836180087" duration="345000" />
+      <workItem from="1674878263913" duration="4000" />
+      <workItem from="1675781133871" duration="867000" />
+      <workItem from="1675785435880" duration="597000" />
+      <workItem from="1677834868689" duration="10380000" />
+      <workItem from="1677848074616" duration="171000" />
+      <workItem from="1677849059103" duration="286000" />
+      <workItem from="1677849357173" duration="3489000" />
+      <workItem from="1677856723983" duration="11000" />
+      <workItem from="1677857032323" duration="1110000" />
+      <workItem from="1677871682908" duration="10000" />
+      <workItem from="1678094051808" duration="59000" />
     </task>
     <task id="LOCAL-00001" summary="Sistemato Excel molto basico per giacenze linee">
       <created>1555408363753</created>
@@ -187,11 +246,25 @@
         </entry>
       </map>
     </option>
-    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="Sistemato Excel molto basico per giacenze linee" />
     <option name="LAST_COMMIT_MESSAGE" value="Sistemato Excel molto basico per giacenze linee" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/src/excel2InvoiceEuroconnect.php</url>
+          <line>17</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>

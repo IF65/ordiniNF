@@ -15,8 +15,8 @@ $timeZone = new DateTimeZone('Europe/Rome');
 $inputFileName = '';
 
 if ($debug) {
-    $inputFileName = "/Users/if65/Desktop/test_fatture_excel.xlsx";
-    $sheetName = ' ITMK 2019';
+    $inputFileName = "/Users/if65/Desktop/NC ELETTRONICHE.xlsx";
+    $sheetName = 'NC TEKWORLD BENI';
 } else {
     if (!isset($_FILES['userfile']) || !is_uploaded_file($_FILES['userfile']['tmp_name'])) {
         echo 'Non hai inviato nessun file...';

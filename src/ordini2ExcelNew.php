@@ -7,16 +7,11 @@
     $request = file_get_contents('php://input');
     $data = json_decode($request, true);
 
-    use PhpOffice\PhpSpreadsheet\Cell\Coordinate;
     use PhpOffice\PhpSpreadsheet\Cell\DataType;
     use PhpOffice\PhpSpreadsheet\Spreadsheet;
     use PhpOffice\PhpSpreadsheet\Writer\Xlsx;
     use PhpOffice\PhpSpreadsheet\Style\Style;
     use PhpOffice\PhpSpreadsheet\Style\NumberFormat;
-    use PhpOffice\PhpSpreadsheet\Style\Alignment;
-    use PhpOffice\PhpSpreadsheet\Style\Fill;
-    use PhpOffice\PhpSpreadsheet\Style\Border;
-	use \PhpOffice\PhpSpreadsheet\Style\Protection;
 	use PhpOffice\PhpSpreadsheet\Shared\Date;
 	
 	// verifico l'esistenza della cartella temp e se serve la creo
