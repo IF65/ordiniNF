@@ -5,14 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5ba9a39a-6692-4f3c-b7df-938c53d18a9a" name="Default Changelist" comment="Sistemato Excel molto basico per giacenze linee">
-      <change afterPath="$PROJECT_DIR$/src/excel2OrdiniSportland.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/ordiniNF.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/ordiniNF.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/excel2InvoiceEuroconnect.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/excel2InvoiceEuroconnect.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ordini2ExcelNew.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/ordini2ExcelNew.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/excel2OrdiniSportland.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/excel2OrdiniSportland.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -221,7 +215,7 @@
       <workItem from="1677856723983" duration="11000" />
       <workItem from="1677857032323" duration="1110000" />
       <workItem from="1677871682908" duration="10000" />
-      <workItem from="1678094051808" duration="59000" />
+      <workItem from="1678094051808" duration="2291000" />
     </task>
     <task id="LOCAL-00001" summary="Sistemato Excel molto basico per giacenze linee">
       <created>1555408363753</created>

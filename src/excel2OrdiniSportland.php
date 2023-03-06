@@ -21,8 +21,8 @@ if (!isset($_FILES['userfile']) || !is_uploaded_file($_FILES['userfile']['tmp_na
 
 if (move_uploaded_file($_FILES['userfile']['tmp_name'], "/phpUpload/" . $_FILES['userfile']['name'])) {
     $inputFileName = "/phpUpload/" . $_FILES['userfile']['name'];
-    /*if (true) {
-        $inputFileName = "/Users/if65/Desktop/Sportland/Ordini per Test caricamento _Modello 2023_/Mod.2023 x Prova_Garmin.xlsx";*/
+/*if (true) {
+    $inputFileName = "/Users/if65/Desktop/Sportland/Ordini per Test caricamento _Modello 2023_/Mod.2023 x Prova_Garmin.xlsx";*/
 
     /** Create a new Xls Reader  **/
     $reader = new Xlsx();
@@ -38,21 +38,6 @@ if (move_uploaded_file($_FILES['userfile']['tmp_name'], "/phpUpload/" . $_FILES[
         $highestColumn = $worksheet->getHighestColumn();
         $highestColumnIndex = Coordinate::columnIndexFromString($highestColumn);
 
-        // Definizione Package
-        $package = [];
-        for ($rowIndex = 1; $rowIndex <= 9; $rowIndex++) {
-            $packageId = $worksheet->getCellByColumnAndRow(28, $rowIndex)->getValue();
-            if ($packageId != '') {
-                $package[$packageId] = [];
-                for ($columnIndex = 29; $columnIndex <= 49; $columnIndex++) {
-                    $value = $worksheet->getCellByColumnAndRow($columnIndex, $rowIndex)->getValue();
-                    if ($value != '') {
-                        $package[$packageId][$columnIndex] = $value;
-                    }
-                }
-            }
-        }
-
         // Definizione sedi
         $stores = [];
         for ($columnIndex = 53; $columnIndex <= 73; $columnIndex++) {
@@ -62,6 +47,19 @@ if (move_uploaded_file($_FILES['userfile']['tmp_name'], "/phpUpload/" . $_FILES[
             }
         }
 
+        // Definizione taglie
+        $sizes = [];
+        for ($rowIndex = 1; $rowIndex <= 9; $rowIndex++) {
+            $sizeId = $worksheet->getCellByColumnAndRow(28, $rowIndex)->getValue() ?? '';
+            if ($sizeId != '') {
+                for ($columnIndex = 29; $columnIndex <= 49; $columnIndex++) {
+                    $size = $worksheet->getCellByColumnAndRow($columnIndex, $rowIndex)->getValue() ?? '';
+                    if ($size != '') {
+                        $sizes[$sizeId][$columnIndex] = $size;
+                    }
+                }
+            }
+        }
 
         /** @var  Article[] $articles */
         $articles = [];
@@ -75,7 +73,7 @@ if (move_uploaded_file($_FILES['userfile']['tmp_name'], "/phpUpload/" . $_FILES[
                 break;
             }
 
-            $packageId = $worksheet->getCellByColumnAndRow(28, $index)->getValue();
+            $sizeId = $worksheet->getCellByColumnAndRow(28, $index)->getValue();
 
             /** @var PackageItem[] $packageClass1Items */
             $packageClass1Items = [];
@@ -88,19 +86,19 @@ if (move_uploaded_file($_FILES['userfile']['tmp_name'], "/phpUpload/" . $_FILES[
             for ($columnIndex = 29; $columnIndex <= 49; $columnIndex++) {
                 $value = (int)$worksheet->getCellByColumnAndRow($columnIndex, $index)->getValue() ?? 0;
                 if ($value != 0) {
-                    $packageClass1Items[] = new PackageItem($packageId, $package[$packageId][$columnIndex], $value);
+                    $packageClass1Items[] = new PackageItem($sizeId, $sizes[$sizeId][$columnIndex], $value);
                 }
                 $value = (int)$worksheet->getCellByColumnAndRow($columnIndex, $index + 1)->getValue() ?? 0;
                 if ($value != 0) {
-                    $packageClass2Items[] = new PackageItem($packageId, $package[$packageId][$columnIndex], $value);
+                    $packageClass2Items[] = new PackageItem($sizeId, $sizes[$sizeId][$columnIndex], $value);
                 }
                 $value = (int)$worksheet->getCellByColumnAndRow($columnIndex, $index + 2)->getValue() ?? 0;
                 if ($value != 0) {
-                    $packageClass3Items[] = new PackageItem($packageId, $package[$packageId][$columnIndex], $value);
+                    $packageClass3Items[] = new PackageItem($sizeId, $sizes[$sizeId][$columnIndex], $value);
                 }
                 $value = (int)$worksheet->getCellByColumnAndRow($columnIndex, $index + 3)->getValue() ?? 0;
                 if ($value != 0) {
-                    $packageClass4Items[] = new PackageItem($packageId, $package[$packageId][$columnIndex], $value);
+                    $packageClass4Items[] = new PackageItem($sizeId, $sizes[$sizeId][$columnIndex], $value);
                 }
             }
 
@@ -168,6 +166,7 @@ if (move_uploaded_file($_FILES['userfile']['tmp_name'], "/phpUpload/" . $_FILES[
         }
 
         echo json_encode(array("recordCount" => count($articles), "values" => $articles));
+        //file_put_contents('/Users/if65/Desktop/ordineSP.json', json_encode(array("recordCount" => count($articles), "values" => $articles)));
     } catch (\PhpOffice\PhpSpreadsheet\Exception $e) {
         die ("Error");
     }
