@@ -21,8 +21,8 @@ if (!isset($_FILES['userfile']) || !is_uploaded_file($_FILES['userfile']['tmp_na
 
 if (move_uploaded_file($_FILES['userfile']['tmp_name'], "/phpUpload/" . $_FILES['userfile']['name'])) {
     $inputFileName = "/phpUpload/" . $_FILES['userfile']['name'];
-    /*if (true) {
-        $inputFileName = "/Users/if65/Desktop/Sportland/Ordini per Test caricamento _Modello 2023_/Mod.2023 x Prova_Garmin.xlsx";*/
+/*    if (true) {
+        $inputFileName = "/Users/if65/Desktop/AKUSS23.xlsx";*/
 
     /** Create a new Xls Reader  **/
     $reader = new Xlsx();
@@ -53,7 +53,7 @@ if (move_uploaded_file($_FILES['userfile']['tmp_name'], "/phpUpload/" . $_FILES[
             $sizeId = $worksheet->getCellByColumnAndRow(28, $rowIndex)->getValue() ?? '';
             if ($sizeId != '') {
                 for ($columnIndex = 29; $columnIndex <= 49; $columnIndex++) {
-                    $size = $worksheet->getCellByColumnAndRow($columnIndex, $rowIndex)->getValue() ?? '';
+                    $size = (string)$worksheet->getCellByColumnAndRow($columnIndex, $rowIndex)->getValue() ?? '';
                     if ($size != '') {
                         $sizes[$sizeId][$columnIndex] = $size;
                     }
