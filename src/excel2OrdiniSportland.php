@@ -21,8 +21,8 @@ if (!isset($_FILES['userfile']) || !is_uploaded_file($_FILES['userfile']['tmp_na
 
 if (move_uploaded_file($_FILES['userfile']['tmp_name'], "/phpUpload/" . $_FILES['userfile']['name'])) {
     $inputFileName = "/phpUpload/" . $_FILES['userfile']['name'];
-/*    if (true) {
-        $inputFileName = "/Users/if65/Desktop/AKUSS23.xlsx";*/
+/*if (true) {
+    $inputFileName = "/Users/if65/Desktop/AKUSS23.xlsx";*/
 
     /** Create a new Xls Reader  **/
     $reader = new Xlsx();
@@ -50,10 +50,10 @@ if (move_uploaded_file($_FILES['userfile']['tmp_name'], "/phpUpload/" . $_FILES[
         // Definizione taglie
         $sizes = [];
         for ($rowIndex = 1; $rowIndex <= 9; $rowIndex++) {
-            $sizeId = $worksheet->getCellByColumnAndRow(28, $rowIndex)->getValue() ?? '';
+            $sizeId = (string)$worksheet->getCellByColumnAndRow(28, $rowIndex)->getValue() ?? '';
             if ($sizeId != '') {
                 for ($columnIndex = 29; $columnIndex <= 49; $columnIndex++) {
-                    $size = (string)$worksheet->getCellByColumnAndRow($columnIndex, $rowIndex)->getValue() ?? '';
+                    $size = str_replace('.', ',', (string)$worksheet->getCellByColumnAndRow($columnIndex, $rowIndex)->getValue() ?? '');
                     if ($size != '') {
                         $sizes[$sizeId][$columnIndex] = $size;
                     }
@@ -82,7 +82,7 @@ if (move_uploaded_file($_FILES['userfile']['tmp_name'], "/phpUpload/" . $_FILES[
                 break;
             }
 
-            $sizeId = $worksheet->getCellByColumnAndRow(28, $index)->getValue();
+            $sizeId = (string)$worksheet->getCellByColumnAndRow(28, $index)->getValue();
 
             $usedSizes = [];
 
@@ -178,7 +178,7 @@ if (move_uploaded_file($_FILES['userfile']['tmp_name'], "/phpUpload/" . $_FILES[
         }
 
         echo json_encode(array("recordCount" => count($articles), "values" => $articles));
-        //file_put_contents('/Users/if65/Desktop/ordineSP.json', json_encode(array("recordCount" => count($articles), "values" => $articles)));
+        //file_put_contents('/Users/if65/Desktop/ordine2SP.json', json_encode(array("recordCount" => count($articles), "values" => $articles)));
     } catch (\PhpOffice\PhpSpreadsheet\Exception $e) {
         die ("Error");
     }
