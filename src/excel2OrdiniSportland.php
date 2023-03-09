@@ -22,7 +22,7 @@ if (!isset($_FILES['userfile']) || !is_uploaded_file($_FILES['userfile']['tmp_na
 if (move_uploaded_file($_FILES['userfile']['tmp_name'], "/phpUpload/" . $_FILES['userfile']['name'])) {
     $inputFileName = "/phpUpload/" . $_FILES['userfile']['name'];
 /*if (true) {
-    $inputFileName = "/Users/if65/Desktop/AKUSS23.xlsx";*/
+    $inputFileName = "/Users/if65/Desktop/MUC_OFF_SPORTLAND_BIKE_ESPOSITORE_DOPPIO.xlsx";*/
 
     /** Create a new Xls Reader  **/
     $reader = new Xlsx();
@@ -141,17 +141,17 @@ if (move_uploaded_file($_FILES['userfile']['tmp_name'], "/phpUpload/" . $_FILES[
             }
 
             $articles[] = new Article(
-                $worksheet->getCellByColumnAndRow(13, $index)->getValue() ?? '',
-                $worksheet->getCellByColumnAndRow(14, $index)->getValue() ?? '',
-                $worksheet->getCellByColumnAndRow(1, $index)->getValue() ?? '',
-                $worksheet->getCellByColumnAndRow(2, $index)->getValue() ?? '',
+                (string)$worksheet->getCellByColumnAndRow(13, $index)->getValue() ?? '',
+                    (string)$worksheet->getCellByColumnAndRow(14, $index)->getValue() ?? '',
+                    (string)$worksheet->getCellByColumnAndRow(1, $index)->getValue() ?? '',
+                    (string)$worksheet->getCellByColumnAndRow(2, $index)->getValue() ?? '',
                 (int)$worksheet->getCellByColumnAndRow(3, $index)->getValue() ?? 0,
-                $worksheet->getCellByColumnAndRow(15, $index)->getValue() ?? '',
-                $worksheet->getCellByColumnAndRow(4, $index)->getValue() ?? '', // settore
-                $worksheet->getCellByColumnAndRow(5, $index)->getValue() ?? '',//reparto
-                $worksheet->getCellByColumnAndRow(6, $index)->getValue() ?? '',
-                $worksheet->getCellByColumnAndRow(7, $index)->getValue() ?? '',
-                $worksheet->getCellByColumnAndRow(8, $index)->getValue() ?? '',
+                    (string)$worksheet->getCellByColumnAndRow(15, $index)->getValue() ?? '',
+                    (string)$worksheet->getCellByColumnAndRow(4, $index)->getValue() ?? '', // settore
+                    (string)$worksheet->getCellByColumnAndRow(5, $index)->getValue() ?? '',//reparto
+                    (string)$worksheet->getCellByColumnAndRow(6, $index)->getValue() ?? '',
+                    (string)$worksheet->getCellByColumnAndRow(7, $index)->getValue() ?? '',
+                    (string)$worksheet->getCellByColumnAndRow(8, $index)->getValue() ?? '',
                 (string)$worksheet->getCellByColumnAndRow(9, $index)->getValue() ?? '',
                 (string)$worksheet->getCellByColumnAndRow(10, $index)->getValue() ?? '',
                 $worksheet->getCellByColumnAndRow(16, $index)->getValue() ?? '',
