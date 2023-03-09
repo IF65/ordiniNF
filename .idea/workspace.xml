@@ -95,9 +95,9 @@
       <method v="2" />
     </configuration>
     <list>
+      <item itemvalue="PHP Script.excel2InvoiceEuroconnect.php" />
       <item itemvalue="PHP Script.excel2OrdiniSportland.php" />
       <item itemvalue="PHP Script.excel2griglia.php" />
-      <item itemvalue="PHP Script.excel2InvoiceEuroconnect.php" />
       <item itemvalue="PHP Script.reportVenditori.php" />
       <item itemvalue="PHP Script.stampaIncassiFood2.php" />
     </list>
@@ -225,7 +225,12 @@
       <workItem from="1678283270283" duration="9000" />
       <workItem from="1678290646903" duration="3287000" />
       <workItem from="1678294615975" duration="3000" />
-      <workItem from="1678348439451" duration="1129000" />
+      <workItem from="1678348439451" duration="2842000" />
+      <workItem from="1678357492264" duration="156000" />
+      <workItem from="1678359636689" duration="2000" />
+      <workItem from="1678366810765" duration="1000" />
+      <workItem from="1678366815850" duration="336000" />
+      <workItem from="1678367229741" duration="29000" />
     </task>
     <task id="LOCAL-00001" summary="Sistemato Excel molto basico per giacenze linee">
       <created>1555408363753</created>

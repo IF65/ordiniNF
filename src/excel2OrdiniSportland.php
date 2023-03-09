@@ -22,7 +22,7 @@ if (!isset($_FILES['userfile']) || !is_uploaded_file($_FILES['userfile']['tmp_na
 if (move_uploaded_file($_FILES['userfile']['tmp_name'], "/phpUpload/" . $_FILES['userfile']['name'])) {
     $inputFileName = "/phpUpload/" . $_FILES['userfile']['name'];
 /*if (true) {
-    $inputFileName = "/Users/if65/Desktop/MUC_OFF_SPORTLAND_BIKE_ESPOSITORE_DOPPIO.xlsx";*/
+    $inputFileName = "/Users/if65/Desktop/ADIDAS FW23 STOCK 4D 0903.xlsx";*/
 
     /** Create a new Xls Reader  **/
     $reader = new Xlsx();
@@ -49,7 +49,7 @@ if (move_uploaded_file($_FILES['userfile']['tmp_name'], "/phpUpload/" . $_FILES[
 
         // Definizione taglie
         $sizes = [];
-        for ($rowIndex = 1; $rowIndex <= 9; $rowIndex++) {
+        for ($rowIndex = 1; $rowIndex <= 10; $rowIndex++) {
             $sizeId = (string)$worksheet->getCellByColumnAndRow(28, $rowIndex)->getValue() ?? '';
             if ($sizeId != '') {
                 for ($columnIndex = 29; $columnIndex <= 49; $columnIndex++) {
@@ -178,7 +178,7 @@ if (move_uploaded_file($_FILES['userfile']['tmp_name'], "/phpUpload/" . $_FILES[
         }
 
         echo json_encode(array("recordCount" => count($articles), "values" => $articles));
-        //file_put_contents('/Users/if65/Desktop/ordine2SP.json', json_encode(array("recordCount" => count($articles), "values" => $articles)));
+        //file_put_contents('/Users/if65/Desktop/ordineSP.json', json_encode(array("recordCount" => count($articles), "values" => $articles), JSON_PRETTY_PRINT));
     } catch (\PhpOffice\PhpSpreadsheet\Exception $e) {
         die ("Error");
     }
